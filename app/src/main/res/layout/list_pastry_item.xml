@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pastryName"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/addItem"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/addItem"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/descript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/addItem"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/allerganics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/addItem"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</LinearLayout>

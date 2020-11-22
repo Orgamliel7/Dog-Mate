@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dateOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/dateOrder"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/namePastry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/namePastry"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/customerName"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cusEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/customerEmail"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/customerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/customerPhone"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/customerAppartment"
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF"
+                android:text="@string/customerAppartment"
+                android:textColor="#0C0C0C" />
+
+            <TextView
+                android:id="@+id/customerFloor"
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF"
+                android:text="@string/customerFloor"
+                android:textColor="#0C0C0C" />
+
+            <TextView
+                android:id="@+id/customerNumHouse"
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF"
+                android:text="@string/customerNumHouse"
+                android:textColor="#0C0C0C" />
+
+            <TextView
+                android:id="@+id/customerStreet"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF"
+                android:text="@string/customerStreet"
+                android:textColor="#0C0C0C" />
+
+            <TextView
+                android:id="@+id/customerCity"
+                android:layout_width="91dp"
+                android:layout_height="33dp"
+                android:background="#FFFF"
+                android:text="@string/customerCity"
+                android:textColor="#0C0C0C" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/Comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/Comment"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/PayOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/PayOrder"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/recievedOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/recievedOrder"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+</LinearLayout>

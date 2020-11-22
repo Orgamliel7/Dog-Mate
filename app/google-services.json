@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "354647910645",
+    "firebase_url": "https://dogmate-c8039.firebaseio.com",
+    "project_id": "dogmate-c8039",
+    "storage_bucket": "dogmate-c8039.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354647910645:android:9ae3d93ef2a973ae4bfdbc",
+        "android_client_info": {
+          "package_name": "com.oreo.DogMate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354647910645-0d8eoigh7ojhtghof93jav1srfefp8k9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwteQzBoEr_yWsxhdw2a151w3ohrElEcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354647910645-0d8eoigh7ojhtghof93jav1srfefp8k9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

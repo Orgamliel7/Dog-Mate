@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_menu"
+            android:icon="@drawable/my_menu"
+            android:title="התפריט שלי" />
+        <item
+            android:id="@+id/baker_orders"
+            android:icon="@drawable/baker_orders"
+            android:title="ההזמנות שלי" />
+        <item
+            android:id="@+id/main_menu"
+            android:icon="@drawable/main_menu"
+            android:title="תפריט ראשי" />
+        <item
+            android:id="@+id/baker_settings"
+            android:icon="@drawable/baker_settings"
+            android:title="הגדרות" />
+        <item
+            android:id="@+id/log_out"
+            android:icon="@drawable/log_out"
+            android:title="התנתקות" />
+    </group>
+
+</menu>

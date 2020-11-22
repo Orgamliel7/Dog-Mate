@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/customer_orders"
+            android:icon="@drawable/customer_orders"
+            android:title="ההזמנות שלי" />
+        <item
+            android:id="@+id/buy_pastry"
+            android:icon="@drawable/buy_pastry"
+            android:title="הזמנה חדשה" />
+        <item
+            android:id="@+id/customer_favorites"
+            android:icon="@drawable/customer_favorites"
+            android:title="המועדפים שלי" />
+        <item
+            android:id="@+id/main_menu_customer"
+            android:icon="@drawable/main_menu_customer"
+            android:title="תפריט ראשי" />
+        <item
+            android:id="@+id/customer_settings"
+            android:icon="@drawable/customer_settings"
+            android:title="הגדרות" />
+        <item
+            android:id="@+id/log_out_customer"
+            android:icon="@drawable/log_out_customer"
+            android:title="התנתקות" />
+    </group>
+
+</menu>

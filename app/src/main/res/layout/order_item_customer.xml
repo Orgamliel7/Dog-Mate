@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dateOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/dateOrder"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/namePastry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/namePastry"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bakerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/bakerName"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bakerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/bakerEmail"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bakerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/bakerPhone"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bakerAppartment"
+                android:layout_width="70dp"
+                android:layout_height="37dp"
+                android:layout_column="5"
+                android:background="#FFFF"
+                android:text="@string/bakerAppartment"
+                android:textColor="#0C0C0C" />
+
+            <TextView
+                android:id="@+id/bakerFloor"
+                android:layout_width="72dp"
+                android:layout_height="37dp"
+                android:layout_column="4"
+                android:background="#FFFF"
+                android:text="@string/bakerFloor"
+                android:textColor="#0C0C0C" />
+
+            <TextView
+                android:id="@+id/bakerNumHouse"
+                android:layout_width="90dp"
+                android:layout_height="37dp"
+                android:layout_column="3"
+                android:background="#FFFF"
+                android:text="@string/bakerNumHouse"
+                android:textColor="#0C0C0C" />
+
+            <TextView
+                android:id="@+id/bakerStreet"
+                android:layout_width="83dp"
+                android:layout_height="37dp"
+                android:layout_column="2"
+                android:background="#FFFF"
+                android:text="@string/bakerStreet"
+                android:textColor="#0C0C0C" />
+
+            <TextView
+                android:id="@+id/bakerCity"
+                android:layout_width="96dp"
+                android:layout_height="37dp"
+                android:layout_column="1"
+                android:background="#FFFF"
+                android:text="@string/bakerCity"
+                android:textColor="#0C0C0C" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/Comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/Comment"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/PayOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/PayOrder"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/recievedOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:text="@string/recievedOrder"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp" />
+
+</LinearLayout>
