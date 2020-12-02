@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\eliya\\.gradle\\caches\\transforms-2\\files-2.1\\0c7684b5efebf4f910d4e2dc76f3404c\\appcompat-1.0.2\\res\\values-v21\\values-v21.xml",
@@ -23,14 +23,14 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "55",
+                        "startOffsets": "57",
                         "endLines": "6",
                         "endColumns": "12",
-                        "endOffsets": "278"
+                        "endOffsets": "284"
                     },
                     "to": {
                         "startLines": "6",

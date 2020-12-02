@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bacground"
     android:orientation="vertical"
-    tools:context=".customerSideActivities.Favorites">
+    tools:context=".adopterSideActivities.Favorites">
 
     <ListView
         android:id="@+id/bakers_list"

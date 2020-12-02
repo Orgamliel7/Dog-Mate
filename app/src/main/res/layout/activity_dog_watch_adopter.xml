@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relativlayou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground"
+    android:orientation="vertical"
+    tools:context=".adopterSideActivities.dogWatchActivityAdopter">
+
+
+    <TextView
+        android:id="@+id/pastryWatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:background="#FFFFFF"
+        android:text="@string/PASTRYDETS"
+        android:textColor="#000"
+        android:textDirection="rtl"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bakerdets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:background="#FFFFFF"
+        android:text="@string/bakerDETS"
+        android:textColor="#000"
+        android:textDirection="rtl"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/TableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bakerStreet"
+                android:layout_width="213dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:background="#FFFF"
+                android:text="@string/bakerStreet"
+                android:textColor="#0C0C0C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/bakerCity"
+                android:layout_width="197dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="#FFFF"
+                android:text="@string/bakerCity"
+                android:textColor="#0C0C0C"
+                android:textSize="18sp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/totalPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="סך הכל לתשלום"
+        android:background="#FFFFFF"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:onClick="adoption"
+        android:text="@string/adoption"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pastryPicturesRecycler" />
+
+    <ProgressBar
+        android:id="@+id/progress_image_baker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pastryPicturesRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground"
+    tools:context=".advertiserSideActivities.AddDogActivity"
+    tools:ignore="LabelFor" >
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="85dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/description"
+        android:labelFor="@+id/description"
+        android:textColor="#0A0A0A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/price"
+        android:textColor="#0A0A0A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/pastryName"
+        android:textColor="#0A0A0A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/desInput"
+        android:layout_width="238dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceInput"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/alerganicInput"
+        android:layout_width="238dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="360dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/priceInput"
+        android:layout_width="238dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInput"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/addPastryTextView"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="104dp"
+        android:text="@string/addItem"
+        android:textColor="#0A0A0A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alerganics"
+        android:layout_width="115dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/alerganic"
+        android:textColor="#0A0A0A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addPicture"
+        android:layout_width="312dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        android:onClick="addItem"
+        android:text="@string/addPicture"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alerganicInput" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="238dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

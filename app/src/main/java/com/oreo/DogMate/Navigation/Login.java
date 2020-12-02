@@ -19,8 +19,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.oreo.DogMate.R;
-import com.oreo.DogMate.bakerSideActivities.bakerScreenActivity;
-import com.oreo.DogMate.customerSideActivities.customerScreen;
+import com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity;
+import com.oreo.DogMate.adopterSideActivities.adopterScreen;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,8 +35,8 @@ public class Login extends AppCompatActivity {
     boolean isBaker = false;
     private FirebaseAuth FireLog;
     String userID;
-    DatabaseReference bakersRef;
-    DatabaseReference customersRef;
+    DatabaseReference advertiserRef;
+    DatabaseReference adopterRef;
     DatabaseReference usersRef;
     FirebaseDatabase DB;
 
@@ -49,8 +49,8 @@ public class Login extends AppCompatActivity {
         DB = FirebaseDatabase.getInstance();
         progressBar = findViewById(R.id.progressBar);
         usersRef = DB.getReference("Users");
-        bakersRef = DB.getReference("Users/Bakers");
-        customersRef = DB.getReference("Users/Customers");
+        advertiserRef = DB.getReference("Users/Advertiser");
+        adopterRef = DB.getReference("Users/Adopter");
     }
 
 
@@ -104,12 +104,12 @@ public class Login extends AppCompatActivity {
     }
 
     private void BakerLogin() {
-        Intent intent = new Intent(Login.this, bakerScreenActivity.class);
+        Intent intent = new Intent(Login.this, advertiserScreenActivity.class);
         startActivity(intent);
     }
 
     private void CustomerLogin() {
-        Intent intent = new Intent(Login.this, customerScreen.class);
+        Intent intent = new Intent(Login.this, adopterScreen.class);
         startActivity(intent);
     }
 

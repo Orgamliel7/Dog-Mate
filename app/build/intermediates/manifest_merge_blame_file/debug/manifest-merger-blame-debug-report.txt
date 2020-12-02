@@ -6,13 +6,13 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="22"
-8-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
+8-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
+9-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:24:5-79
 12-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:24:22-76
@@ -24,131 +24,131 @@
 14-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
 15
 16    <application
-16-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:7:5-58:19
+16-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:7:5-58:19
 17        android:allowBackup="true"
-17-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:8:9-35
+17-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:8:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\3cbfbf747f25ee2613cffb9fb53dd267\core-1.0.1\AndroidManifest.xml:22:18-86
 19        android:debuggable="true"
 20        android:icon="@drawable/customer_favorites"
-20-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:9:9-52
+20-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:9:9-52
 21        android:label="@string/app_name"
-21-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:10:9-41
+21-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:10:9-41
 22        android:roundIcon="@drawable/bacground"
-22-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:11:9-48
+22-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:11:9-48
 23        android:supportsRtl="true"
-23-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:12:9-35
+23-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:12:9-35
 24        android:testOnly="true"
 25        android:theme="@style/AppTheme" >
-25-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:13:9-40
+25-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:13:9-40
 26        <activity
-26-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:14:9-15:58
-27            android:name="com.oreo.DogMate.customerSideActivities.SearchMainMenu"
-27-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:14:19-88
+26-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:14:9-15:58
+27            android:name="com.oreo.DogMate.adopterSideActivities.SearchMainMenu"
+27-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:14:19-87
 28            android:theme="@style/AppTheme.NoActionBar" />
-28-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:15:13-56
+28-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:15:13-56
 29        <activity
-29-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:16:9-17:58
-30            android:name="com.oreo.DogMate.customerSideActivities.SearchPastryActivity"
-30-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:16:19-94
+29-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:16:9-17:58
+30            android:name="com.oreo.DogMate.adopterSideActivities.searchDogActivity"
+30-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:16:19-90
 31            android:theme="@style/AppTheme.NoActionBar" />
-31-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:17:13-56
+31-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:17:13-56
 32        <activity
-32-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:18:9-19:58
-33            android:name="com.oreo.DogMate.customerSideActivities.customer_settings"
-33-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:18:19-91
+32-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:18:9-19:58
+33            android:name="com.oreo.DogMate.adopterSideActivities.adopter_settings"
+33-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:18:19-89
 34            android:theme="@style/AppTheme.NoActionBar" />
-34-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:19:13-56
-35        <activity android:name="com.oreo.DogMate.bakerSideActivities.BakerSettingsActivity" />
-35-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:20:9-95
-35-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:20:19-92
-36        <activity android:name="com.oreo.DogMate.Navigation.Customer_Navigation" />
-36-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:21:9-84
-36-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:21:19-81
-37        <activity android:name="com.oreo.DogMate.Navigation.Baker_Navigation" />
-37-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:22:9-81
-37-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:22:19-78
+34-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:19:13-56
+35        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserSettingsActivity" />
+35-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:20:9-105
+35-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:20:19-102
+36        <activity android:name="com.oreo.DogMate.Navigation.Adopter_Navigation" />
+36-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:21:9-83
+36-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:21:19-80
+37        <activity android:name="com.oreo.DogMate.Navigation.Advertiser_Navigation" />
+37-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:22:9-86
+37-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:22:19-83
 38        <activity
-38-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:23:9-24:58
-39            android:name="com.oreo.DogMate.customerSideActivities.PastryWatchActivityCustomer"
-39-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:23:19-101
+38-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:23:9-24:58
+39            android:name="com.oreo.DogMate.adopterSideActivities.dogWatchActivityAdopter"
+39-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:23:19-96
 40            android:theme="@style/AppTheme.NoActionBar" />
-40-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:24:13-56
-41        <activity android:name="com.oreo.DogMate.bakerSideActivities.WatchPastryBakerActivity" />
-41-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:25:9-98
-41-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:25:19-95
-42        <activity android:name="com.oreo.DogMate.bakerSideActivities.addPatryPicturesActivity" />
-42-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:26:9-98
-42-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:26:19-95
+40-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:24:13-56
+41        <activity android:name="com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity" />
+41-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:25:9-105
+41-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:25:19-102
+42        <activity android:name="com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity" />
+42-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:26:9-101
+42-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:26:19-98
 43        <activity
-43-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:27:9-29:59
-44            android:name="com.oreo.DogMate.customerSideActivities.CustomerOrderActivity"
-44-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:28:13-89
+43-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:27:9-29:59
+44            android:name="com.oreo.DogMate.adopterSideActivities.AdopterOrderActivity"
+44-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:28:13-87
 45            android:theme="@style/AppTheme.NoActionBar" />
-45-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:29:13-56
+45-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:29:13-56
 46        <activity
-46-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:30:9-31:58
-47            android:name="com.oreo.DogMate.customerSideActivities.BuyPastryActivity"
-47-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:30:19-91
+46-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:30:9-31:58
+47            android:name="com.oreo.DogMate.adopterSideActivities.BuyDogActivity"
+47-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:30:19-87
 48            android:theme="@style/AppTheme.NoActionBar" />
-48-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:31:13-56
+48-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:31:13-56
 49        <activity
-49-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:32:9-33:59
-50            android:name="com.oreo.DogMate.customerSideActivities.CustomerMenuActivity"
-50-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:32:19-94
+49-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:32:9-33:59
+50            android:name="com.oreo.DogMate.adopterSideActivities.AdopterMenuActivity"
+50-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:32:19-92
 51            android:theme="@style/AppTheme.NoActionBar" />
-51-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:33:13-56
-52        <activity android:name="com.oreo.DogMate.bakerSideActivities.BakerOrderActivity" />
-52-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:34:9-92
-52-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:34:19-89
+51-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:33:13-56
+52        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserOrderActivity" />
+52-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:34:9-102
+52-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:34:19-99
 53        <activity
-53-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:35:9-37:59
-54            android:name="com.oreo.DogMate.customerSideActivities.Favorites"
-54-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:36:13-77
+53-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:35:9-37:59
+54            android:name="com.oreo.DogMate.adopterSideActivities.Favorites"
+54-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:36:13-76
 55            android:theme="@style/AppTheme.NoActionBar" />
-55-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:37:13-56
-56        <activity android:name="com.oreo.DogMate.bakerSideActivities.AddPastryActivity" />
-56-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:38:9-91
-56-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:38:19-88
+55-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:37:13-56
+56        <activity android:name="com.oreo.DogMate.advertiserSideActivities.AddDogActivity" />
+56-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:38:9-93
+56-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:38:19-90
 57        <activity android:name="com.oreo.DogMate.Navigation.Register" />
-57-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:39:9-73
-57-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:39:19-70
+57-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:39:9-73
+57-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:39:19-70
 58        <activity
-58-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:40:9-42:59
-59            android:name="com.oreo.DogMate.customerSideActivities.SearchBakerActivity"
-59-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:41:13-87
+58-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:40:9-42:59
+59            android:name="com.oreo.DogMate.adopterSideActivities.SearchAdvertiserActivity"
+59-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:41:13-91
 60            android:theme="@style/AppTheme.NoActionBar" />
-60-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:42:13-56
-61        <activity android:name="com.oreo.DogMate.bakerSideActivities.BakerMenuActivity" />
-61-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:43:9-91
-61-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:43:19-88
+60-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:42:13-56
+61        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserMenuActivity" />
+61-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:43:9-101
+61-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:43:19-98
 62        <activity
-62-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:44:9-46:59
-63            android:name="com.oreo.DogMate.bakerSideActivities.bakerScreenActivity"
-63-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:45:13-84
+62-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:44:9-46:59
+63            android:name="com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity"
+63-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:45:13-94
 64            android:theme="@style/AppTheme.NoActionBar" />
-64-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:46:13-56
+64-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:46:13-56
 65        <activity android:name="com.oreo.DogMate.Navigation.Login" />
-65-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:47:9-70
-65-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:47:19-67
+65-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:47:9-70
+65-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:47:19-67
 66        <activity
-66-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:48:9-50:59
-67            android:name="com.oreo.DogMate.customerSideActivities.customerScreen"
-67-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:49:13-82
+66-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:48:9-50:59
+67            android:name="com.oreo.DogMate.adopterSideActivities.adopterScreen"
+67-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:49:13-80
 68            android:theme="@style/AppTheme.NoActionBar" />
-68-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:50:13-56
+68-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:50:13-56
 69        <activity android:name="com.oreo.DogMate.Navigation.MainActivity" >
-69-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:51:9-57:20
-69-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:51:19-74
+69-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:51:9-57:20
+69-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:51:19-74
 70            <intent-filter>
-70-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:52:13-56:29
+70-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:52:13-56:29
 71                <action android:name="android.intent.action.MAIN" />
-71-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:53:17-69
-71-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:53:25-66
+71-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:53:17-69
+71-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:53:25-66
 72
 73                <category android:name="android.intent.category.LAUNCHER" />
-73-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:55:17-77
-73-->C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:55:27-74
+73-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:55:17-77
+73-->C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:55:27-74
 74            </intent-filter>
 75        </activity>
 76        <activity

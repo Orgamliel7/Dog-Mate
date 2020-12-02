@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
+            "outputFile": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\eliya\\.gradle\\caches\\transforms-2\\files-2.1\\d92a27efcac738b4f280b9ad0c07bda7\\jetified-play-services-base-17.1.0\\res\\values-sv\\values.xml",

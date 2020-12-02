@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ml\\values-ml.xml",
+            "outputFile": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ml\\values-ml.xml",
             "map": [
                 {
                     "source": "C:\\Users\\eliya\\.gradle\\caches\\transforms-2\\files-2.1\\3cbfbf747f25ee2613cffb9fb53dd267\\core-1.0.1\\res\\values-ml\\values-ml.xml",

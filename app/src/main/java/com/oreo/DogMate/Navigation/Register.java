@@ -21,8 +21,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.oreo.DogMate.Objects.Address;
-import com.oreo.DogMate.Objects.Baker;
-import com.oreo.DogMate.Objects.Customer;
+import com.oreo.DogMate.Objects.Adopter;
+import com.oreo.DogMate.Objects.Advertiser;
 import com.oreo.DogMate.R;
 
 import java.util.ArrayList;
@@ -51,8 +51,8 @@ public class Register extends AppCompatActivity {
     CheckBox inputBaker, inputCustomer;
     ProgressBar progressBar2;
     DatabaseReference usersRef;
-    DatabaseReference bakersRef;
-    DatabaseReference customersRef;
+    DatabaseReference advertiserRef;
+    DatabaseReference adopterRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,8 +62,8 @@ public class Register extends AppCompatActivity {
         FireLog = FirebaseAuth.getInstance();
         DB = FirebaseDatabase.getInstance();
         usersRef = DB.getReference("Users");
-        bakersRef = DB.getReference("Users/Bakers");
-        customersRef = DB.getReference("Users/Customers");
+        advertiserRef = DB.getReference("Users/Advertiser");
+        adopterRef = DB.getReference("Users/Adopter");
 
         retrieve();//retrieve all elements in the activity
         setFonts();
@@ -152,19 +152,19 @@ public class Register extends AppCompatActivity {
                             Address adress = new Address(citys,streetS,housNums,floorS,apparmentS);
                             userID = user.getUid();
                             if (inputBaker.isChecked()) {
-                                Baker baker = new Baker(email, fullName, Phone, adress, userID);
+                                Advertiser advertiser = new Advertiser(email, fullName, Phone, adress, userID);
                                 try {
-                                    bakersRef.child(userID).setValue(baker);
-                                    Toast.makeText(Register.this, "Baker added", Toast.LENGTH_LONG).show();
+                                    advertiserRef.child(userID).setValue(advertiser);
+                                    Toast.makeText(Register.this, "Advertiser added", Toast.LENGTH_LONG).show();
                                 } catch (Exception e) {
                                     Log.d(TAG, "onFailue" + e.toString());
                                 }
                             } else {
-                                ArrayList<Baker> b= new ArrayList<Baker>();
-                                Customer customer = new Customer(email, fullName, Phone, adress, userID, b);
+                                ArrayList<Advertiser> b= new ArrayList<Advertiser>();
+                                Adopter adopter = new Adopter(email, fullName, Phone, adress, userID, b);
                                 try {
-                                    customersRef.child(userID).setValue(customer);
-                                    Toast.makeText(Register.this, "Customer added", Toast.LENGTH_LONG).show();
+                                    adopterRef.child(userID).setValue(adopter);
+                                    Toast.makeText(Register.this, "Adopter added", Toast.LENGTH_LONG).show();
                                 } catch (Exception e) {
                                     Log.d(TAG, "onFailue" + e.toString());
                                 }

@@ -24,47 +24,47 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.oreo.DogMate.customerSideActivities.SearchMainMenu"
+            android:name="com.oreo.DogMate.adopterSideActivities.SearchMainMenu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.oreo.DogMate.customerSideActivities.SearchPastryActivity"
+            android:name="com.oreo.DogMate.adopterSideActivities.searchDogActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.oreo.DogMate.customerSideActivities.customer_settings"
+            android:name="com.oreo.DogMate.adopterSideActivities.adopter_settings"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.oreo.DogMate.bakerSideActivities.BakerSettingsActivity" />
-        <activity android:name="com.oreo.DogMate.Navigation.Customer_Navigation" />
-        <activity android:name="com.oreo.DogMate.Navigation.Baker_Navigation" />
+        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserSettingsActivity" />
+        <activity android:name="com.oreo.DogMate.Navigation.Adopter_Navigation" />
+        <activity android:name="com.oreo.DogMate.Navigation.Advertiser_Navigation" />
         <activity
-            android:name="com.oreo.DogMate.customerSideActivities.PastryWatchActivityCustomer"
+            android:name="com.oreo.DogMate.adopterSideActivities.dogWatchActivityAdopter"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.oreo.DogMate.bakerSideActivities.WatchPastryBakerActivity" />
-        <activity android:name="com.oreo.DogMate.bakerSideActivities.addPatryPicturesActivity" />
+        <activity android:name="com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity" />
+        <activity android:name="com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity" />
         <activity
-            android:name="com.oreo.DogMate.customerSideActivities.CustomerOrderActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.oreo.DogMate.customerSideActivities.BuyPastryActivity"
+            android:name="com.oreo.DogMate.adopterSideActivities.AdopterOrderActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.oreo.DogMate.customerSideActivities.CustomerMenuActivity"
+            android:name="com.oreo.DogMate.adopterSideActivities.BuyDogActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.oreo.DogMate.bakerSideActivities.BakerOrderActivity" />
         <activity
-            android:name="com.oreo.DogMate.customerSideActivities.Favorites"
+            android:name="com.oreo.DogMate.adopterSideActivities.AdopterMenuActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.oreo.DogMate.bakerSideActivities.AddPastryActivity" />
+        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserOrderActivity" />
+        <activity
+            android:name="com.oreo.DogMate.adopterSideActivities.Favorites"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.oreo.DogMate.advertiserSideActivities.AddDogActivity" />
         <activity android:name="com.oreo.DogMate.Navigation.Register" />
         <activity
-            android:name="com.oreo.DogMate.customerSideActivities.SearchBakerActivity"
+            android:name="com.oreo.DogMate.adopterSideActivities.SearchAdvertiserActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.oreo.DogMate.bakerSideActivities.BakerMenuActivity" />
+        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserMenuActivity" />
         <activity
-            android:name="com.oreo.DogMate.bakerSideActivities.bakerScreenActivity"
+            android:name="com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.oreo.DogMate.Navigation.Login" />
         <activity
-            android:name="com.oreo.DogMate.customerSideActivities.customerScreen"
+            android:name="com.oreo.DogMate.adopterSideActivities.adopterScreen"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.oreo.DogMate.Navigation.MainActivity" >
             <intent-filter>

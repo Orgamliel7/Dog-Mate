@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:2:1-60:12
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:2:1-60:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\162eae9e3b95502533b1d58f9f927687\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\0c7684b5efebf4f910d4e2dc76f3404c\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d57d4834f2d494225ce62a1223005011\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -62,25 +62,25 @@ MERGED from [com.google.firebase:firebase-components:16.0.1] C:\Users\eliya\.gra
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\4655d48b53629a14d75e5254bfd5c4f8\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e3dec554e122611f1853e4214e27b1f\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\616513930b2d8570c7c0caf2b6f7c974\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:2:1-60:12
 	package
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:3:5-31
-		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:2:1-60:12
-		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:2:1-60:12
+		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:2:1-60:12
-		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:2:1-60:12
+		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-storage:19.2.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\80b96b8459e39584abd3365a7bf0267b\jetified-firebase-storage-19.2.0\AndroidManifest.xml:27:5-67
@@ -98,9 +98,9 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\8e87049f04bfb8e1222c3649481564d8\jetified-play-services-measurement-sdk-api-18.0.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\8e87049f04bfb8e1222c3649481564d8\jetified-play-services-measurement-sdk-api-18.0.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:7:5-58:19
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:7:5-58:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\162eae9e3b95502533b1d58f9f927687\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\162eae9e3b95502533b1d58f9f927687\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d57d4834f2d494225ce62a1223005011\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -154,141 +154,141 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\eliya\.gradle\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\3cbfbf747f25ee2613cffb9fb53dd267\core-1.0.1\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:11:9-48
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:11:9-48
 	android:icon
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:9:9-52
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:9:9-52
 	android:allowBackup
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:13:9-40
-activity#com.oreo.DogMate.customerSideActivities.SearchMainMenu
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:14:9-15:58
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:13:9-40
+activity#com.oreo.DogMate.adopterSideActivities.SearchMainMenu
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:14:9-15:58
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:15:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:15:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:14:19-88
-activity#com.oreo.DogMate.customerSideActivities.SearchPastryActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:16:9-17:58
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:14:19-87
+activity#com.oreo.DogMate.adopterSideActivities.searchDogActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:16:9-17:58
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:17:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:17:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:16:19-94
-activity#com.oreo.DogMate.customerSideActivities.customer_settings
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:18:9-19:58
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:16:19-90
+activity#com.oreo.DogMate.adopterSideActivities.adopter_settings
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:18:9-19:58
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:19:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:19:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:18:19-91
-activity#com.oreo.DogMate.bakerSideActivities.BakerSettingsActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:20:9-95
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:18:19-89
+activity#com.oreo.DogMate.advertiserSideActivities.advertiserSettingsActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:20:9-105
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:20:19-92
-activity#com.oreo.DogMate.Navigation.Customer_Navigation
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:21:9-84
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:20:19-102
+activity#com.oreo.DogMate.Navigation.Adopter_Navigation
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:21:9-83
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:21:19-81
-activity#com.oreo.DogMate.Navigation.Baker_Navigation
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:22:9-81
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:21:19-80
+activity#com.oreo.DogMate.Navigation.Advertiser_Navigation
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:22:9-86
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:22:19-78
-activity#com.oreo.DogMate.customerSideActivities.PastryWatchActivityCustomer
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:23:9-24:58
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:22:19-83
+activity#com.oreo.DogMate.adopterSideActivities.dogWatchActivityAdopter
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:23:9-24:58
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:24:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:24:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:23:19-101
-activity#com.oreo.DogMate.bakerSideActivities.WatchPastryBakerActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:25:9-98
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:23:19-96
+activity#com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:25:9-105
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:25:19-95
-activity#com.oreo.DogMate.bakerSideActivities.addPatryPicturesActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:26:9-98
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:25:19-102
+activity#com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:26:9-101
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:26:19-95
-activity#com.oreo.DogMate.customerSideActivities.CustomerOrderActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:27:9-29:59
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:26:19-98
+activity#com.oreo.DogMate.adopterSideActivities.AdopterOrderActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:27:9-29:59
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:29:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:29:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:28:13-89
-activity#com.oreo.DogMate.customerSideActivities.BuyPastryActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:30:9-31:58
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:28:13-87
+activity#com.oreo.DogMate.adopterSideActivities.BuyDogActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:30:9-31:58
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:31:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:31:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:30:19-91
-activity#com.oreo.DogMate.customerSideActivities.CustomerMenuActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:32:9-33:59
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:30:19-87
+activity#com.oreo.DogMate.adopterSideActivities.AdopterMenuActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:32:9-33:59
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:33:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:33:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:32:19-94
-activity#com.oreo.DogMate.bakerSideActivities.BakerOrderActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:34:9-92
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:32:19-92
+activity#com.oreo.DogMate.advertiserSideActivities.advertiserOrderActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:34:9-102
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:34:19-89
-activity#com.oreo.DogMate.customerSideActivities.Favorites
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:35:9-37:59
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:34:19-99
+activity#com.oreo.DogMate.adopterSideActivities.Favorites
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:35:9-37:59
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:37:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:37:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:36:13-77
-activity#com.oreo.DogMate.bakerSideActivities.AddPastryActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:38:9-91
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:36:13-76
+activity#com.oreo.DogMate.advertiserSideActivities.AddDogActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:38:9-93
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:38:19-88
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:38:19-90
 activity#com.oreo.DogMate.Navigation.Register
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:39:9-73
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:39:9-73
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:39:19-70
-activity#com.oreo.DogMate.customerSideActivities.SearchBakerActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:40:9-42:59
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:39:19-70
+activity#com.oreo.DogMate.adopterSideActivities.SearchAdvertiserActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:40:9-42:59
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:42:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:42:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:41:13-87
-activity#com.oreo.DogMate.bakerSideActivities.BakerMenuActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:43:9-91
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:41:13-91
+activity#com.oreo.DogMate.advertiserSideActivities.advertiserMenuActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:43:9-101
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:43:19-88
-activity#com.oreo.DogMate.bakerSideActivities.bakerScreenActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:44:9-46:59
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:43:19-98
+activity#com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:44:9-46:59
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:46:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:46:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:45:13-84
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:45:13-94
 activity#com.oreo.DogMate.Navigation.Login
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:47:9-70
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:47:9-70
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:47:19-67
-activity#com.oreo.DogMate.customerSideActivities.customerScreen
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:48:9-50:59
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:47:19-67
+activity#com.oreo.DogMate.adopterSideActivities.adopterScreen
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:48:9-50:59
 	android:theme
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:50:13-56
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:50:13-56
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:49:13-82
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:49:13-80
 activity#com.oreo.DogMate.Navigation.MainActivity
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:51:9-57:20
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:51:9-57:20
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:51:19-74
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:51:19-74
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:52:13-56:29
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:52:13-56:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:53:17-69
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:53:17-69
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:53:25-66
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:53:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:55:17-77
+ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:55:17-77
 	android:name
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml:55:27-74
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml:55:27-74
 uses-sdk
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\162eae9e3b95502533b1d58f9f927687\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\162eae9e3b95502533b1d58f9f927687\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\0c7684b5efebf4f910d4e2dc76f3404c\appcompat-1.0.2\AndroidManifest.xml:20:5-44
@@ -405,16 +405,16 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\eliya\.gradle\caches\transform
 MERGED from [androidx.print:print:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e3dec554e122611f1853e4214e27b1f\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\616513930b2d8570c7c0caf2b6f7c974\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\616513930b2d8570c7c0caf2b6f7c974\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eliya\AndroidStudioProjects\DogMate2\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-storage:19.2.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\80b96b8459e39584abd3365a7bf0267b\jetified-firebase-storage-19.2.0\AndroidManifest.xml:26:5-79

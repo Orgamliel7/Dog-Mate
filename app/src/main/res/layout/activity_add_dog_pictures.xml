@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground"
+    android:padding="16dp"
+    tools:context=".advertiserSideActivities.addDogPicturesActivity">
+
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="124dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="132dp"
+        android:background="#FFF"
+        android:text="@string/Upload"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="העלאה" />
+
+    <Button
+        android:id="@+id/chooseFile"
+        android:layout_width="124dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFF"
+        android:text="@string/chooseFile"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="בחר קובץ" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="356dp"
+        android:layout_height="468dp"
+        android:layout_above="@id/progressBarPicture"
+        android:layout_below="@id/chooseFile"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarPicture"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="385dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="608dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/doneUploading"
+        android:layout_width="124dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="#fff"
+        android:text="@string/doneUploading"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="backToMenu"
+        app:layout_constraintEnd_toStartOf="@+id/uploadButton"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

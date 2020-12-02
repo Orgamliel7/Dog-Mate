@@ -1,6 +1,6 @@
 package com.oreo.DogMate.Objects;
 /**
- * Represents the url and name of an image of a pastry,
+ * Represents the url and name of an image of a dog,
  *
  */
 

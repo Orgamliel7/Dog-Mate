@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bacground"
     android:orientation="vertical"
-    tools:context=".customerSideActivities.SearchMainMenu">
+    tools:context=".adopterSideActivities.SearchMainMenu">
 
     <TextView
         android:id="@+id/textView12"
