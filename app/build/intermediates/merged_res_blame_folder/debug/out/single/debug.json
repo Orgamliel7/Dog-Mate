@@ -1,242 +1,242 @@
 [
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_order_item_adopter.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\order_item_adopter.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_buy_pastry.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\buy_pastry.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_advertiser.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_search_advertiser.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\profile.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_log_out_customer.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\log_out_customer.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\profile.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_main_menu_customer.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\main_menu_customer.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_watch_pastry_baker.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_watch_pastry_baker.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_advertiser_settings.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_advertiser_settings.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dog_watch_adopter.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_dog_watch_adopter.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_order_item_advertiser.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\order_item_advertiser.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_adopter_menu.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\navigation_adopter_menu.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pop_baker.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\pop_baker.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_advertiser_navigation.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_advertiser_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dog_watch_adopter.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_dog_watch_adopter.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_advertiser_screen.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_advertiser_screen.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_main_menu.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_search_main_menu.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_log_out.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\log_out.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_image_item.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\image_item.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adopter_order.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_adopter_order.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adopter_menu.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_adopter_menu.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_dog.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_add_dog.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\menu_customer_menu.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\menu\\customer_menu.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_adopter_menu.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\navigation_adopter_menu.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\menu_customer_menu.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\menu\\customer_menu.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_cake.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-xxxhdpi\\cake.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baker_orders.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\baker_orders.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_dog_pictures.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_add_dog_pictures.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_advertiser_item.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\advertiser_item.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customer_orders.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\customer_orders.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_advertiser.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_search_advertiser.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_favorite_advertiser.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_favorite_advertiser.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_favorite_advertiser.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_favorite_advertiser.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adopter_screen.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_adopter_screen.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_advertiser_navigation.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_advertiser_navigation.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baker_orders.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\baker_orders.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pop_baker.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\pop_baker.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_advertiser_settings.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_advertiser_settings.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_dog.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_add_dog.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_main_menu.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_search_main_menu.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customer_orders.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\customer_orders.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_main_menu_customer.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\main_menu_customer.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_advertiser_menu.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\navigation_advertiser_menu.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_buy_dog.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_buy_dog.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adopter_screen.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_adopter_screen.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_dog.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_search_dog.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_order_item_adopter.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\order_item_adopter.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adopter_navigation.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_adopter_navigation.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_dog_pictures.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_add_dog_pictures.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_advertiser_order.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_advertiser_order.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adopter_settings.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_adopter_settings.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_cake.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-xxxhdpi\\cake.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baker_settings.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\baker_settings.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_main_menu.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\main_menu.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_pastry_item.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\list_pastry_item.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_pastry_item.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\list_pastry_item.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\menu_baker_menu.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\menu\\baker_menu.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_favorites.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_favorites.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adopter_menu.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_adopter_menu.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_order_item_advertiser.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\order_item_advertiser.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customer_favorites.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\customer_favorites.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_advertiser_item.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\advertiser_item.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_favorites.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_favorites.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_advertiser_menu.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_advertiser_menu.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adopter_settings.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_adopter_settings.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customer_favorites.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\customer_favorites.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_dog.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_search_dog.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_main_menu.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\main_menu.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bacground.jpg.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\bacground.jpg"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_buy_dog.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_buy_dog.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_advertiser_order.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_advertiser_order.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_image_item.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\image_item.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customer_settings.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\customer_settings.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bacground.jpg.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\bacground.jpg"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_my_menu.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\my_menu.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adopter_order.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_adopter_order.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baker_settings.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\baker_settings.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\menu_baker_menu.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\menu\\baker_menu.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_advertiser_screen.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_advertiser_screen.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_buy_pastry.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\buy_pastry.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_advertiser_menu.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\navigation_advertiser_menu.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_watch_pastry_baker.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_watch_pastry_baker.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_log_out.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\log_out.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_advertiser_menu.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\layout\\activity_advertiser_menu.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customer_settings.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\customer_settings.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_my_menu.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\drawable\\my_menu.xml"
     },
     {
-        "merged": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_log_out_customer.xml.flat",
-        "source": "C:\\Users\\eliya\\AndroidStudioProjects\\DogMate2\\app\\src\\main\\res\\drawable\\log_out_customer.xml"
+        "merged": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adopter_navigation.xml.flat",
+        "source": "C:\\Users\\orgam\\AndroidStudioProjects\\DogMate\\app\\src\\main\\res\\layout\\activity_adopter_navigation.xml"
     }
 ]

@@ -132,7 +132,7 @@ public class Register extends AppCompatActivity {
         }
 
         if ((!inputBaker.isChecked()) && (!inputCustomer.isChecked())) {
-            inputBaker.setError("יש לבחור אופה/לקוח");
+            inputBaker.setError("יש לבחור מפרסם/מאמץ");
             return;
         }
         if (inputBaker.isChecked() && inputCustomer.isChecked()) {
