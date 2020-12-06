@@ -9,7 +9,7 @@
     tools:context=".adopterSideActivities.Favorites">
 
     <ListView
-        android:id="@+id/bakers_list"
+        android:id="@+id/advertisers_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

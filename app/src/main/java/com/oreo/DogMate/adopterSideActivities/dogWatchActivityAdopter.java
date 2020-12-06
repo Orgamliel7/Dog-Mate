@@ -47,7 +47,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
     Dog dog;
     Advertiser advertiser;
     DatabaseReference adoptionsRef;
-    TextView dogDetails,BakerDetails, street, city, total; //will show the dog and bakers main details
+    TextView dogDetails,AdvertiserDetails, street, city, total; //will show the dog and Advertisers main details
 
     @Override
 
@@ -57,12 +57,12 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
         Intent intent = getIntent();
         dog =(Dog) intent.getSerializableExtra("Dog");
         recyclerView = findViewById(R.id.dogPicturesRecycler);
-        progressBar = findViewById(R.id.progress_image_baker);
+        progressBar = findViewById(R.id.progress_image_advertiser);
         dogDetails = findViewById(R.id.dogWatch);
-        BakerDetails = findViewById(R.id.bakerdets);
+        AdvertiserDetails = findViewById(R.id.advertiserdets);
         total = findViewById(R.id.totalPay);
-        street = findViewById(R.id.bakerStreet);
-        city = findViewById(R.id.bakerCity);
+        street = findViewById(R.id.advertiserStreet);
+        city = findViewById(R.id.advertiserCity);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         uploads = new ArrayList<>();
@@ -72,9 +72,9 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
         FireLog = FirebaseAuth.getInstance();
         DB = FirebaseDatabase.getInstance();
         userID = FireLog.getCurrentUser().getUid();
-        imageRef = DB.getReference("Menu").child(dog.getBakerID()).child(dog.getDocID()).child("images");
+        imageRef = DB.getReference("Menu").child(dog.getadvertiserID()).child(dog.getDocID()).child("images");
         storage = FirebaseStorage.getInstance();
-        dogRef=DB.getReference("Menu").child(dog.getBakerID()).child(dog.getDocID());
+        dogRef=DB.getReference("Menu").child(dog.getadvertiserID()).child(dog.getDocID());
 
     }
     protected void onStart() {
@@ -86,11 +86,11 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
              * Setting the details of the dog and advertiser from the DB
              */
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.hasChild(dog.getBakerID())){
-                    advertiser = dataSnapshot.child(dog.getBakerID()).getValue(Advertiser.class);
+                if(dataSnapshot.hasChild(dog.getadvertiserID())){
+                    advertiser = dataSnapshot.child(dog.getadvertiserID()).getValue(Advertiser.class);
                     dogDetails.setText("צפייה בכלב: "+ dog.getName());
                     total.setText("סך הכל לתשלום: "+ dog.getPrice()+".");
-                    BakerDetails.setText("פרטי המפרסם: "+ advertiser.getFull_name());
+                    AdvertiserDetails.setText("פרטי המפרסם: "+ advertiser.getFull_name());
                     street.setText("רחוב: "+ advertiser.getAddress().getStreetName());
                     city.setText("עיר: "+ advertiser.getAddress().getCity());
                 }

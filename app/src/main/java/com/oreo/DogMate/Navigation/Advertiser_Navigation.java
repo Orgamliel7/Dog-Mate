@@ -22,8 +22,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 /**
- * An activity that contains a side navigator for the baker
- * all the baker's activities will inherit it
+ * An activity that contains a side navigator for the advertiser
+ * all the advertiser's activities will inherit it
  */
 public class Advertiser_Navigation extends Activity implements NavigationView.OnNavigationItemSelectedListener{
     protected DrawerLayout drawer;
@@ -64,7 +64,7 @@ public class Advertiser_Navigation extends Activity implements NavigationView.On
                 startActivity(i);
                 break;
 
-            case R.id.baker_orders:
+            case R.id.advertiser_orders:
                 Intent j = new Intent(this, advertiserOrderActivity.class);
                 startActivity(j);
                 break;
@@ -73,7 +73,7 @@ public class Advertiser_Navigation extends Activity implements NavigationView.On
                 Intent k = new Intent(this, advertiserScreenActivity.class);
                 startActivity(k);
                 break;
-            case R.id.baker_settings:
+            case R.id.advertiser_settings:
                 Intent l = new Intent(this, advertiserSettingsActivity.class);
                 startActivity(l);
                 break;

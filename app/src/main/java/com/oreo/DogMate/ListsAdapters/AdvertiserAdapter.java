@@ -32,8 +32,8 @@ public class AdvertiserAdapter extends ArrayAdapter<Advertiser> {
         LayoutInflater inflater =  context.getLayoutInflater();
         View listViewItem = inflater.inflate(R.layout.advertiser_item, null, true);
 
-        TextView address = listViewItem.findViewById(R.id.BakerAddress);
-        TextView name = listViewItem.findViewById(R.id.BakerName);
+        TextView address = listViewItem.findViewById(R.id.AdvertiserAddress);
+        TextView name = listViewItem.findViewById(R.id.AdvertiserName);
 
 
         Advertiser advertiser = advertisers.get(position);

@@ -27,7 +27,7 @@
         android:textStyle="bold" />
 
     <ListView
-        android:id="@+id/bakersListView"
+        android:id="@+id/advertisersListView"
         android:layout_width="match_parent"
         android:layout_height="634dp" />
 

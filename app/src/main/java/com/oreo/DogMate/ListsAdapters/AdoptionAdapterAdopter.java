@@ -32,14 +32,14 @@ public class AdoptionAdapterAdopter extends ArrayAdapter<Adoption> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
         View listViewItem = inflater.inflate(R.layout.order_item_adopter, null, true);
-        TextView B_phone = listViewItem.findViewById(R.id.bakerPhone);
-        TextView B_name = listViewItem.findViewById(R.id.bakerName);
-        TextView B_email = listViewItem.findViewById(R.id.bakerEmail);
-        TextView B_City = listViewItem.findViewById(R.id.bakerCity);
-        TextView B_Street = listViewItem.findViewById(R.id.bakerStreet);
-        TextView B_House = listViewItem.findViewById(R.id.bakerNumHouse);
-        TextView B_floor = listViewItem.findViewById(R.id.bakerFloor);
-        TextView B_appartment = listViewItem.findViewById(R.id.bakerAppartment);
+        TextView B_phone = listViewItem.findViewById(R.id.advertiserPhone);
+        TextView B_name = listViewItem.findViewById(R.id.advertiserName);
+        TextView B_email = listViewItem.findViewById(R.id.advertiserEmail);
+        TextView B_City = listViewItem.findViewById(R.id.advertiserCity);
+        TextView B_Street = listViewItem.findViewById(R.id.advertiserStreet);
+        TextView B_House = listViewItem.findViewById(R.id.advertiserNumHouse);
+        TextView B_floor = listViewItem.findViewById(R.id.advertiserFloor);
+        TextView B_appartment = listViewItem.findViewById(R.id.advertiserAppartment);
         TextView date = listViewItem.findViewById(R.id.dateOrder);
         TextView pay = listViewItem.findViewById(R.id.PayOrder);
         TextView recievedOrder = listViewItem.findViewById(R.id.recievedOrder);

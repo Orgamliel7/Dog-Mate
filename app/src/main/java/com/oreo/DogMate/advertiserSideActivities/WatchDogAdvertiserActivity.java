@@ -32,7 +32,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
- * In this activity the baker can watch a certain dog in his menu,
+ * In this activity the advertiser can watch a certain dog in his menu,
  * and edit or delete it or delete photos of it
  */
 public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements DogImageAdapterAdvertiser.OnItemClickListener {
@@ -57,7 +57,7 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
         Intent intent = getIntent();
         dog =(Dog) intent.getSerializableExtra("Dog");
         recyclerView = findViewById(R.id.dogPicturesRecycler);
-        progressBar = findViewById(R.id.progress_image_baker);
+        progressBar = findViewById(R.id.progress_image_advertiser);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         uploads = new ArrayList<>();
@@ -138,7 +138,7 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
         intent.putExtra("Dog", dog);
         startActivity(intent);
     }
-//contains a dialog to ask if the baker is sure he wants to delete the dog
+//contains a dialog to ask if the advertiser is sure he wants to delete the dog
     public void deletedog(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(true);

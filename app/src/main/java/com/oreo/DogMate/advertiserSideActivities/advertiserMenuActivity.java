@@ -24,8 +24,8 @@ import java.util.List;
 import androidx.annotation.NonNull;
 
 /**
- * shows the baker it's dogs, and an option to add a new dog,
- * when pressing a dog wil move to WatchdogBaker activity
+ * shows the advertiser it's dogs, and an option to add a new dog,
+ * when pressing a dog wil move to Watchdogadvertiser activity
  */
 public class advertiserMenuActivity extends Advertiser_Navigation {
     private FirebaseAuth FireLog;// fire base authentication

@@ -54,7 +54,7 @@
         app:layout_constraintTop_toTopOf="@id/dogPicturesRecycler" />
 
     <ProgressBar
-        android:id="@+id/progress_image_baker"
+        android:id="@+id/progress_image_advertiser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

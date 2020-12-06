@@ -20,7 +20,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 /**
- * In this activity, the baker can add a new dog or edit an existing one
+ * In this activity, the advertiser can add a new dog or edit an existing one
  *
  */
 public class AddDogActivity extends Advertiser_Navigation {

@@ -32,7 +32,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * In this Activity the user will register,
- * fill in details and choose to be a adopter or a baker
+ * fill in details and choose to be a adopter or a advertiser
  */
 public class Register extends AppCompatActivity {
 
@@ -48,7 +48,7 @@ public class Register extends AppCompatActivity {
     String password, email, Phone, fullName;
     String citys, streetS,floorS, apparmentS, housNums;
     String userID;
-    CheckBox inputBaker, inputadopter;
+    CheckBox inputadvertiser, inputadopter;
     ProgressBar progressBar2;
     DatabaseReference usersRef;
     DatabaseReference advertiserRef;
@@ -131,12 +131,12 @@ public class Register extends AppCompatActivity {
             return;
         }
 
-        if ((!inputBaker.isChecked()) && (!inputadopter.isChecked())) {
-            inputBaker.setError("נא לבחור מפרסם/מאמץ");
+        if ((!inputadvertiser.isChecked()) && (!inputadopter.isChecked())) {
+            inputadvertiser.setError("נא לבחור מפרסם/מאמץ");
             return;
         }
-        if (inputBaker.isChecked() && inputadopter.isChecked()) {
-            inputBaker.setError("יש לבחור תפקיד אחד בלבד!");
+        if (inputadvertiser.isChecked() && inputadopter.isChecked()) {
+            inputadvertiser.setError("יש לבחור תפקיד אחד בלבד!");
             return;
         }
 
@@ -151,7 +151,7 @@ public class Register extends AppCompatActivity {
                             FirebaseUser user = FireLog.getCurrentUser();
                             Address adress = new Address(citys,streetS,housNums,floorS,apparmentS);
                             userID = user.getUid();
-                            if (inputBaker.isChecked()) {
+                            if (inputadvertiser.isChecked()) {
                                 Advertiser advertiser = new Advertiser(email, fullName, Phone, adress, userID);
                                 try {
                                     advertiserRef.child(userID).setValue(advertiser);
@@ -210,8 +210,8 @@ public class Register extends AppCompatActivity {
         //confirm button
         confirm = findViewById(R.id.confirm);
 
-        //checkboxes of baker and adopter
-        inputBaker = findViewById(R.id.ifBaker);
+        //checkboxes of advertiser and adopter
+        inputadvertiser = findViewById(R.id.ifadvertiser);
         inputadopter = findViewById(R.id.ifadopter);
 
     }
@@ -222,7 +222,7 @@ public class Register extends AppCompatActivity {
         phone.setTypeface(font);
         pass.setTypeface(font);
         name.setTypeface(font);
-        inputBaker.setTypeface(font);
+        inputadvertiser.setTypeface(font);
         inputadopter.setTypeface(font);
         confirm.setTypeface(font);
     }

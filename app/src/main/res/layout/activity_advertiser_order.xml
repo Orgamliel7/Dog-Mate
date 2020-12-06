@@ -9,10 +9,10 @@
     tools:context=".advertiserSideActivities.advertiserOrderActivity">
 
     <TextView
-        android:id="@+id/myOrdersBaker"
+        android:id="@+id/myOrdersAdvertiser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/myOrdersBaker"
+        android:text="@string/myOrdersadvertiser"
         android:textColor="#0C0C0C"
         android:textSize="30sp"
         android:textStyle="bold" />

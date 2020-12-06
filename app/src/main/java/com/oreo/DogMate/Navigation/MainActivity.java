@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toast.makeText(MainActivity.this, "firebase conection success",Toast.LENGTH_LONG).show();
         newUser = (Button) findViewById(R.id.adopter);
-        Exsitadopter = (Button) findViewById(R.id.Baker);
+        Exsitadopter = (Button) findViewById(R.id.Advertiser);
         welcome = (TextView) findViewById(R.id.Hello);
         font = Typeface.createFromAsset(this.getAssets(), "fonts/Anka CLM Bold.ttf");
         newUser.setTypeface(font);

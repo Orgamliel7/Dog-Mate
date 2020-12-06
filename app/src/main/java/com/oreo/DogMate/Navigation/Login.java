@@ -26,13 +26,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
- * Login for an existing user - both adopter and baker
+ * Login for an existing user - both adopter and Advertiser
  */
 public class Login extends AppCompatActivity {
     //Test
     String email = "", password = "";
     ProgressBar progressBar;
-    boolean isBaker = false;
+    boolean isAdvertiser = false;
     private FirebaseAuth FireLog;
     String userID;
     DatabaseReference advertiserRef;
@@ -76,7 +76,7 @@ public class Login extends AppCompatActivity {
                                     @Override
                                     public void onDataChange(DataSnapshot dataSnapshot) {
                                         if (dataSnapshot.child("Advertiser").hasChild(userID)) {
-                                            BakerLogin();
+                                            AdvertiserLogin();
 
                                         } else if (dataSnapshot.child("Adopter").hasChild(userID)) {
                                             adopterLogin();
@@ -103,7 +103,7 @@ public class Login extends AppCompatActivity {
                 });
     }
 
-    private void BakerLogin() {
+    private void AdvertiserLogin() {
         Intent intent = new Intent(Login.this, advertiserScreenActivity.class);
         startActivity(intent);
     }

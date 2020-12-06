@@ -23,12 +23,12 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/bakerdets"
+        android:id="@+id/advertiserdets"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
         android:background="#FFFFFF"
-        android:text="@string/bakerDETS"
+        android:text="@string/advertiserDETS"
         android:textColor="#000"
         android:textDirection="rtl"
         android:textSize="18sp" />
@@ -44,22 +44,22 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/bakerStreet"
+                android:id="@+id/advertiserStreet"
                 android:layout_width="213dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:background="#FFFF"
-                android:text="@string/bakerStreet"
+                android:text="@string/advertiserStreet"
                 android:textColor="#0C0C0C"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/bakerCity"
+                android:id="@+id/advertiserCity"
                 android:layout_width="197dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:background="#FFFF"
-                android:text="@string/bakerCity"
+                android:text="@string/advertiserCity"
                 android:textColor="#0C0C0C"
                 android:textSize="18sp" />
 
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toTopOf="@id/dogPicturesRecycler" />
 
     <ProgressBar
-        android:id="@+id/progress_image_baker"
+        android:id="@+id/progress_image_advertiser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

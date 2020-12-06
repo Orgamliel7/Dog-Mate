@@ -21,7 +21,7 @@ import java.util.List;
 import androidx.annotation.NonNull;
 
 /**
- * In this activity, the baker can watch his orders and their details
+ * In this activity, the Advertiser can watch his orders and their details
  */
 public class advertiserOrderActivity extends Advertiser_Navigation {
 

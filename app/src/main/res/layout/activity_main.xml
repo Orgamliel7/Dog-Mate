@@ -25,11 +25,11 @@
             android:textStyle="bold"
             android:typeface="serif"
             app:fontFamily="sans-serif-medium"
-            app:layout_constraintBottom_toTopOf="@+id/Baker"
+            app:layout_constraintBottom_toTopOf="@+id/Advertiser"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/Baker"
+            android:id="@+id/Advertiser"
             android:layout_width="236dp"
             android:layout_height="82dp"
             android:layout_marginEnd="92dp"

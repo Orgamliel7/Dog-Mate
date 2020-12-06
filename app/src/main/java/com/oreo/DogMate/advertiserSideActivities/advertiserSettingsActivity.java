@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * the baker can change his password and personal details in here
+ * the Advertiser can change his password and personal details in here
  */
 public class advertiserSettingsActivity extends Advertiser_Navigation {
     private FirebaseAuth FireLog = FirebaseAuth.getInstance();// fire base authentication
@@ -68,14 +68,14 @@ public class advertiserSettingsActivity extends Advertiser_Navigation {
                 phoneS = phone.getText().toString().trim();
 
                 Address address = new Address(cityS, streetS, numOfHouseS, floorS, appartmentS);
-                updateBaker(cityS, streetS, numOfHouseS, floorS, appartmentS,phoneS,newPasswordS);
+                updateAdvertiser(cityS, streetS, numOfHouseS, floorS, appartmentS,phoneS,newPasswordS);
 
             }
         });
 
     }
 
-    public void updateBaker(String cityS, String streetS,  String numOfHouseS, String floorS, String appartmentS,
+    public void updateAdvertiser(String cityS, String streetS,  String numOfHouseS, String floorS, String appartmentS,
                             final String phone, final String newPasswordS){
         user = FireLog.getCurrentUser();
         userID = FireLog.getCurrentUser().getUid();

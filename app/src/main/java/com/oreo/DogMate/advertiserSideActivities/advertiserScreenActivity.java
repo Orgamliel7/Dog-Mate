@@ -11,7 +11,7 @@ import com.oreo.DogMate.Navigation.Login;
 import com.oreo.DogMate.R;
 
 /**
- * The bakers main menu - the first screen he sees when he logs in
+ * The Advertisers main menu - the first screen he sees when he logs in
  */
 public class advertiserScreenActivity extends Advertiser_Navigation {
 
@@ -27,7 +27,7 @@ public class advertiserScreenActivity extends Advertiser_Navigation {
         myMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveToBakerMenu();
+                moveToAdvertiserMenu();
             }
         });
 
@@ -41,12 +41,12 @@ public class advertiserScreenActivity extends Advertiser_Navigation {
 
     }
 
-    private void moveToBakerMenu() {
+    private void moveToAdvertiserMenu() {
         Intent intent = new Intent(this, advertiserMenuActivity.class);
         startActivity(intent);
     }
 
-    public void moveToBakerOrders(View v){
+    public void moveToAdvertiserOrders(View v){
         startActivity(new Intent(getApplicationContext(), advertiserOrderActivity.class));
     }
     public void moveToSettings(){

@@ -33,7 +33,7 @@ import androidx.annotation.NonNull;
  */
 public class SearchAdvertiserActivity extends Adopter_Navigation {
     private FirebaseAuth FireLog;// fire base authentication
-    ListView listViewBakers;
+    ListView listViewAdvertisers;
     String userID;
     DatabaseReference AdvertiserRef;
     FirebaseDatabase DB;
@@ -53,7 +53,7 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
         search_edit_text = (EditText) findViewById(R.id.search_edit_text);
         noResults =findViewById(R.id.noResults);
         noResults.setVisibility(View.INVISIBLE);
-        listViewBakers = findViewById(R.id.bakersListView);
+        listViewAdvertisers = findViewById(R.id.advertisersListView);
 
         advertiserList = new ArrayList<Advertiser>();
 
@@ -79,7 +79,7 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
                     setAdapter(s.toString().toLowerCase().trim());
                 }
                 else{
-                    //if there is not searched text - will again show all the bakers
+                    //if there is not searched text - will again show all the Advertisers
                    cleanFilter();
                 }
             }
@@ -102,7 +102,7 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
                     String full_name = advertiser.getFull_name();
                     String city = advertiser.getAddress().getCity();
                     String streetName = advertiser.getAddress().getStreetName();
-                    //Adding all the bakers macthing to the search
+                    //Adding all the Advertisers macthing to the search
                     if (full_name.toLowerCase().trim().contains(searchedText)) {
                         advertiserList.add(advertiser);
                     } else if (city.toLowerCase().trim().contains(searchedText)) {
@@ -115,7 +115,7 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
                     noResults.setVisibility(View.VISIBLE);
                 }
                 AdvertiserAdapter advertiserAdapter = new AdvertiserAdapter(SearchAdvertiserActivity.this, advertiserList);
-                listViewBakers.setAdapter(advertiserAdapter);
+                listViewAdvertisers.setAdapter(advertiserAdapter);
             }
 
             @Override
@@ -125,15 +125,15 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
         });
 
     }
-//showing all the bakers again
+//showing all the Advertisers again
     public void cleanFilter(){
         noResults.setVisibility(View.INVISIBLE);
         AdvertiserRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 advertiserList.clear();
-                for (DataSnapshot bakersnapShot : dataSnapshot.getChildren()) {
-                    Advertiser advertiser = bakersnapShot.getValue(Advertiser.class);
+                for (DataSnapshot advertisersnapShot : dataSnapshot.getChildren()) {
+                    Advertiser advertiser = advertisersnapShot.getValue(Advertiser.class);
                     advertiserList.add(advertiser);
                 }
                 if (advertiserList.isEmpty()) {
@@ -141,7 +141,7 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
                     return;
                 }
                 AdvertiserAdapter advertiserAdapter = new AdvertiserAdapter(SearchAdvertiserActivity.this, advertiserList);
-                listViewBakers.setAdapter(advertiserAdapter);
+                listViewAdvertisers.setAdapter(advertiserAdapter);
             }
 
             @Override
@@ -158,8 +158,8 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 advertiserList.clear();
-                for (DataSnapshot bakersnapShot : dataSnapshot.getChildren()) {
-                    Advertiser advertiser = bakersnapShot.getValue(Advertiser.class);
+                for (DataSnapshot advertisersnapShot : dataSnapshot.getChildren()) {
+                    Advertiser advertiser = advertisersnapShot.getValue(Advertiser.class);
                     advertiserList.add(advertiser);
                 }
                 if (advertiserList.isEmpty()) {
@@ -167,7 +167,7 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
                     return;
                 }
                 AdvertiserAdapter advertiserAdapter = new AdvertiserAdapter(SearchAdvertiserActivity.this, advertiserList);
-                listViewBakers.setAdapter(advertiserAdapter);
+                listViewAdvertisers.setAdapter(advertiserAdapter);
             }
 
             @Override
@@ -176,7 +176,7 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
             }
         });
         //Press on a advertiser will move to the advertiser's menu
-        listViewBakers.setOnItemClickListener(new ListView.OnItemClickListener() {
+        listViewAdvertisers.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(SearchAdvertiserActivity.this, AdopterMenuActivity.class);

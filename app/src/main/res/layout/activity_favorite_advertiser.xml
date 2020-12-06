@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bacground"
-    tools:context=".adopterSideActivities.FavoriteBakerActivity">
+    tools:context=".adopterSideActivities.FavoriteAdvertiserActivity">
 
     <TextView
-        android:id="@+id/baker_name"
+        android:id="@+id/advertiser_name"
         android:layout_width="145dp"
         android:layout_height="52dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="132dp"
-        android:text="@string/bakerdits"
+        android:text="@string/advertiserdits"
         android:textColor="#000"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -33,7 +33,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/baker_name" />
+        app:layout_constraintTop_toBottomOf="@+id/advertiser_name" />
 
     <Button
         android:id="@+id/moveToMenuButton"
@@ -48,5 +48,5 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/baker_name" />
+        app:layout_constraintTop_toBottomOf="@+id/advertiser_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>

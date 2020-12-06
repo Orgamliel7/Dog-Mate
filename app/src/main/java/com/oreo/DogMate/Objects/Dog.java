@@ -15,20 +15,20 @@ public class Dog implements Serializable {
     private String docID;
     ArrayList<Upload> images;
     private String imagesID;
-    private String bakerID;
+    private String advertiserID;
 
     public Dog(){
         // no args constructor needed
     }
 
-    public Dog(String price, String name, String allerganics, String description, String bakerID){
+    public Dog(String price, String name, String allerganics, String description, String advertiserID){
         this.price=price;
         this.name=name;
         this.allerganics=allerganics;
         this.description=description;
         images = new ArrayList<Upload>();
         imagesID = "";
-        this.bakerID=bakerID;
+        this.advertiserID=advertiserID;
     }
     public void addImage(Upload upload){
         if(images==null){
@@ -40,12 +40,12 @@ public class Dog implements Serializable {
         this.images = images;
     }
 
-    public String getBakerID() {
-        return bakerID;
+    public String getadvertiserID() {
+        return advertiserID;
     }
 
-    public void setBakerID(String bakeID) {
-        this.bakerID = bakeID;
+    public void setadvertiserID(String advertiserID) {
+        this.advertiserID = advertiserID;
     }
     public ArrayList<Upload> getImages(){
         if(images==null) images = new ArrayList<>();

@@ -33,7 +33,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 /**
- * In this activity, the bake is adding pictures for his dog
+ * In this activity, the advertiser is adding pictures for his dog
  */
 public class addDogPicturesActivity extends Advertiser_Navigation {
     private static final int PICK_IMAGE_REQUEST = 1;

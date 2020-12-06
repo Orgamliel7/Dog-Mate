@@ -165,8 +165,8 @@
 
         <Button
             android:id="@+id/confirm"
-            android:layout_width="157dp"
-            android:layout_height="39dp"
+            android:layout_width="174dp"
+            android:layout_height="80dp"
             android:layout_marginEnd="248dp"
             android:background="#FAF7F7"
             android:onClick="register"
@@ -253,11 +253,12 @@
             tools:ignore="LabelFor"
             tools:targetApi="o" />
 
+
         <TextView
             android:id="@+id/registerTextView"
             android:layout_width="129dp"
             android:layout_height="53dp"
-            android:layout_marginStart="132dp"
+            android:layout_marginStart="140dp"
             android:layout_marginTop="136dp"
             android:text="@string/Reg"
             android:textColor="#111111"
@@ -266,8 +267,7 @@
             app:layout_constraintBottom_toTopOf="@+id/EmailInput"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.138" />
-
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/EmailInput"
@@ -313,12 +313,12 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <CheckBox
-            android:id="@+id/ifBaker"
+            android:id="@+id/ifadvertiser"
             android:layout_width="135dp"
             android:layout_height="50dp"
             android:layout_marginStart="160dp"
             android:buttonTint="#110000"
-            android:text="@string/ifBaker"
+            android:text="@string/ifadvertiser"
             android:textColor="#0C0C0C"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -330,6 +330,7 @@
             android:layout_width="109dp"
             android:layout_height="50dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
             android:buttonTint="#0C0000"
             android:text="@string/ifadopter"
             android:textSize="30sp"

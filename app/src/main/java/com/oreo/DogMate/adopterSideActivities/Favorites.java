@@ -26,17 +26,17 @@ import java.util.List;
 import androidx.annotation.NonNull;
 
 /**
- * This Activity contains all the favorites bakers that the user have chosen.
+ * This Activity contains all the favorites Advertisers that the user have chosen.
  *
  */
 public class Favorites extends Adopter_Navigation {
     private FirebaseAuth FireLog;// fire base authentication - will give us the user ID
-    ListView listViewBakers; // The list view that will show the bakers
+    ListView listViewAdvertisers; // The list view that will show the Advertisers
     String userID;
     DatabaseReference AdopterRef; //A reference to the adopter's favorites arrayList in the DB
     FirebaseDatabase DB; // A reference to our DataBase
     FirebaseUser currentUser; //A reference to the current user
-    List<Advertiser> advertiserList; // the list that will contain the bakers
+    List<Advertiser> advertiserList; // the list that will contain the Advertisers
 
 
     @Override
@@ -47,7 +47,7 @@ public class Favorites extends Adopter_Navigation {
         FireLog = FirebaseAuth.getInstance();
         currentUser = FireLog.getCurrentUser();
         userID = currentUser.getUid();
-        listViewBakers = findViewById(R.id.bakers_list);
+        listViewAdvertisers = findViewById(R.id.advertisers_list);
         advertiserList = new ArrayList<Advertiser>();
         AdopterRef = DB.getReference("Cutsomers").child(userID).child("favorites");
 
@@ -59,7 +59,7 @@ public class Favorites extends Adopter_Navigation {
         userID = FireLog.getCurrentUser().getUid();
         AdopterRef = DB.getReference("Users/Adopter").child(userID);
         /**
-         * Adding the favorites bakers to the advertiserList.
+         * Adding the favorites Advertisers to the advertiserList.
          */
         AdopterRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -75,7 +75,7 @@ public class Favorites extends Adopter_Navigation {
                     return;
                 }
                 AdvertiserAdapter advertiserAdapter = new AdvertiserAdapter(Favorites.this, advertiserList);
-                listViewBakers.setAdapter(advertiserAdapter);
+                listViewAdvertisers.setAdapter(advertiserAdapter);
             }
 
             @Override
@@ -87,7 +87,7 @@ public class Favorites extends Adopter_Navigation {
          * when the adopter will press one advertiser,
          * the activity of the dogs of this advertiser will be opened
          */
-        listViewBakers.setOnItemClickListener(new ListView.OnItemClickListener() {
+        listViewAdvertisers.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(Favorites.this, AdopterMenuActivity.class);
