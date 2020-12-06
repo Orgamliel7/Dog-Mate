@@ -79,7 +79,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
     }
     protected void onStart() {
         super.onStart();
-        adoptionsRef = DB.getReference("Users/Adoptions");
+        adoptionsRef = DB.getReference("Users/Advertiser");
         adoptionsRef.addValueEventListener(new ValueEventListener() {
             @Override
             /**
@@ -134,7 +134,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
      * @param v - the button "adoption" - will take the user to the Buydog activity
      *           to fill details of the adoption.
      */
-        public void order(View v) {
+        public void adoption(View v) {
             Intent intent = new Intent(dogWatchActivityAdopter.this, BuyDogActivity.class);
             intent.putExtra("Dog", dog);
             intent.putExtra("Advertiser", advertiser);
