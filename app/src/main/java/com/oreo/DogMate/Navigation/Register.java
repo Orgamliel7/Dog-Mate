@@ -87,56 +87,56 @@ public class Register extends AppCompatActivity {
 
         //check that all the inputs are valid
         if (TextUtils.isEmpty(email)) {
-            email_handler.setError("נא למלא E-mail");
+            email_handler.setError("נא למלא Email");
             return;
         }
 
         if (TextUtils.isEmpty(password)) {
-            password_handler.setError("נא למלא סיסמא.");
+            password_handler.setError("נא למלא סיסמא");
             return;
         }
 
         if (password.length() < 6) {
-            password_handler.setError("סיסמא חייבת להיות עם 6 תווים לפחות.");
+            password_handler.setError("נא הכנס סיסמא בעלת 6 תווים מינימום");
             return;
         }
 
         if (TextUtils.isEmpty(fullName)) {
-            inputFullName.setError("זהו שדה חובה.");
+            inputFullName.setError("זהו שדה חובה");
             return;
         }
 
         if (TextUtils.isEmpty(Phone)) {
-            inputPhone.setError("יש למלא מספר טלפון");
+            inputPhone.setError("נא למלא מספר טלפון");
             return;
         }
         if (TextUtils.isEmpty(citys)) {
-            city.setError("יש למלא עיר");
+            city.setError("נא למלא עיר מגורים");
             return;
         }
         if (TextUtils.isEmpty(streetS)) {
-            street.setError("יש למלא רחוב");
+            street.setError("נא למלא רחוב");
             return;
         }
         if (TextUtils.isEmpty(housNums)) {
-            houseNum.setError("יש למלא מספר בית");
+            houseNum.setError("נא למלא מספר בית");
             return;
         }
         if (TextUtils.isEmpty(floorS)) {
-            floor.setError("יש למלא מספר קומה");
+            floor.setError("נא למלא מספר קומה");
             return;
         }
         if (TextUtils.isEmpty(apparmentS)) {
-            appartment.setError("יש למלא מספר דירה");
+            appartment.setError("נא למלא מספר דירה");
             return;
         }
 
         if ((!inputBaker.isChecked()) && (!inputCustomer.isChecked())) {
-            inputBaker.setError("יש לבחור מפרסם/מאמץ");
+            inputBaker.setError("נא לבחור מפרסם/מאמץ");
             return;
         }
         if (inputBaker.isChecked() && inputCustomer.isChecked()) {
-            inputBaker.setError("יש לבחור תפקיד אחד!");
+            inputBaker.setError("יש לבחור תפקיד אחד בלבד!");
             return;
         }
 
