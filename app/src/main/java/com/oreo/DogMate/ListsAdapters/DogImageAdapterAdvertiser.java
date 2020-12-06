@@ -59,7 +59,7 @@ public class DogImageAdapterAdvertiser extends RecyclerView.Adapter<DogImageAdap
 
         public ImageViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.pastryImage);
+            imageView = itemView.findViewById(R.id.dogImage);
             itemView.setOnClickListener(this);
             itemView.setOnCreateContextMenuListener(this);
 

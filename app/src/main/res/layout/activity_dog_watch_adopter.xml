@@ -11,13 +11,13 @@
 
 
     <TextView
-        android:id="@+id/pastryWatch"
+        android:id="@+id/dogWatch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:gravity="right"
         android:background="#FFFFFF"
-        android:text="@string/PASTRYDETS"
+        android:text="@string/dogDETS"
         android:textColor="#000"
         android:textDirection="rtl"
         android:textSize="18sp" />
@@ -83,7 +83,7 @@
         android:text="@string/adoption"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/pastryPicturesRecycler" />
+        app:layout_constraintTop_toTopOf="@id/dogPicturesRecycler" />
 
     <ProgressBar
         android:id="@+id/progress_image_baker"
@@ -91,7 +91,7 @@
         android:layout_height="wrap_content" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/pastryPicturesRecycler"
+        android:id="@+id/dogPicturesRecycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp" >

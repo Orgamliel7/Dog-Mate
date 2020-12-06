@@ -14,20 +14,20 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/namePastry"
+        android:id="@+id/nameDog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFF"
-        android:text="@string/namePastry"
+        android:text="@string/nameDog"
         android:textColor="#0C0C0C"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/customerName"
+        android:id="@+id/adopterName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFF"
-        android:text="@string/customerName"
+        android:text="@string/adopterName"
         android:textColor="#0C0C0C"
         android:textSize="18sp" />
 
@@ -36,16 +36,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFF"
-        android:text="@string/customerEmail"
+        android:text="@string/adopterEmail"
         android:textColor="#0C0C0C"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/customerPhone"
+        android:id="@+id/adopterPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFF"
-        android:text="@string/customerPhone"
+        android:text="@string/adopterPhone"
         android:textColor="#0C0C0C"
         android:textSize="18sp" />
 
@@ -58,43 +58,43 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/customerAppartment"
+                android:id="@+id/adopterAppartment"
                 android:layout_width="67dp"
                 android:layout_height="match_parent"
                 android:background="#FFFF"
-                android:text="@string/customerAppartment"
+                android:text="@string/adopterAppartment"
                 android:textColor="#0C0C0C" />
 
             <TextView
-                android:id="@+id/customerFloor"
+                android:id="@+id/adopterFloor"
                 android:layout_width="74dp"
                 android:layout_height="match_parent"
                 android:background="#FFFF"
-                android:text="@string/customerFloor"
+                android:text="@string/adopterFloor"
                 android:textColor="#0C0C0C" />
 
             <TextView
-                android:id="@+id/customerNumHouse"
+                android:id="@+id/adopterNumHouse"
                 android:layout_width="91dp"
                 android:layout_height="match_parent"
                 android:background="#FFFF"
-                android:text="@string/customerNumHouse"
+                android:text="@string/adopterNumHouse"
                 android:textColor="#0C0C0C" />
 
             <TextView
-                android:id="@+id/customerStreet"
+                android:id="@+id/adopterStreet"
                 android:layout_width="86dp"
                 android:layout_height="match_parent"
                 android:background="#FFFF"
-                android:text="@string/customerStreet"
+                android:text="@string/adopterStreet"
                 android:textColor="#0C0C0C" />
 
             <TextView
-                android:id="@+id/customerCity"
+                android:id="@+id/adopterCity"
                 android:layout_width="91dp"
                 android:layout_height="33dp"
                 android:background="#FFFF"
-                android:text="@string/customerCity"
+                android:text="@string/adopterCity"
                 android:textColor="#0C0C0C" />
         </TableRow>
 

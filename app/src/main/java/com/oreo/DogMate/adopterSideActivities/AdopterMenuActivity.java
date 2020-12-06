@@ -38,9 +38,9 @@ import androidx.annotation.Nullable;
 public class AdopterMenuActivity extends Adopter_Navigation {
 
     private FirebaseAuth FireLog;// fire base authentication
-    ListView listViewPastries;
+    ListView listViewdogs;
     String userID;
-    DatabaseReference menuForCustomer, customerRef;
+    DatabaseReference menuForadopter, adopterRef;
     FirebaseDatabase DB;
     List<Dog> dogList;
     Advertiser advertiser;
@@ -57,7 +57,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
         search_edit_text = (EditText) findViewById(R.id.search_edit_text2);
         noResults = findViewById(R.id.noResults2);
         noResults.setVisibility(View.INVISIBLE);
-        listViewPastries = (ListView) findViewById(R.id.listViewPastriesC);
+        listViewdogs = (ListView) findViewById(R.id.listViewdogsC);
         DB = FirebaseDatabase.getInstance();
         FireLog = FirebaseAuth.getInstance();
         userID = FireLog.getCurrentUser().getUid();
@@ -85,18 +85,18 @@ public class AdopterMenuActivity extends Adopter_Navigation {
 
     private void cleanFilter() {
         userID = FireLog.getCurrentUser().getUid();
-        menuForCustomer = DB.getReference("Menu").child(advertiser.getUserID());
-        menuForCustomer.addValueEventListener(new ValueEventListener() {
+        menuForadopter = DB.getReference("Menu").child(advertiser.getUserID());
+        menuForadopter.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 dogList.clear();
-                for (DataSnapshot pastrySnapShot : dataSnapshot.getChildren()) {
-                    Dog dog = pastrySnapShot.getValue(Dog.class);
+                for (DataSnapshot dogSnapShot : dataSnapshot.getChildren()) {
+                    Dog dog = dogSnapShot.getValue(Dog.class);
                     dogList.add(dog);
                 }
 
                 DogAdapter dogAdapter = new DogAdapter(AdopterMenuActivity.this, dogList);
-                listViewPastries.setAdapter(dogAdapter);
+                listViewdogs.setAdapter(dogAdapter);
             }
 
             @Override
@@ -110,18 +110,18 @@ public class AdopterMenuActivity extends Adopter_Navigation {
     protected void onStart() {
         super.onStart();
         userID = FireLog.getCurrentUser().getUid();
-        menuForCustomer = DB.getReference("Menu").child(advertiser.getUserID());
-        menuForCustomer.addValueEventListener(new ValueEventListener() {
+        menuForadopter = DB.getReference("Menu").child(advertiser.getUserID());
+        menuForadopter.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 dogList.clear();
-                for (DataSnapshot pastrySnapShot : dataSnapshot.getChildren()) {
-                    Dog dog = pastrySnapShot.getValue(Dog.class);
+                for (DataSnapshot dogSnapShot : dataSnapshot.getChildren()) {
+                    Dog dog = dogSnapShot.getValue(Dog.class);
                     dogList.add(dog);
                 }
 
                 DogAdapter dogAdapter = new DogAdapter(AdopterMenuActivity.this, dogList);
-                listViewPastries.setAdapter(dogAdapter);
+                listViewdogs.setAdapter(dogAdapter);
             }
 
             @Override
@@ -130,8 +130,8 @@ public class AdopterMenuActivity extends Adopter_Navigation {
             }
         });
         //If this advertiser is in the favorits - will point this out to the adopter
-        customerRef = DB.getReference("Users/Customers").child(userID);
-        customerRef.addListenerForSingleValueEvent(new ValueEventListener() {
+        adopterRef = DB.getReference("Users/Adopter").child(userID);
+        adopterRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 me = dataSnapshot.getValue(Adopter.class);
@@ -139,7 +139,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
                     if(me.getFavorites().get(i).getUserID().equals(advertiser.getUserID())){
                         Button button = (Button) findViewById(R.id.addtoFavorites);
                         button.setClickable(false);
-                        button.setText("זהו אופה מועדף עליי!");
+                        button.setText("זהו מפרסם מועדף עליי!");
                     }
                 }
             }
@@ -150,7 +150,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
             }
         });
 
-        listViewPastries.setOnItemClickListener(new ListView.OnItemClickListener() {
+        listViewdogs.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(AdopterMenuActivity.this, dogWatchActivityAdopter.class);
@@ -168,8 +168,8 @@ public class AdopterMenuActivity extends Adopter_Navigation {
      * @param searchedText
      */
     public void setAdapter(final String searchedText) {
-        menuForCustomer = DB.getReference("Menu").child(advertiser.getUserID());
-        menuForCustomer.addListenerForSingleValueEvent(new ValueEventListener() {
+        menuForadopter = DB.getReference("Menu").child(advertiser.getUserID());
+        menuForadopter.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 /*
@@ -190,7 +190,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
                     noResults.setVisibility(View.VISIBLE);
                 }
                 DogAdapter dogAdapter = new DogAdapter(AdopterMenuActivity.this, dogList);
-                listViewPastries.setAdapter(dogAdapter);
+                listViewdogs.setAdapter(dogAdapter);
             }
 
             @Override
@@ -207,13 +207,13 @@ public class AdopterMenuActivity extends Adopter_Navigation {
      */
     public void addToFavorits(View view) {
 
-        customerRef = DB.getReference("Users/Customers").child(userID);
-        customerRef.addListenerForSingleValueEvent(new ValueEventListener() {
+        adopterRef = DB.getReference("Users/Adopter").child(userID);
+        adopterRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 me = dataSnapshot.getValue(Adopter.class);
-                me.addBaker(advertiser);
-                customerRef.setValue(me, completionListener);
+                me.addAdvertiser(advertiser);
+                adopterRef.setValue(me, completionListener);
             }
 
             @Override
@@ -225,12 +225,12 @@ public class AdopterMenuActivity extends Adopter_Navigation {
                 @Override
                 public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
                     if (databaseError != null) {
-                        Toast.makeText(getApplicationContext(), "אופה לא נוסף למועדפים!",
+                        Toast.makeText(getApplicationContext(), "מפרסם לא נוסף למועדפים!",
                                 Toast.LENGTH_SHORT).show();
 
 
                     } else {
-                        Toast.makeText(getApplicationContext(), "אופה נוסף למועדפים!",
+                        Toast.makeText(getApplicationContext(), "מפרסם נוסף למועדפים!",
                                 Toast.LENGTH_SHORT).show();
                     }
                 }

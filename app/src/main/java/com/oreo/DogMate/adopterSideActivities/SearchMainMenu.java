@@ -74,7 +74,7 @@ public class SearchMainMenu extends Adopter_Navigation {
 
             }
         });
-        //A click on a adoption will move to the PastryWatchActivity to re-adoption
+        //A click on a adoption will move to the dogWatchActivity to re-adoption
         ordersListView.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -87,11 +87,11 @@ public class SearchMainMenu extends Adopter_Navigation {
         });
     }
 
-    public void SearchBaker(View view) {
+    public void SearchAdvertiser(View view) {
         startActivity(new Intent(SearchMainMenu.this, SearchAdvertiserActivity.class));
     }
 
-    public void SearchPastry(View view) {
+    public void SearchDog(View view) {
         startActivity(new Intent(SearchMainMenu.this, searchDogActivity.class));
     }
 }

@@ -32,7 +32,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * In this Activity the user will register,
- * fill in details and choose to be a customer or a baker
+ * fill in details and choose to be a adopter or a baker
  */
 public class Register extends AppCompatActivity {
 
@@ -48,7 +48,7 @@ public class Register extends AppCompatActivity {
     String password, email, Phone, fullName;
     String citys, streetS,floorS, apparmentS, housNums;
     String userID;
-    CheckBox inputBaker, inputCustomer;
+    CheckBox inputBaker, inputadopter;
     ProgressBar progressBar2;
     DatabaseReference usersRef;
     DatabaseReference advertiserRef;
@@ -131,11 +131,11 @@ public class Register extends AppCompatActivity {
             return;
         }
 
-        if ((!inputBaker.isChecked()) && (!inputCustomer.isChecked())) {
+        if ((!inputBaker.isChecked()) && (!inputadopter.isChecked())) {
             inputBaker.setError("נא לבחור מפרסם/מאמץ");
             return;
         }
-        if (inputBaker.isChecked() && inputCustomer.isChecked()) {
+        if (inputBaker.isChecked() && inputadopter.isChecked()) {
             inputBaker.setError("יש לבחור תפקיד אחד בלבד!");
             return;
         }
@@ -210,9 +210,9 @@ public class Register extends AppCompatActivity {
         //confirm button
         confirm = findViewById(R.id.confirm);
 
-        //checkboxes of baker and customer
+        //checkboxes of baker and adopter
         inputBaker = findViewById(R.id.ifBaker);
-        inputCustomer = findViewById(R.id.ifCustomer);
+        inputadopter = findViewById(R.id.ifadopter);
 
     }
 
@@ -223,7 +223,7 @@ public class Register extends AppCompatActivity {
         pass.setTypeface(font);
         name.setTypeface(font);
         inputBaker.setTypeface(font);
-        inputCustomer.setTypeface(font);
+        inputadopter.setTypeface(font);
         confirm.setTypeface(font);
     }
 

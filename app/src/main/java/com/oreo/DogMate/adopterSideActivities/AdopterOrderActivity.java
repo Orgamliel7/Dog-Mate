@@ -37,7 +37,7 @@ public class AdopterOrderActivity extends Adopter_Navigation {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adopter_order);
-        ordersListView = (ListView)findViewById(R.id.listOrdersCustomer);
+        ordersListView = (ListView)findViewById(R.id.listOrdersadopter);
 
         DB = FirebaseDatabase.getInstance();
         FireLog = FirebaseAuth.getInstance();
@@ -49,7 +49,7 @@ public class AdopterOrderActivity extends Adopter_Navigation {
     protected void onStart() {
         super.onStart();
         userID = FireLog.getCurrentUser().getUid();
-        databaseOrdersC = DB.getReference("Orders/Customers Orders").child(userID);
+        databaseOrdersC = DB.getReference("Orders/adopters Orders").child(userID);
 
         databaseOrdersC.addValueEventListener(new ValueEventListener() {
             @Override

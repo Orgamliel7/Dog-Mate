@@ -85,7 +85,7 @@ public class Favorites extends Adopter_Navigation {
         });
         /**
          * when the adopter will press one advertiser,
-         * the activity of the pastries of this advertiser will be opened
+         * the activity of the dogs of this advertiser will be opened
          */
         listViewBakers.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override

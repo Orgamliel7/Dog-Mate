@@ -326,12 +326,12 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <CheckBox
-            android:id="@+id/ifCustomer"
+            android:id="@+id/ifadopter"
             android:layout_width="109dp"
             android:layout_height="50dp"
             android:layout_marginEnd="8dp"
             android:buttonTint="#0C0000"
-            android:text="@string/ifCustomer"
+            android:text="@string/ifadopter"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"

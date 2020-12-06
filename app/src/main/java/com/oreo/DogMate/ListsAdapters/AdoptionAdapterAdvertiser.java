@@ -32,32 +32,32 @@ public class AdoptionAdapterAdvertiser extends ArrayAdapter<Adoption> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
         View listViewItem = inflater.inflate(R.layout.order_item_advertiser, null, true);
-        TextView C_phone = listViewItem.findViewById(R.id.customerPhone);
-        TextView C_name = listViewItem.findViewById(R.id.customerName);
+        TextView C_phone = listViewItem.findViewById(R.id.adopterPhone);
+        TextView C_name = listViewItem.findViewById(R.id.adopterName);
         TextView C_email = listViewItem.findViewById(R.id.cusEmail);
-        TextView C_City = listViewItem.findViewById(R.id.customerCity);
-        TextView C_Street = listViewItem.findViewById(R.id.customerStreet);
-        TextView C_House = listViewItem.findViewById(R.id.customerNumHouse);
-        TextView C_floor = listViewItem.findViewById(R.id.customerFloor);
-        TextView C_appartment = listViewItem.findViewById(R.id.customerAppartment);
+        TextView C_City = listViewItem.findViewById(R.id.adopterCity);
+        TextView C_Street = listViewItem.findViewById(R.id.adopterStreet);
+        TextView C_House = listViewItem.findViewById(R.id.adopterNumHouse);
+        TextView C_floor = listViewItem.findViewById(R.id.adopterFloor);
+        TextView C_appartment = listViewItem.findViewById(R.id.adopterAppartment);
         TextView date = listViewItem.findViewById(R.id.dateOrder);
         TextView pay = listViewItem.findViewById(R.id.PayOrder);
         TextView recievedOrder = listViewItem.findViewById(R.id.recievedOrder);
-        TextView namePastry = listViewItem.findViewById(R.id.namePastry);
+        TextView nameDog = listViewItem.findViewById(R.id.nameDog);
         TextView comments = listViewItem.findViewById(R.id.Comment);
 
         Adoption adoption = ordersList.get(position);
         Dog dog = ordersList.get(position).getDog();
-        C_email.setText("מייל הלקוח: " + adoption.getAdopter().getEmail());
-        C_phone.setText("טלפון הלקוח: " + adoption.getAdopter().getPhone());
-        C_name.setText("שם הלקוח: " + adoption.getAdopter().getFull_name());
+        C_email.setText("מייל המאמץ: " + adoption.getAdopter().getEmail());
+        C_phone.setText("טלפון המאמץ: " + adoption.getAdopter().getPhone());
+        C_name.setText("שם המאמץ: " + adoption.getAdopter().getFull_name());
         C_City.setText("עיר: " + adoption.getAdopter().getAddress().getCity());
         C_Street.setText("רחוב: " + adoption.getAdopter().getAddress().getStreetName());
         C_House.setText("מספר בית: " + adoption.getAdopter().getAddress().getBuildingNumber());
         C_floor.setText("קומה: " + adoption.getAdopter().getAddress().getFloor());
         C_appartment.setText("דירה: " + adoption.getAdopter().getAddress().getAppartmentNumber());
         date.setText("תאריך: " + adoption.getDate());
-        namePastry.setText("שם המאפה: " + adoption.getDog().getName());
+        nameDog.setText("שם הכלב: " + adoption.getDog().getName());
         comments.setText("הערות: " + adoption.getComments());
         if(adoption.isCard() == true){
             pay.setText("אמצעי תשלום: אשראי");

@@ -17,12 +17,12 @@ import androidx.annotation.Nullable;
 
 public class DogAdapter extends ArrayAdapter<Dog> {
     private Activity context;
-    private List<Dog> pastries;
+    private List<Dog> dogs;
 
-    public DogAdapter(Activity context, List<Dog> pastries ){
-            super(context, R.layout.list_pastry_item,pastries);
+    public DogAdapter(Activity context, List<Dog> dogs ){
+            super(context, R.layout.list_dog_item,dogs);
         this.context = context;
-        this.pastries = pastries;
+        this.dogs = dogs;
 
     }
 
@@ -30,14 +30,14 @@ public class DogAdapter extends ArrayAdapter<Dog> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater =  context.getLayoutInflater();
-        View listViewItem = inflater.inflate(R.layout.list_pastry_item, null, true);
+        View listViewItem = inflater.inflate(R.layout.list_dog_item, null, true);
 
         TextView price = listViewItem.findViewById(R.id.price);
-        TextView name = listViewItem.findViewById(R.id.pastryName);
+        TextView name = listViewItem.findViewById(R.id.dogName);
         TextView allerganics = listViewItem.findViewById(R.id.allerganics);
         TextView description = listViewItem.findViewById(R.id.descript);
 
-        Dog dog = pastries.get(position);
+        Dog dog = dogs.get(position);
         price.setText("מחיר: "+ dog.getPrice());
         name.setText("שם: "+ dog.getName());
         allerganics.setText("רכיבים אלרגניים: "+ dog.getAllerganics());
@@ -48,7 +48,7 @@ public class DogAdapter extends ArrayAdapter<Dog> {
 
     @Override
     public int getCount() {
-        if(pastries == null) return 0;
-        else return pastries.size();
+        if(dogs == null) return 0;
+        else return dogs.size();
     }
 }

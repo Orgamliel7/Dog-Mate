@@ -24,12 +24,12 @@ import androidx.annotation.Nullable;
  *
  */
 public class AddDogActivity extends Advertiser_Navigation {
-    public static final String TAG = "TAG_ADD_PASTRY";
+    public static final String TAG = "TAG_ADD_dog";
     String userID;
     String priceIn, nameIn, descIn, allergicIn;
     private FirebaseAuth FireLog;// fire base authentication
     EditText price, name, description, allergenic;
-    DatabaseReference pastryRef;
+    DatabaseReference dogRef;
     FirebaseDatabase DB;
     Dog dog;
 
@@ -39,7 +39,7 @@ public class AddDogActivity extends Advertiser_Navigation {
         setContentView(R.layout.activity_add_dog);
         FireLog = FirebaseAuth.getInstance();
         DB = FirebaseDatabase.getInstance();
-        pastryRef = DB.getReference("Menu/" + FireLog.getCurrentUser().getUid());
+        dogRef = DB.getReference("Menu/" + FireLog.getCurrentUser().getUid());
         FirebaseUser user = FireLog.getCurrentUser();
         userID = user.getUid();
         retrieve(); //retrieve all the Edit texts
@@ -75,19 +75,19 @@ public class AddDogActivity extends Advertiser_Navigation {
             @Override
             public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
                 if(databaseError!=null){
-                    Toast.makeText(getApplicationContext(), "הוספת מאפה נכשלה",
+                    Toast.makeText(getApplicationContext(), "הוספת כלב נכשלה",
                             Toast.LENGTH_SHORT).show();
 
                 }
                 else {
-                    Toast.makeText(getApplicationContext(), "מאפה נוסף בהצלחה!",
+                    Toast.makeText(getApplicationContext(), "כלב נוסף בהצלחה!",
                             Toast.LENGTH_SHORT).show();
                 }
             }
         };
         if(dog ==null) {
             dog = new Dog(priceIn, nameIn, allergicIn, descIn, userID);
-            dog.setDocID(pastryRef.push().getKey());
+            dog.setDocID(dogRef.push().getKey());
         }
         //if the dog exist and we just want to edit it
         else{
@@ -96,8 +96,8 @@ public class AddDogActivity extends Advertiser_Navigation {
             dog.setDescription(descIn);
             dog.setAllerganics(allergicIn);
         }
-        pastryRef.child(dog.getDocID()).setValue(dog, completionListener);
-        DB.getReference("Pastries").child(dog.getDocID()).setValue(dog,completionListener);
+        dogRef.child(dog.getDocID()).setValue(dog, completionListener);
+        DB.getReference("Dogs").child(dog.getDocID()).setValue(dog,completionListener);
         addPicture();
     }
 

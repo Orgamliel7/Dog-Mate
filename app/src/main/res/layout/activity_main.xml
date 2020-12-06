@@ -36,7 +36,7 @@
             android:layout_marginBottom="368dp"
             android:background="#FFFFFF"
             android:drawableBottom="@color/colorAccent"
-            android:text="@string/ExsitCustomer"
+            android:text="@string/Exsitadopter"
             android:textColor="#111111"
             android:textSize="36sp"
             android:textStyle="bold"
@@ -45,7 +45,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
-            android:id="@+id/Customer"
+            android:id="@+id/adopter"
             android:layout_width="236dp"
             android:layout_height="82dp"
             android:layout_marginEnd="92dp"

@@ -26,7 +26,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
- * Login for an existing user - both customer and baker
+ * Login for an existing user - both adopter and baker
  */
 public class Login extends AppCompatActivity {
     //Test
@@ -79,7 +79,7 @@ public class Login extends AppCompatActivity {
                                             BakerLogin();
 
                                         } else if (dataSnapshot.child("Adopter").hasChild(userID)) {
-                                            CustomerLogin();
+                                            adopterLogin();
                                         }
                                     }
 
@@ -108,7 +108,7 @@ public class Login extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void CustomerLogin() {
+    private void adopterLogin() {
         Intent intent = new Intent(Login.this, adopterScreen.class);
         startActivity(intent);
     }

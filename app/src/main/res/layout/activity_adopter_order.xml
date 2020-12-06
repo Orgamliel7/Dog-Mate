@@ -9,16 +9,16 @@
     tools:context=".adopterSideActivities.AdopterOrderActivity">
 
     <TextView
-        android:id="@+id/myOrdersCustomer"
+        android:id="@+id/myOrdersadopter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/myOrdersCustomer"
+        android:text="@string/myOrdersadopter"
         android:textColor="#0C0C0C"
         android:textSize="30sp"
         android:textStyle="bold" />
 
     <ListView
-        android:id="@+id/listOrdersCustomer"
+        android:id="@+id/listOrdersadopter"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

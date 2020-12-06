@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="@string/SearchbyPastry"
+        android:hint="@string/Searchbydog"
         android:importantForAutofill="no"
         android:inputType="text" />
 
@@ -26,7 +26,7 @@
         android:textStyle="bold" />
 
     <ListView
-        android:id="@+id/listViewPastriesC"
+        android:id="@+id/listViewdogsC"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

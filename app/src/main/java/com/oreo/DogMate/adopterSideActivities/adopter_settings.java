@@ -67,12 +67,12 @@ public class adopter_settings extends Adopter_Navigation {
                 phoneS = phone.getText().toString().trim();
 
                 Address address = new Address(cityS, streetS, numOfHouseS, floorS, appartmentS);
-                updateCustomer(cityS, streetS, numOfHouseS, floorS, appartmentS,phoneS,newPasswordS);
+                updateadopter(cityS, streetS, numOfHouseS, floorS, appartmentS,phoneS,newPasswordS);
 
             }
         });
     }
-    public void updateCustomer(String cityS, String streetS,  String numOfHouseS, String floorS, String appartmentS,
+    public void updateadopter(String cityS, String streetS,  String numOfHouseS, String floorS, String appartmentS,
                             final String phone, final String newPasswordS){
         user = FireLog.getCurrentUser();
         userID = FireLog.getCurrentUser().getUid();

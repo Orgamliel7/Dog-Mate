@@ -43,21 +43,21 @@ public class AdoptionAdapterAdopter extends ArrayAdapter<Adoption> {
         TextView date = listViewItem.findViewById(R.id.dateOrder);
         TextView pay = listViewItem.findViewById(R.id.PayOrder);
         TextView recievedOrder = listViewItem.findViewById(R.id.recievedOrder);
-        TextView namePastry = listViewItem.findViewById(R.id.namePastry);
+        TextView nameDog = listViewItem.findViewById(R.id.nameDog);
         TextView comments = listViewItem.findViewById(R.id.Comment);
 
         Adoption adoption = ordersList.get(position);
         Dog dog = ordersList.get(position).getDog();
-        B_email.setText("מייל האופה: " + adoption.getAdvertiser().getEmail());
-        B_phone.setText("טלפון האופה: " + adoption.getAdvertiser().getPhone());
-        B_name.setText("שם האופה: " + adoption.getAdvertiser().getFull_name());
+        B_email.setText("מייל המפרסם: " + adoption.getAdvertiser().getEmail());
+        B_phone.setText("טלפון המפרסם: " + adoption.getAdvertiser().getPhone());
+        B_name.setText("שם המפרסם: " + adoption.getAdvertiser().getFull_name());
         B_City.setText("עיר: " + adoption.getAdvertiser().getAddress().getCity());
         B_Street.setText("רחוב: " + adoption.getAdvertiser().getAddress().getStreetName());
         B_House.setText("מספר בית: " + adoption.getAdvertiser().getAddress().getBuildingNumber());
         B_floor.setText("קומה: " + adoption.getAdvertiser().getAddress().getFloor());
         B_appartment.setText("דירה: " + adoption.getAdvertiser().getAddress().getAppartmentNumber());
         date.setText("תאריך: " + adoption.getDate());
-        namePastry.setText("שם המאפה: " + adoption.getDog().getName());
+        nameDog.setText("שם הכלב: " + adoption.getDog().getName());
         comments.setText("הערות: " + adoption.getComments());
         if(adoption.isCard() == true){
             pay.setText("אמצעי תשלום: אשראי");

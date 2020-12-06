@@ -27,13 +27,13 @@ import java.util.List;
 import androidx.annotation.NonNull;
 
 /**
- * Search by dog - a list of all the pastries from the "Pastries" in the DB
+ * Search by dog - a list of all the dogs from the "dogs" in the DB
  */
 public class searchDogActivity extends Adopter_Navigation {
     private FirebaseAuth FireLog;// fire base authentication
-    ListView listViewPastries;
+    ListView listViewdogs;
     String userID;
-    DatabaseReference menuForCustomer;
+    DatabaseReference menuForadopter;
     FirebaseDatabase DB;
     List<Dog> dogList;
     EditText search_edit_text;
@@ -44,7 +44,7 @@ public class searchDogActivity extends Adopter_Navigation {
         setContentView(R.layout.activity_search_dog);search_edit_text = (EditText) findViewById(R.id.search_edit_text2);
         noResults = findViewById(R.id.noResults2);
         noResults.setVisibility(View.INVISIBLE);
-        listViewPastries = (ListView) findViewById(R.id.listViewPastriesC);
+        listViewdogs = (ListView) findViewById(R.id.listViewdogsC);
         DB = FirebaseDatabase.getInstance();
         FireLog = FirebaseAuth.getInstance();
         dogList = new ArrayList<Dog>();
@@ -77,18 +77,18 @@ public class searchDogActivity extends Adopter_Navigation {
     private void cleanFilter() {
         userID = FireLog.getCurrentUser().getUid();
         noResults.setVisibility(View.INVISIBLE);
-        menuForCustomer = DB.getReference("Pastries");
-        menuForCustomer.addValueEventListener(new ValueEventListener() {
+        menuForadopter = DB.getReference("dogs");
+        menuForadopter.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 dogList.clear();
-                for (DataSnapshot pastrySnapShot : dataSnapshot.getChildren()) {
-                    Dog dog = pastrySnapShot.getValue(Dog.class);
+                for (DataSnapshot dogSnapShot : dataSnapshot.getChildren()) {
+                    Dog dog = dogSnapShot.getValue(Dog.class);
                     dogList.add(dog);
                 }
 
                 DogAdapter dogAdapter = new DogAdapter(searchDogActivity.this, dogList);
-                listViewPastries.setAdapter(dogAdapter);
+                listViewdogs.setAdapter(dogAdapter);
             }
 
             @Override
@@ -102,18 +102,18 @@ public class searchDogActivity extends Adopter_Navigation {
     protected void onStart() {
         super.onStart();
         userID = FireLog.getCurrentUser().getUid();
-        menuForCustomer = DB.getReference("Pastries");
-        menuForCustomer.addValueEventListener(new ValueEventListener() {
+        menuForadopter = DB.getReference("dogs");
+        menuForadopter.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 dogList.clear();
-                for (DataSnapshot pastrySnapShot : dataSnapshot.getChildren()) {
-                    Dog dog = pastrySnapShot.getValue(Dog.class);
+                for (DataSnapshot dogSnapShot : dataSnapshot.getChildren()) {
+                    Dog dog = dogSnapShot.getValue(Dog.class);
                     dogList.add(dog);
                 }
 
                 DogAdapter dogAdapter = new DogAdapter(searchDogActivity.this, dogList);
-                listViewPastries.setAdapter(dogAdapter);
+                listViewdogs.setAdapter(dogAdapter);
             }
 
             @Override
@@ -122,7 +122,7 @@ public class searchDogActivity extends Adopter_Navigation {
             }
         });
 
-        listViewPastries.setOnItemClickListener(new ListView.OnItemClickListener() {
+        listViewdogs.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(searchDogActivity.this, dogWatchActivityAdopter.class);
@@ -133,8 +133,8 @@ public class searchDogActivity extends Adopter_Navigation {
 
     }
     public void setAdapter(final String searchedText) {
-        menuForCustomer = DB.getReference("Pastries");
-        menuForCustomer.addListenerForSingleValueEvent(new ValueEventListener() {
+        menuForadopter = DB.getReference("dogs");
+        menuForadopter.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 /*
@@ -155,7 +155,7 @@ public class searchDogActivity extends Adopter_Navigation {
                     noResults.setVisibility(View.VISIBLE);
                 }
                 DogAdapter dogAdapter = new DogAdapter(searchDogActivity.this, dogList);
-                listViewPastries.setAdapter(dogAdapter);
+                listViewdogs.setAdapter(dogAdapter);
             }
 
             @Override

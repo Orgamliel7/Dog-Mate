@@ -43,7 +43,7 @@ public class addDogPicturesActivity extends Advertiser_Navigation {
     private ProgressBar progressBar;
     private Uri imageUri;
     private StorageReference storageReference;
-    private DatabaseReference picRef,pastriesRef;
+    private DatabaseReference picRef,dogsRef;
     private StorageTask uploadTask;
     FirebaseDatabase DB;
     private FirebaseAuth FireLog;
@@ -65,7 +65,7 @@ public class addDogPicturesActivity extends Advertiser_Navigation {
         userID = FireLog.getCurrentUser().getUid();
         storageReference = FirebaseStorage.getInstance().getReference("Menu").child(userID).child(dog.getDocID());
         picRef = DB.getReference("Menu").child(userID).child(dog.getDocID());
-        pastriesRef = DB.getReference("Pastries").child(dog.getDocID());
+        dogsRef = DB.getReference("dogs").child(dog.getDocID());
 
 
 
@@ -117,7 +117,7 @@ public class addDogPicturesActivity extends Advertiser_Navigation {
                     Upload upload = new Upload(now + "",url.toString());
                     dog.addImage(upload);
                     picRef.setValue(dog);
-                    pastriesRef.setValue(dog);
+                    dogsRef.setValue(dog);
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override

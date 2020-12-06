@@ -19,7 +19,7 @@
             android:layout_height="59dp"
             android:layout_marginEnd="76dp"
             android:layout_marginBottom="472dp"
-            android:text="@string/ExsitCustomer"
+            android:text="@string/Exsitadopter"
             android:textColor="#141414"
             android:textSize="30sp"
             android:textStyle="bold"

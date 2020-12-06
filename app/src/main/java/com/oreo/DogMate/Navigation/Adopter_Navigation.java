@@ -22,8 +22,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 /**
- * An activity that contains a side navigator for the customer,
- * all the customer's activities will inherit it
+ * An activity that contains a side navigator for the adopter,
+ * all the adopter's activities will inherit it
  */
 public class Adopter_Navigation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
     protected DrawerLayout drawer;
@@ -60,33 +60,33 @@ public class Adopter_Navigation extends AppCompatActivity implements NavigationV
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.customer_orders:
+            case R.id.adopter_orders:
                 Intent i = new Intent(this, AdopterOrderActivity.class);
                 startActivity(i);
                 break;
 
-            case R.id.buy_pastry:
+            case R.id.buy_dog:
                 Intent j = new Intent(this, SearchMainMenu.class);
                 startActivity(j);
                 break;
 
-            case R.id.customer_favorites:
+            case R.id.adopter_favorites:
                 Intent k = new Intent(this, Favorites.class);
                 startActivity(k);
                 break;
 
-            case R.id.main_menu_customer:
+            case R.id.main_menu_adopter:
                 Intent l = new Intent(this, adopterScreen.class);
                 startActivity(l);
                 break;
 
-            case R.id.customer_settings:
+            case R.id.adopter_settings:
                 Intent m = new Intent(this, adopter_settings.class);
                 startActivity(m);
                 break;
 
 
-            case R.id.log_out_customer:
+            case R.id.log_out_adopter:
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(getApplicationContext(), Login.class));
                 finish();

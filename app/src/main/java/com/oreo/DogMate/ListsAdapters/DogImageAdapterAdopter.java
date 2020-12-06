@@ -50,7 +50,7 @@ public class DogImageAdapterAdopter extends RecyclerView.Adapter<DogImageAdapter
 
         public ImageViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.pastryImage);
+            imageView = itemView.findViewById(R.id.dogImage);
         }
 
     }

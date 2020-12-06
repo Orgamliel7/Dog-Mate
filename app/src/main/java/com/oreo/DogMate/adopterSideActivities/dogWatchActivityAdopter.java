@@ -34,9 +34,9 @@ import androidx.recyclerview.widget.RecyclerView;
  */
 public class dogWatchActivityAdopter extends Adopter_Navigation {
     private RecyclerView recyclerView;
-    private DogImageAdapterAdopter pastryImageAdapter; //adapter for the pastries images
+    private DogImageAdapterAdopter dogImageAdapter; //adapter for the dogs images
     private DatabaseReference imageRef; //reference for the upload details in the DB
-    private DatabaseReference pastryRef; //reference to the dog in the Menu in the DB
+    private DatabaseReference dogRef; //reference to the dog in the Menu in the DB
     private FirebaseStorage storage; // reference to the picture itself in the storage
     private List<Upload> uploads; // one upload gives us one picture URL
     private ProgressBar progressBar;
@@ -47,7 +47,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
     Dog dog;
     Advertiser advertiser;
     DatabaseReference adoptionsRef;
-    TextView pastryDetails,BakerDetails, street, city, total; //will show the dog and bakers main details
+    TextView dogDetails,BakerDetails, street, city, total; //will show the dog and bakers main details
 
     @Override
 
@@ -56,9 +56,9 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
         setContentView(R.layout.activity_dog_watch_adopter);
         Intent intent = getIntent();
         dog =(Dog) intent.getSerializableExtra("Dog");
-        recyclerView = findViewById(R.id.pastryPicturesRecycler);
+        recyclerView = findViewById(R.id.dogPicturesRecycler);
         progressBar = findViewById(R.id.progress_image_baker);
-        pastryDetails = findViewById(R.id.pastryWatch);
+        dogDetails = findViewById(R.id.dogWatch);
         BakerDetails = findViewById(R.id.bakerdets);
         total = findViewById(R.id.totalPay);
         street = findViewById(R.id.bakerStreet);
@@ -66,15 +66,15 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         uploads = new ArrayList<>();
-        pastryImageAdapter = new DogImageAdapterAdopter(dogWatchActivityAdopter.this, uploads);
-        recyclerView.setAdapter(pastryImageAdapter);
+        dogImageAdapter = new DogImageAdapterAdopter(dogWatchActivityAdopter.this, uploads);
+        recyclerView.setAdapter(dogImageAdapter);
         DB = FirebaseDatabase.getInstance();
         FireLog = FirebaseAuth.getInstance();
         DB = FirebaseDatabase.getInstance();
         userID = FireLog.getCurrentUser().getUid();
         imageRef = DB.getReference("Menu").child(dog.getBakerID()).child(dog.getDocID()).child("images");
         storage = FirebaseStorage.getInstance();
-        pastryRef=DB.getReference("Menu").child(dog.getBakerID()).child(dog.getDocID());
+        dogRef=DB.getReference("Menu").child(dog.getBakerID()).child(dog.getDocID());
 
     }
     protected void onStart() {
@@ -88,9 +88,9 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.hasChild(dog.getBakerID())){
                     advertiser = dataSnapshot.child(dog.getBakerID()).getValue(Advertiser.class);
-                    pastryDetails.setText("צפייה במאפה: "+ dog.getName());
+                    dogDetails.setText("צפייה בכלב: "+ dog.getName());
                     total.setText("סך הכל לתשלום: "+ dog.getPrice()+".");
-                    BakerDetails.setText("פרטי האופה: "+ advertiser.getFull_name());
+                    BakerDetails.setText("פרטי המפרסם: "+ advertiser.getFull_name());
                     street.setText("רחוב: "+ advertiser.getAddress().getStreetName());
                     city.setText("עיר: "+ advertiser.getAddress().getCity());
                 }
@@ -116,7 +116,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
                     uploads.add(upload);
 
                 }
-                pastryImageAdapter.notifyDataSetChanged();
+                dogImageAdapter.notifyDataSetChanged();
                 progressBar.setVisibility(View.INVISIBLE);
             }
 
@@ -131,7 +131,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
 
     /**
      *
-     * @param v - the button "adoption" - will take the user to the BuyPastry activity
+     * @param v - the button "adoption" - will take the user to the Buydog activity
      *           to fill details of the adoption.
      */
         public void order(View v) {

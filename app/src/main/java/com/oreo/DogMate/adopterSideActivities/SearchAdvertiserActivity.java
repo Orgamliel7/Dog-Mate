@@ -137,7 +137,7 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
                     advertiserList.add(advertiser);
                 }
                 if (advertiserList.isEmpty()) {
-                    Toast.makeText(SearchAdvertiserActivity.this, "התפריט ריק! הוסף מאפה חדש", Toast.LENGTH_LONG).show();
+                    Toast.makeText(SearchAdvertiserActivity.this, "התפריט ריק! הוסף כלב חדש", Toast.LENGTH_LONG).show();
                     return;
                 }
                 AdvertiserAdapter advertiserAdapter = new AdvertiserAdapter(SearchAdvertiserActivity.this, advertiserList);
@@ -163,7 +163,7 @@ public class SearchAdvertiserActivity extends Adopter_Navigation {
                     advertiserList.add(advertiser);
                 }
                 if (advertiserList.isEmpty()) {
-                    Toast.makeText(SearchAdvertiserActivity.this, "התפריט ריק! הוסף מאפה חדש", Toast.LENGTH_LONG).show();
+                    Toast.makeText(SearchAdvertiserActivity.this, "התפריט ריק! הוסף כלב חדש", Toast.LENGTH_LONG).show();
                     return;
                 }
                 AdvertiserAdapter advertiserAdapter = new AdvertiserAdapter(SearchAdvertiserActivity.this, advertiserList);

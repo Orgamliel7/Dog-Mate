@@ -37,9 +37,9 @@ import androidx.recyclerview.widget.RecyclerView;
  */
 public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements DogImageAdapterAdvertiser.OnItemClickListener {
     private RecyclerView recyclerView;
-    private DogImageAdapterAdvertiser pastryImageAdapter;
+    private DogImageAdapterAdvertiser dogImageAdapter;
     private DatabaseReference imageRef;
-    private DatabaseReference pastryRef;
+    private DatabaseReference dogRef;
     private FirebaseStorage storage;
     private List<Upload> uploads;
     private ProgressBar progressBar;
@@ -53,24 +53,24 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_watch_pastry_baker);
+        setContentView(R.layout.activity_watch_dog_advertiser);
         Intent intent = getIntent();
         dog =(Dog) intent.getSerializableExtra("Dog");
-        recyclerView = findViewById(R.id.pastryPicturesRecycler);
+        recyclerView = findViewById(R.id.dogPicturesRecycler);
         progressBar = findViewById(R.id.progress_image_baker);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         uploads = new ArrayList<>();
-        pastryImageAdapter = new DogImageAdapterAdvertiser(WatchDogAdvertiserActivity.this, uploads);
-        recyclerView.setAdapter(pastryImageAdapter);
-        pastryImageAdapter.setOnItemClickListener(WatchDogAdvertiserActivity.this);
+        dogImageAdapter = new DogImageAdapterAdvertiser(WatchDogAdvertiserActivity.this, uploads);
+        recyclerView.setAdapter(dogImageAdapter);
+        dogImageAdapter.setOnItemClickListener(WatchDogAdvertiserActivity.this);
         DB = FirebaseDatabase.getInstance();
         FireLog = FirebaseAuth.getInstance();
         DB = FirebaseDatabase.getInstance();
         userID = FireLog.getCurrentUser().getUid();
         imageRef = DB.getReference("Menu").child(userID).child(dog.getDocID()).child("images");
         storage = FirebaseStorage.getInstance();
-        pastryRef=DB.getReference("Menu").child(userID).child(dog.getDocID());
+        dogRef=DB.getReference("Menu").child(userID).child(dog.getDocID());
 
 
 
@@ -91,7 +91,7 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
                     uploads.add(upload);
 
                 }
-                pastryImageAdapter.notifyDataSetChanged();
+                dogImageAdapter.notifyDataSetChanged();
                 progressBar.setVisibility(View.INVISIBLE);
             }
 
@@ -139,11 +139,11 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
         startActivity(intent);
     }
 //contains a dialog to ask if the baker is sure he wants to delete the dog
-    public void deletePastry(View view) {
+    public void deletedog(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(true);
-        builder.setTitle("מחיקת מאפה");
-        builder.setMessage("האם אתה בטוח שברצונך למחוק מאפה זה?");
+        builder.setTitle("מחיקת כלב");
+        builder.setMessage("האם אתה בטוח שברצונך למחוק כלב זה?");
         builder.setPositiveButton("מחק",
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -151,7 +151,7 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
                         for (int i = 0; i < dog.getImages().size(); i++){
                             onDeleteClick(i);
                         }
-                        pastryRef.removeValue();
+                        dogRef.removeValue();
                     }
                 });
         builder.setNegativeButton("ביטול", new DialogInterface.OnClickListener() {
@@ -164,7 +164,7 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
         dialog.show();
     }
 
-    public void editPastry(View view) {
+    public void editdog(View view) {
         Intent intent = new Intent(WatchDogAdvertiserActivity.this, AddDogActivity.class);
         intent.putExtra("Dog", dog);
         startActivity(intent);

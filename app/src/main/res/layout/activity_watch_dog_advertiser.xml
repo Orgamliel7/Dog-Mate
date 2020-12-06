@@ -15,31 +15,31 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="19dp"
         android:layout_marginEnd="161dp"
-        android:layout_toStartOf="@+id/editPastry"
+        android:layout_toStartOf="@+id/editdog"
         android:background="#FFFFFF"
         android:onClick="addPictures"
         android:text="@string/addPictures"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/pastryPicturesRecycler" />
+        app:layout_constraintTop_toTopOf="@id/dogPicturesRecycler" />
 
     <Button
-        android:id="@+id/deletePastry"
+        android:id="@+id/deletedog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="11dp"
-        android:layout_toStartOf="@+id/editPastry"
+        android:layout_toStartOf="@+id/editdog"
         android:background="#FFFFFF"
-        android:text="@string/deletePastry"
-        android:onClick="deletePastry"
+        android:text="@string/deletedog"
+        android:onClick="deletedog"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/pastryPicturesRecycler" />
+        app:layout_constraintTop_toTopOf="@id/dogPicturesRecycler" />
 
     <Button
-        android:id="@+id/editPastry"
+        android:id="@+id/editdog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -47,11 +47,11 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:background="#FFFFFF"
-        android:onClick="editPastry"
+        android:onClick="editdog"
         android:text="@string/edit"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/pastryPicturesRecycler" />
+        app:layout_constraintTop_toTopOf="@id/dogPicturesRecycler" />
 
     <ProgressBar
         android:id="@+id/progress_image_baker"
@@ -61,10 +61,10 @@
         />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/pastryPicturesRecycler"
+        android:id="@+id/dogPicturesRecycler"
         android:layout_width="339dp"
         android:layout_height="493dp"
-        android:layout_below="@+id/editPastry"
+        android:layout_below="@+id/editdog"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="134dp"

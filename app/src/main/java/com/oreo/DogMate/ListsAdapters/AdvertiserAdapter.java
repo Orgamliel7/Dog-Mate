@@ -38,7 +38,7 @@ public class AdvertiserAdapter extends ArrayAdapter<Advertiser> {
 
         Advertiser advertiser = advertisers.get(position);
         address.setText("עיר: "+ advertiser.getAddress().getCity());
-        name.setText("שם האופה: "+ advertiser.getFull_name());
+        name.setText("שם המפרסם: "+ advertiser.getFull_name());
 
         return listViewItem;
     }

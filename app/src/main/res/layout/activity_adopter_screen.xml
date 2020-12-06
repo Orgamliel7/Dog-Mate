@@ -28,7 +28,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginBottom="452dp"
                     android:background="#F5F2F2"
-                    android:onClick="moveToCustomerOrders"
+                    android:onClick="moveToadopterOrders"
                     android:text="@string/myOrders"
                     android:textSize="30sp"
                     app:layout_constraintBottom_toBottomOf="parent"

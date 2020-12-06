@@ -20,12 +20,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/SearchBaker"
+        android:id="@+id/SearchAdvertiser"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#FFFFFF"
         android:text="@string/serchBAKER"
-        android:onClick="SearchBaker"
+        android:onClick="SearchAdvertiser"
         android:textColor="#000"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -33,12 +33,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/searchPastry"
+        android:id="@+id/SearchDog"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:onClick="SearchPastry"
+        android:onClick="SearchDog"
         android:background="#FFFFFF"
-        android:text="@string/serachPASTRY"
+        android:text="@string/serachdog"
         android:textColor="#000"
         android:textSize="24sp"
         android:textStyle="bold"

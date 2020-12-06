@@ -11,12 +11,12 @@
         android:layout_height="498dp" />
 
     <Button
-        android:id="@+id/addPastry"
+        android:id="@+id/addDog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:text="@string/addItem"
-        android:onClick="addNewPastry"
+        android:onClick="addNewDog"
         android:textSize="24sp"
         android:textStyle="bold" />
 </LinearLayout>

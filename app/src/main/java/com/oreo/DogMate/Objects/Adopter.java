@@ -25,7 +25,7 @@ public class Adopter extends User {
         return favorites;
     }
 
-    public void addBaker(Advertiser advertiser) {
+    public void addAdvertiser(Advertiser advertiser) {
         if(favorites==null){
             favorites = new ArrayList<Advertiser>();
         }

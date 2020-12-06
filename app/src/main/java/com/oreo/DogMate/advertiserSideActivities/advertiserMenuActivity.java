@@ -24,12 +24,12 @@ import java.util.List;
 import androidx.annotation.NonNull;
 
 /**
- * shows the baker it's pastries, and an option to add a new dog,
- * when pressing a dog wil move to WatchPastryBaker activity
+ * shows the baker it's dogs, and an option to add a new dog,
+ * when pressing a dog wil move to WatchdogBaker activity
  */
 public class advertiserMenuActivity extends Advertiser_Navigation {
     private FirebaseAuth FireLog;// fire base authentication
-    ListView listViewPastries;
+    ListView listViewdogs;
     String userID;
     DatabaseReference menu;
     FirebaseDatabase DB;
@@ -41,7 +41,7 @@ public class advertiserMenuActivity extends Advertiser_Navigation {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advertiser_menu);
-        listViewPastries = (ListView) findViewById(R.id.menu);
+        listViewdogs = (ListView) findViewById(R.id.menu);
 
         DB = FirebaseDatabase.getInstance();
         FireLog = FirebaseAuth.getInstance();
@@ -60,17 +60,17 @@ public class advertiserMenuActivity extends Advertiser_Navigation {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 dogList.clear();
 
-                for (DataSnapshot pastrySnapShot : dataSnapshot.getChildren()) {
-                    Dog dog = pastrySnapShot.getValue(Dog.class);
+                for (DataSnapshot dogSnapShot : dataSnapshot.getChildren()) {
+                    Dog dog = dogSnapShot.getValue(Dog.class);
                     dogList.add(dog);
                 }
                 if (dogList.isEmpty()) {
-                    Toast.makeText(advertiserMenuActivity.this, "התפריט ריק! הוסף מאפה חדש", Toast.LENGTH_LONG).show();
-                    moveToAddPastry();
+                    Toast.makeText(advertiserMenuActivity.this, "התפריט ריק! הוסף כלב חדש", Toast.LENGTH_LONG).show();
+                    moveToAdddog();
                     return;
                 }
                 DogAdapter dogAdapter = new DogAdapter(advertiserMenuActivity.this, dogList);
-                listViewPastries.setAdapter(dogAdapter);
+                listViewdogs.setAdapter(dogAdapter);
             }
 
             @Override
@@ -78,7 +78,7 @@ public class advertiserMenuActivity extends Advertiser_Navigation {
 
             }
         });
-        listViewPastries.setOnItemClickListener(new ListView.OnItemClickListener() {
+        listViewdogs.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(advertiserMenuActivity.this, WatchDogAdvertiserActivity.class);
@@ -88,12 +88,12 @@ public class advertiserMenuActivity extends Advertiser_Navigation {
         });
 
     }
-    public void moveToAddPastry() {
+    public void moveToAdddog() {
         Intent intent = new Intent(advertiserMenuActivity.this, AddDogActivity.class);
         startActivity(intent);
     }
 
-    public void addNewPastry(View view) {
-        moveToAddPastry();
+    public void addNewDog(View view) {
+        moveToAdddog();
     }
 }
