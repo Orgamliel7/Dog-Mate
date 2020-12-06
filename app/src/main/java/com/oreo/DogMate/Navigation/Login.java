@@ -75,10 +75,10 @@ public class Login extends AppCompatActivity {
                                 usersRef.addValueEventListener(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(DataSnapshot dataSnapshot) {
-                                        if (dataSnapshot.child("Bakers").hasChild(userID)) {
+                                        if (dataSnapshot.child("Advertiser").hasChild(userID)) {
                                             BakerLogin();
 
-                                        } else if (dataSnapshot.child("Customers").hasChild(userID)) {
+                                        } else if (dataSnapshot.child("Adopter").hasChild(userID)) {
                                             CustomerLogin();
                                         }
                                     }
