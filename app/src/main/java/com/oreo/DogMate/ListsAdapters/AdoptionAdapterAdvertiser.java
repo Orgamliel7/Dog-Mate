@@ -22,7 +22,7 @@ public class AdoptionAdapterAdvertiser extends ArrayAdapter<Adoption> {
     private List<Adoption> ordersList;
 
     public AdoptionAdapterAdvertiser(Activity context, List<Adoption> ordersList)  {
-        super(context, R.layout.order_item_advertiser, ordersList);
+        super(context, R.layout.adoption_item_advertiser, ordersList);
         this.context = context;
         this.ordersList = ordersList;
     }
@@ -31,7 +31,7 @@ public class AdoptionAdapterAdvertiser extends ArrayAdapter<Adoption> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
-        View listViewItem = inflater.inflate(R.layout.order_item_advertiser, null, true);
+        View listViewItem = inflater.inflate(R.layout.adoption_item_advertiser, null, true);
         TextView C_phone = listViewItem.findViewById(R.id.adopterPhone);
         TextView C_name = listViewItem.findViewById(R.id.adopterName);
         TextView C_email = listViewItem.findViewById(R.id.cusEmail);

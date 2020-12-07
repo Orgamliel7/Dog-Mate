@@ -1014,12 +1014,15 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable adopt_dog
+drawable adopter_favorites
+drawable adopter_orders
+drawable adopter_settings
+drawable advertiser_orders
+drawable advertiser_settings
 drawable avd_hide_password
 drawable avd_show_password
 drawable bacground
-drawable baker_orders
-drawable baker_settings
-drawable buy_pastry
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1039,9 +1042,6 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
-drawable customer_favorites
-drawable customer_orders
-drawable customer_settings
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1055,9 +1055,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable log_out
-drawable log_out_customer
+drawable log_out_adopter
 drawable main_menu
-drawable main_menu_customer
+drawable main_menu_adopter
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable my_menu
@@ -1074,7 +1074,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable pop_baker
+drawable pop_advertiser
 drawable profile
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1130,6 +1130,8 @@ id adddogTextView
 id addtoFavorites
 id adjust_height
 id adjust_width
+id adopt
+id adopt_dog
 id adopter
 id adopterAppartment
 id adopterCity
@@ -1175,8 +1177,6 @@ id bottom
 id buildingNumber
 id buildingNumberInput
 id buttonPanel
-id buy
-id buy_dog
 id cash
 id center
 id center_horizontal
@@ -1516,6 +1516,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_dog
 layout activity_add_dog_pictures
+layout activity_adopt_dog
 layout activity_adopter_menu
 layout activity_adopter_navigation
 layout activity_adopter_order
@@ -1526,7 +1527,6 @@ layout activity_advertiser_navigation
 layout activity_advertiser_order
 layout activity_advertiser_screen
 layout activity_advertiser_settings
-layout activity_buy_dog
 layout activity_dog_watch_adopter
 layout activity_favorite_advertiser
 layout activity_favorites
@@ -1537,6 +1537,8 @@ layout activity_search_advertiser
 layout activity_search_dog
 layout activity_search_main_menu
 layout activity_watch_dog_advertiser
+layout adoption_item_adopter
+layout adoption_item_advertiser
 layout advertiser_item
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1564,8 +1566,6 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout order_item_adopter
-layout order_item_advertiser
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -1575,8 +1575,8 @@ menu customer_menu
 mipmap cake
 mipmap ic_launcher
 mipmap ic_launcher_round
+string Adopt
 string Advertiser
-string Buy
 string C_city
 string C_email
 string City
@@ -1642,6 +1642,7 @@ string addItem
 string addPicture
 string addPictures
 string addTofavorites
+string adopt
 string adopter
 string adopterAppartment
 string adopterCity
@@ -1670,7 +1671,6 @@ string app_name
 string appartmentNumber
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
-string buy
 string cach
 string cash
 string character_counter_content_description

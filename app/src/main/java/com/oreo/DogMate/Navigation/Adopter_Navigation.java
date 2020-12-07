@@ -65,7 +65,7 @@ public class Adopter_Navigation extends AppCompatActivity implements NavigationV
                 startActivity(i);
                 break;
 
-            case R.id.buy_dog:
+            case R.id.adopt_dog:
                 Intent j = new Intent(this, SearchMainMenu.class);
                 startActivity(j);
                 break;

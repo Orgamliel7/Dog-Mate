@@ -17,7 +17,7 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@drawable/customer_favorites"
+        android:icon="@drawable/adopter_favorites"
         android:label="@string/app_name"
         android:roundIcon="@drawable/bacground"
         android:supportsRtl="true"
@@ -44,7 +44,7 @@
             android:name="com.oreo.DogMate.adopterSideActivities.AdopterOrderActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.oreo.DogMate.adopterSideActivities.BuyDogActivity"
+            android:name="com.oreo.DogMate.adopterSideActivities.AdoptDogActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.oreo.DogMate.adopterSideActivities.AdopterMenuActivity"

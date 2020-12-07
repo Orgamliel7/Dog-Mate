@@ -33,9 +33,9 @@ import androidx.annotation.Nullable;
 /**
  * Activity for filling detail for the adoption after choosing a dog to adoption
  */
-public class BuyDogActivity extends Adopter_Navigation {
+public class AdoptDogActivity extends Adopter_Navigation {
 
-    Button Buy, date;
+    Button Adopt, date;
     EditText comment;
     RadioButton cash,card, delivery, pickup;
     String dateS,commentS;
@@ -61,13 +61,13 @@ public class BuyDogActivity extends Adopter_Navigation {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buy_dog);
+        setContentView(R.layout.activity_adopt_dog);
         calendar = Calendar.getInstance();
         Intent intent = getIntent();
         dog = (Dog) intent.getSerializableExtra("Dog");
         advertiser = (Advertiser) intent.getSerializableExtra("Advertiser");
         dog.getName();
-        Buy = findViewById(R.id.buy);
+        Adopt = findViewById(R.id.adopt);
         date = (Button) findViewById(R.id.inputDate);
         comment = findViewById(R.id.commentInput);
         cash = findViewById(R.id.cash);
@@ -87,7 +87,7 @@ public class BuyDogActivity extends Adopter_Navigation {
             @Override
             public void onClick(View view) {
                 DatePickerDialog dialog =  new DatePickerDialog(
-                        BuyDogActivity.this,
+                        AdoptDogActivity.this,
                         android.R.style.Theme_Holo_Light_Dialog_MinWidth,
                         mDateListener,
                         calendar.get(Calendar.YEAR),
@@ -135,7 +135,7 @@ public class BuyDogActivity extends Adopter_Navigation {
     }
 
     public void CreateNewOrderC(View view) {
-        findViewById(R.id.buy).setEnabled(true);
+        findViewById(R.id.adopt).setEnabled(true);
         dateS = (day + "/" + month + "/" + year);
         commentS = comment.getText().toString().trim();
         //validations
@@ -189,9 +189,9 @@ if (creditCard) {
 }
 **/
         // when finishing to adoption - moves to the orders list
-        Toast.makeText(BuyDogActivity.this, "הזמנה נשלחה בהצלחה!", Toast.LENGTH_LONG).show();
-        findViewById(R.id.buy).setEnabled(true);
-        startActivity(new Intent(BuyDogActivity.this, AdopterOrderActivity.class));
+        Toast.makeText(AdoptDogActivity.this, "הזמנה נשלחה בהצלחה!", Toast.LENGTH_LONG).show();
+        findViewById(R.id.adopt).setEnabled(true);
+        startActivity(new Intent(AdoptDogActivity.this, AdopterOrderActivity.class));
     }
 
 }

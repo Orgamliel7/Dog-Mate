@@ -8,7 +8,7 @@
             android:title="התפריט שלי" />
         <item
             android:id="@+id/advertiser_orders"
-            android:icon="@drawable/baker_orders"
+            android:icon="@drawable/advertiser_orders"
             android:title="ההזמנות שלי" />
         <item
             android:id="@+id/main_menu"
@@ -16,7 +16,7 @@
             android:title="תפריט ראשי" />
         <item
             android:id="@+id/advertiser_settings"
-            android:icon="@drawable/baker_settings"
+            android:icon="@drawable/advertiser_settings"
             android:title="הגדרות" />
         <item
             android:id="@+id/log_out"

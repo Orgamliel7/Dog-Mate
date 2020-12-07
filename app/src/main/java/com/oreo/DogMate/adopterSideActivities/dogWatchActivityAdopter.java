@@ -131,11 +131,11 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
 
     /**
      *
-     * @param v - the button "adoption" - will take the user to the Buydog activity
+     * @param v - the button "adoption" - will take the user to the adoptdog activity
      *           to fill details of the adoption.
      */
         public void adoption(View v) {
-            Intent intent = new Intent(dogWatchActivityAdopter.this, BuyDogActivity.class);
+            Intent intent = new Intent(dogWatchActivityAdopter.this, AdoptDogActivity.class);
             intent.putExtra("Dog", dog);
             intent.putExtra("Advertiser", advertiser);
             startActivity(intent);

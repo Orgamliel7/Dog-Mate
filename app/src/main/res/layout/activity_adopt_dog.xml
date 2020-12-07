@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bacground"
     android:orientation="vertical"
-    tools:context=".adopterSideActivities.BuyDogActivity"
+    tools:context=".adopterSideActivities.AdoptDogActivity"
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
@@ -117,12 +117,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buy"
+        android:id="@+id/adopt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="52dp"
-        android:text="@string/buy"
+        android:text="@string/adopt"
         android:textColor="#0C0C0C"
         android:textSize="24sp"
         android:background="#FCF9F9"

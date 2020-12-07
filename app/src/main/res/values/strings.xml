@@ -47,7 +47,7 @@
     <string name="appartmentNumber">מספר דירה</string>
     <string name="floor">קומה</string>
     <string name="streetName">רחוב</string>
-    <string name="Buy">אמץ!</string>
+    <string name="Adopt">אמץ!</string>
     <string name="command">הערות</string>
     <string name="cach">מזומן</string>
     <string name="OrderDetails">פרטי ההזמנה</string>
@@ -60,7 +60,7 @@
     <string name="delivery">משלוח</string>
     <string name="selfDelivery">איסוף עצמי</string>
     <string name="comment">הערות</string>
-    <string name="buy">אמץ</string>
+    <string name="adopt">אמץ</string>
     <string name="numOfOrderC">מספר הזמנה</string>
     <string name="advertiser_email">מייל המפרסם</string>
     <string name="city_C">עיר</string>
