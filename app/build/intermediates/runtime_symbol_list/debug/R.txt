@@ -1569,11 +1569,10 @@ int layout select_dialog_item_material 0x7f0b0050
 int layout select_dialog_multichoice_material 0x7f0b0051
 int layout select_dialog_singlechoice_material 0x7f0b0052
 int layout support_simple_spinner_dropdown_item 0x7f0b0053
-int menu baker_menu 0x7f0c0000
-int menu customer_menu 0x7f0c0001
-int mipmap cake 0x7f0d0000
-int mipmap ic_launcher 0x7f0d0001
-int mipmap ic_launcher_round 0x7f0d0002
+int menu adopter_menu 0x7f0c0000
+int menu advertiser_menu 0x7f0c0001
+int mipmap ic_launcher 0x7f0d0000
+int mipmap ic_launcher_round 0x7f0d0001
 int string Adopt 0x7f0e0000
 int string Advertiser 0x7f0e0001
 int string C_city 0x7f0e0002

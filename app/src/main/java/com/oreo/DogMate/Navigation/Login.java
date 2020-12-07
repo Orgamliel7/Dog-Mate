@@ -58,6 +58,15 @@ public class Login extends AppCompatActivity {
 
         password = ((EditText) findViewById(R.id.password)).getText().toString();
         email = ((EditText) findViewById(R.id.EmailInput)).getText().toString();
+        //if don't fill email or password
+        if (email.isEmpty()) {
+            Toast.makeText(this, "You did not enter a email", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (password.isEmpty()) {
+            Toast.makeText(this, "You did not enter a password", Toast.LENGTH_SHORT).show();
+            return;
+        }
         FireLog.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
