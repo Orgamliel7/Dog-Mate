@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Represent a Dog
  */
 public class Dog implements Serializable {
-    private  String price;
+    private  String age;
     private String name;
     private String allerganics;
     private String description;
@@ -21,8 +21,8 @@ public class Dog implements Serializable {
         // no args constructor needed
     }
 
-    public Dog(String price, String name, String allerganics, String description, String advertiserID){
-        this.price=price;
+    public Dog(String age, String name, String allerganics, String description, String advertiserID){
+        this.age=age;
         this.name=name;
         this.allerganics=allerganics;
         this.description=description;
@@ -64,8 +64,8 @@ public class Dog implements Serializable {
         return name;
     }
 
-    public String getPrice() {
-        return price;
+    public String getAge() {
+        return age;
     }
 
     public String getAllerganics() {
@@ -76,8 +76,8 @@ public class Dog implements Serializable {
         return description;
     }
 
-    public void setPrice(String price) {
-        this.price = price;
+    public void setAge(String age) {
+        this.age = age;
     }
 
     public void setAllerganics(String allerganics) {

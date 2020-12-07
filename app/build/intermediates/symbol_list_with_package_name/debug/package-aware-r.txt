@@ -1157,6 +1157,8 @@ id advertiser_settings
 id advertiserdets
 id advertisersListView
 id advertisers_list
+id age
+id ageInput
 id alerganicInput
 id alerganics
 id alertTitle
@@ -1338,8 +1340,6 @@ id percent
 id phone
 id phoneC
 id pin
-id price
-id priceInput
 id progressBar
 id progressBar2
 id progressBarPicture
@@ -1665,6 +1665,7 @@ string advertiserPhone
 string advertiserStreet
 string advertiser_email
 string advertiserdits
+string age
 string alerganic
 string app_name
 string appartmentNumber
@@ -1760,7 +1761,6 @@ string pay
 string pay_C
 string phoneNumber
 string pictures
-string price
 string project_id
 string recieveOrder
 string recievedOrder

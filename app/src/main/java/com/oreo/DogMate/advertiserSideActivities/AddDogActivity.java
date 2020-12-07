@@ -26,9 +26,9 @@ import androidx.annotation.Nullable;
 public class AddDogActivity extends Advertiser_Navigation {
     public static final String TAG = "TAG_ADD_dog";
     String userID;
-    String priceIn, nameIn, descIn, allergicIn;
+    String ageIn, nameIn, descIn, allergicIn;
     private FirebaseAuth FireLog;// fire base authentication
-    EditText price, name, description, allergenic;
+    EditText age, name, description, allergenic;
     DatabaseReference dogRef;
     FirebaseDatabase DB;
     Dog dog;
@@ -46,7 +46,7 @@ public class AddDogActivity extends Advertiser_Navigation {
         Intent intent = getIntent();
         if(intent.hasExtra("Dog")) {
             dog = (Dog) intent.getSerializableExtra("Dog");
-            price.setText(dog.getPrice());
+            age.setText(dog.getAge());
             name.setText(dog.getName());
             description.setText(dog.getDescription());
             allergenic.setText(dog.getAllerganics());
@@ -55,12 +55,12 @@ public class AddDogActivity extends Advertiser_Navigation {
 
     public void addItem(View view) {
 
-        priceIn = price.getText().toString().trim();
+        ageIn = age.getText().toString().trim();
         nameIn = name.getText().toString().trim();
         descIn = description.getText().toString().trim();
         allergicIn = allergenic.getText().toString().trim();
-        if (TextUtils.isEmpty(priceIn)) {
-            price.setError("נא למלא מחיר");
+        if (TextUtils.isEmpty(ageIn)) {
+            age.setError("נא למלא מחיר");
             return;
         }
         if (TextUtils.isEmpty(nameIn)) {
@@ -86,12 +86,12 @@ public class AddDogActivity extends Advertiser_Navigation {
             }
         };
         if(dog ==null) {
-            dog = new Dog(priceIn, nameIn, allergicIn, descIn, userID);
+            dog = new Dog(ageIn, nameIn, allergicIn, descIn, userID);
             dog.setDocID(dogRef.push().getKey());
         }
         //if the dog exist and we just want to edit it
         else{
-            dog.setPrice(priceIn);
+            dog.setAge(ageIn);
             dog.setName(nameIn);
             dog.setDescription(descIn);
             dog.setAllerganics(allergicIn);
@@ -102,7 +102,7 @@ public class AddDogActivity extends Advertiser_Navigation {
     }
 
     public void retrieve() {
-        price = (EditText) findViewById(R.id.priceInput);
+        age = (EditText) findViewById(R.id.ageInput);
         name = (EditText) findViewById(R.id.nameInput);
         description = (EditText) findViewById(R.id.desInput);
         allergenic = (EditText) findViewById(R.id.alerganicInput);

@@ -32,13 +32,13 @@ public class DogAdapter extends ArrayAdapter<Dog> {
         LayoutInflater inflater =  context.getLayoutInflater();
         View listViewItem = inflater.inflate(R.layout.list_dog_item, null, true);
 
-        TextView price = listViewItem.findViewById(R.id.price);
+        TextView age = listViewItem.findViewById(R.id.age);
         TextView name = listViewItem.findViewById(R.id.dogName);
         TextView allerganics = listViewItem.findViewById(R.id.allerganics);
         TextView description = listViewItem.findViewById(R.id.descript);
 
         Dog dog = dogs.get(position);
-        price.setText("מחיר: "+ dog.getPrice());
+        age.setText("מחיר: "+ dog.getAge());
         name.setText("שם: "+ dog.getName());
         allerganics.setText("רכיבים אלרגניים: "+ dog.getAllerganics());
         description.setText("תיאור: "+ dog.getDescription());
