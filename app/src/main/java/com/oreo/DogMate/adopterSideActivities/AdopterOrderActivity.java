@@ -49,7 +49,7 @@ public class AdopterOrderActivity extends Adopter_Navigation {
     protected void onStart() {
         super.onStart();
         userID = FireLog.getCurrentUser().getUid();
-        databaseOrdersC = DB.getReference("Orders/adopters Orders").child(userID);
+        databaseOrdersC = DB.getReference("Adoptions/Adopter Adoptions").child(userID);
 
         databaseOrdersC.addValueEventListener(new ValueEventListener() {
             @Override
