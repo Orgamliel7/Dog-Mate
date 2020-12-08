@@ -38,7 +38,7 @@ public class DogAdapter extends ArrayAdapter<Dog> {
         TextView description = listViewItem.findViewById(R.id.descript);
 
         Dog dog = dogs.get(position);
-        age.setText("מחיר: "+ dog.getAge());
+        age.setText("גיל: "+ dog.getAge());
         name.setText("שם: "+ dog.getName());
         allerganics.setText("רכיבים אלרגניים: "+ dog.getAllerganics());
         description.setText("תיאור: "+ dog.getDescription());

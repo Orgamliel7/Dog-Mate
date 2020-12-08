@@ -60,7 +60,7 @@ public class AddDogActivity extends Advertiser_Navigation {
         descIn = description.getText().toString().trim();
         allergicIn = allergenic.getText().toString().trim();
         if (TextUtils.isEmpty(ageIn)) {
-            age.setError("נא למלא מחיר");
+            age.setError("נא למלא גיל");
             return;
         }
         if (TextUtils.isEmpty(nameIn)) {
