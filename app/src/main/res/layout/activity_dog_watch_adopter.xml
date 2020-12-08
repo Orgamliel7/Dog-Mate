@@ -70,7 +70,7 @@
         android:id="@+id/totalPay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="סך הכל לתשלום"
+        android:text="גיל הכלב"
         android:background="#FFFFFF"
         android:textColor="#000"
         android:textSize="24sp" />

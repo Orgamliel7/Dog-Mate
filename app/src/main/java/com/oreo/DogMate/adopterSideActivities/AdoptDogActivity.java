@@ -145,7 +145,7 @@ public class AdoptDogActivity extends Adopter_Navigation {
         }
 
         else if((!card.isChecked())&&(!cash.isChecked())){
-            card.setError("חובה לבחור אמצעי תשלום!");
+            card.setError("חובה לבחור אמצעי תשלום למשלוח!");
             return;
 
         }
@@ -178,18 +178,9 @@ public class AdoptDogActivity extends Adopter_Navigation {
                  dateS,commentS,creditCard,deliveryBool);
         adoptionsAdoRef.child(adopter.getUserID()).child(orderNum).setValue(adoption,completionListener);
         adoptionsAdvRef.child(advertiser.getUserID()).child(orderNum).setValue(adoption,completionListener);
-/**
-if (creditCard) {
-    System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
-         String url = "http://www.google.com";
-         Intent i = new Intent(Intent.ACTION_VIEW);
-         i.setData(Uri.parse(url));
-         startActivity(i);
 
-}
-**/
         // when finishing to adoption - moves to the orders list
-        Toast.makeText(AdoptDogActivity.this, "הזמנה נשלחה בהצלחה!", Toast.LENGTH_LONG).show();
+        Toast.makeText(AdoptDogActivity.this, "האימוץ בוצע בהצלחה!", Toast.LENGTH_LONG).show();
         findViewById(R.id.adopt).setEnabled(true);
         startActivity(new Intent(AdoptDogActivity.this, AdopterOrderActivity.class));
     }

@@ -62,7 +62,7 @@ public class advertiserOrderActivity extends Advertiser_Navigation {
                     ordersList.add(adoption);
                 }
                 if (ordersList.isEmpty()) {
-                    Toast.makeText(advertiserOrderActivity.this, "אין הזמנות בתור", Toast.LENGTH_LONG).show();
+                    Toast.makeText(advertiserOrderActivity.this, "אין כלבים במאגר", Toast.LENGTH_LONG).show();
                     return;
                 }
                 AdoptionAdapterAdvertiser orderAdapter = new AdoptionAdapterAdvertiser(advertiserOrderActivity.this, ordersList);

@@ -60,7 +60,7 @@ public class AdopterOrderActivity extends Adopter_Navigation {
                     adoptionList.add(adoption);
                 }
                 if (adoptionList.isEmpty()) {
-                    Toast.makeText(AdopterOrderActivity.this, "אין הזמנות בתור", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AdopterOrderActivity.this, "אין כלבים במאגר", Toast.LENGTH_LONG).show();
                     return;
                 }
                 AdoptionAdapterAdopter orderC_Adapter = new AdoptionAdapterAdopter(AdopterOrderActivity.this, adoptionList);

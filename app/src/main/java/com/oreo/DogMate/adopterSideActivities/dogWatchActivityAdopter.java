@@ -88,8 +88,8 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.hasChild(dog.getadvertiserID())){
                     advertiser = dataSnapshot.child(dog.getadvertiserID()).getValue(Advertiser.class);
-                    dogDetails.setText("צפייה בכלב: "+ dog.getName());
-                    total.setText("סך הכל לתשלום: "+ dog.getAge()+".");
+                    dogDetails.setText("שם הכלב: "+ dog.getName());
+                    total.setText("גיל הכלב "+ dog.getAge()+".");
                     AdvertiserDetails.setText("פרטי המפרסם: "+ advertiser.getFull_name());
                     street.setText("רחוב: "+ advertiser.getAddress().getStreetName());
                     city.setText("עיר: "+ advertiser.getAddress().getCity());

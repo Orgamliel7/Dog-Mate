@@ -67,10 +67,10 @@ public class AdoptionAdapterAdvertiser extends ArrayAdapter<Adoption> {
         }
 
         if (adoption.isDelivery()==true){
-            recievedOrder.setText("קבלת ההזמנה: משלוח");
+            recievedOrder.setText("קבלת הכלב: משלוח");
         }
         else{
-            recievedOrder.setText("קבלת ההזמנה: איסוף עצמי");
+            recievedOrder.setText("קבלת הכלב: איסוף עצמי");
         }
         return listViewItem;
     }

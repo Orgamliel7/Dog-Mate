@@ -62,7 +62,7 @@ public class SearchMainMenu extends Adopter_Navigation {
                     ordersList.add(adoption);
                 }
                 if (ordersList.isEmpty()) {
-                    Toast.makeText(SearchMainMenu.this, "אין הזמנות בתור", Toast.LENGTH_LONG).show();
+                    Toast.makeText(SearchMainMenu.this, "אין כלבים במאגר", Toast.LENGTH_LONG).show();
                     return;
                 }
                 AdoptionAdapterAdopter orderC_Adapter = new AdoptionAdapterAdopter(SearchMainMenu.this, ordersList);

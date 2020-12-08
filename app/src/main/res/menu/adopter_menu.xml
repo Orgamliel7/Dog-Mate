@@ -5,11 +5,11 @@
         <item
             android:id="@+id/adopter_orders"
             android:icon="@drawable/adopter_orders"
-            android:title="ההזמנות שלי" />
+            android:title="הכלבים שלי" />
         <item
             android:id="@+id/adopt_dog"
             android:icon="@drawable/adopt_dog"
-            android:title="הזמנה חדשה" />
+            android:title="אימוץ חדש" />
         <item
             android:id="@+id/adopter_favorites"
             android:icon="@drawable/adopter_favorites"

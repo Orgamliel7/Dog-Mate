@@ -9,7 +9,7 @@
         <item
             android:id="@+id/advertiser_orders"
             android:icon="@drawable/advertiser_orders"
-            android:title="ההזמנות שלי" />
+            android:title="הכלבים שלי" />
         <item
             android:id="@+id/main_menu"
             android:icon="@drawable/main_menu"
