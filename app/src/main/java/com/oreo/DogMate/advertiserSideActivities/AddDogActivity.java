@@ -64,7 +64,7 @@ public class AddDogActivity extends Advertiser_Navigation {
             return;
         }
         if (TextUtils.isEmpty(nameIn)) {
-            name.setError("נא למלא שם");
+            name.setError("נא לכתוב את גזע הכלב");
             return;
         }
         if (TextUtils.isEmpty(descIn)) {

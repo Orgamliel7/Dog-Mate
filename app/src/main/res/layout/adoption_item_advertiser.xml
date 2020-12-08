@@ -14,11 +14,11 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/nameDog"
+        android:id="@+id/dogBreed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFF"
-        android:text="@string/nameDog"
+        android:text="@string/dogBreed"
         android:textColor="#0C0C0C"
         android:textSize="18sp" />
 

@@ -1225,6 +1225,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id dogBreed
 id dogImage
 id dogName
 id dogPicturesRecycler
@@ -1308,7 +1309,6 @@ id myOrdersadopter
 id my_last_orders_list_view
 id my_menu
 id name
-id nameDog
 id nameInput
 id nav_view
 id nav_view2
@@ -1709,9 +1709,9 @@ string deletedog
 string delivery
 string description
 string dog
+string dogBreed
 string dogDETS
 string dogID
-string dogName
 string dogPictures
 string dog_id
 string dog_id_C
@@ -1742,7 +1742,6 @@ string myMenu
 string myOrders
 string myOrdersadopter
 string myOrdersadvertiser
-string nameDog
 string navigation_drawer_close
 string navigation_drawer_open
 string newORDER
@@ -1750,6 +1749,7 @@ string newOrder
 string noRes
 string numOfOrder
 string numOfOrderC
+string og
 string orderDetails
 string passwordApprove
 string password_toggle_content_description

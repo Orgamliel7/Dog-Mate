@@ -43,7 +43,7 @@ public class AdoptionAdapterAdopter extends ArrayAdapter<Adoption> {
         TextView date = listViewItem.findViewById(R.id.dateOrder);
         TextView pay = listViewItem.findViewById(R.id.PayOrder);
         TextView recievedOrder = listViewItem.findViewById(R.id.recievedOrder);
-        TextView nameDog = listViewItem.findViewById(R.id.nameDog);
+        TextView nameDog = listViewItem.findViewById(R.id.dogBreed);
         TextView comments = listViewItem.findViewById(R.id.Comment);
 
         Adoption adoption = ordersList.get(position);
@@ -57,7 +57,7 @@ public class AdoptionAdapterAdopter extends ArrayAdapter<Adoption> {
         B_floor.setText("קומה: " + adoption.getAdvertiser().getAddress().getFloor());
         B_appartment.setText("דירה: " + adoption.getAdvertiser().getAddress().getAppartmentNumber());
         date.setText("תאריך: " + adoption.getDate());
-        nameDog.setText("שם הכלב: " + adoption.getDog().getName());
+        nameDog.setText("גזע הכלב: " + adoption.getDog().getName());
         comments.setText("הערות: " + adoption.getComments());
         if(adoption.isCard() == true){
             pay.setText("אמצעי תשלום: אשראי");

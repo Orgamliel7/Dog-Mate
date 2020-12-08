@@ -70,10 +70,10 @@
         android:id="@+id/totalPay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="גיל הכלב"
         android:background="#FFFFFF"
+        android:text="גיל הכלב"
         android:textColor="#000"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/adopt"
