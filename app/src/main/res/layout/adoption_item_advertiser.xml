@@ -61,25 +61,25 @@
                 android:id="@+id/adopterAppartment"
                 android:layout_width="67dp"
                 android:layout_height="match_parent"
-                android:background="#FFFF"
-                android:text="@string/adopterAppartment"
-                android:textColor="#0C0C0C" />
+                android:background="#FFFF"/>
+<!--                android:text="@string/adopterAppartment"-->
+<!--                android:textColor="#0C0C0C" -->
 
             <TextView
                 android:id="@+id/adopterFloor"
                 android:layout_width="74dp"
                 android:layout_height="match_parent"
-                android:background="#FFFF"
-                android:text="@string/adopterFloor"
-                android:textColor="#0C0C0C" />
+                android:background="#FFFF"/>
+<!--                android:text="@string/adopterFloor"-->
+<!--                android:textColor="#0C0C0C" -->
 
             <TextView
                 android:id="@+id/adopterNumHouse"
                 android:layout_width="91dp"
                 android:layout_height="match_parent"
-                android:background="#FFFF"
-                android:text="@string/adopterNumHouse"
-                android:textColor="#0C0C0C" />
+                android:background="#FFFF"/>
+<!--                android:text="@string/adopterNumHouse"-->
+<!--                android:textColor="#0C0C0C" -->
 
             <TextView
                 android:id="@+id/adopterStreet"

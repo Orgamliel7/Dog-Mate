@@ -63,27 +63,28 @@
                 android:layout_width="70dp"
                 android:layout_height="37dp"
                 android:layout_column="5"
-                android:background="#FFFF"
-                android:text="@string/advertiserAppartment"
-                android:textColor="#0C0C0C" />
+                android:background="#FFFF"/>
+<!--                android:text="@string/advertiserAppartment"-->
+<!--                android:textColor="#0C0C0C" -->
+
 
             <TextView
                 android:id="@+id/advertiserFloor"
                 android:layout_width="72dp"
                 android:layout_height="37dp"
                 android:layout_column="4"
-                android:background="#FFFF"
-                android:text="@string/advertiserFloor"
-                android:textColor="#0C0C0C" />
+                android:background="#FFFF"/>
+<!--                android:text="@string/advertiserFloor"-->
+<!--                android:textColor="#0C0C0C" -->
 
             <TextView
                 android:id="@+id/advertiserNumHouse"
                 android:layout_width="90dp"
                 android:layout_height="37dp"
                 android:layout_column="3"
-                android:background="#FFFF"
-                android:text="@string/advertiserNumHouse"
-                android:textColor="#0C0C0C" />
+                android:background="#FFFF"/>
+<!--                android:text="@string/advertiserNumHouse"-->
+<!--                android:textColor="#0C0C0C" -->
 
             <TextView
                 android:id="@+id/advertiserStreet"

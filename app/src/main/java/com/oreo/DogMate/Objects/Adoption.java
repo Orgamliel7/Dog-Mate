@@ -16,7 +16,7 @@ public class Adoption implements Serializable {
     String comments;
 
     boolean card;// true means pay by card, false means pay by cash
-    boolean delivery;//true means delivery from the advertiser, false means self-delivery
+    boolean delivery;//true means apartment from the advertiser, false means self-apartment
 
     public Adoption(Adopter adopter, Advertiser advertiser, Dog dog, String date,
                     String comments, boolean card, boolean delivery) {

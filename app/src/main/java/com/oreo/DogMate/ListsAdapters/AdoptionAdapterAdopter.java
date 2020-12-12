@@ -39,7 +39,7 @@ public class AdoptionAdapterAdopter extends ArrayAdapter<Adoption> {
         TextView B_Street = listViewItem.findViewById(R.id.advertiserStreet);
         TextView B_House = listViewItem.findViewById(R.id.advertiserNumHouse);
         TextView B_floor = listViewItem.findViewById(R.id.advertiserFloor);
-        TextView B_appartment = listViewItem.findViewById(R.id.advertiserAppartment);
+        //TextView B_appartment = listViewItem.findViewById(R.id.advertiserAppartment);
         TextView date = listViewItem.findViewById(R.id.dateOrder);
         TextView pay = listViewItem.findViewById(R.id.PayOrder);
         TextView recievedOrder = listViewItem.findViewById(R.id.recievedOrder);
@@ -53,24 +53,24 @@ public class AdoptionAdapterAdopter extends ArrayAdapter<Adoption> {
         B_name.setText("שם המפרסם: " + adoption.getAdvertiser().getFull_name());
         B_City.setText("עיר: " + adoption.getAdvertiser().getAddress().getCity());
         B_Street.setText("רחוב: " + adoption.getAdvertiser().getAddress().getStreetName());
-        B_House.setText("מספר בית: " + adoption.getAdvertiser().getAddress().getBuildingNumber());
-        B_floor.setText("קומה: " + adoption.getAdvertiser().getAddress().getFloor());
-        B_appartment.setText("דירה: " + adoption.getAdvertiser().getAddress().getAppartmentNumber());
+       // B_House.setText("מספר בית: " + adoption.getAdvertiser().getAddress().getBuildingNumber());
+       // B_floor.setText("קומה: " + adoption.getAdvertiser().getAddress().getFloor());
+       // B_appartment.setText("דירה: " + adoption.getAdvertiser().getAddress().getAppartmentNumber());
         date.setText("תאריך: " + adoption.getDate());
         nameDog.setText("גזע הכלב: " + adoption.getDog().getName());
         comments.setText("הערות: " + adoption.getComments());
         if(adoption.isCard() == true){
-            pay.setText("אמצעי תשלום: אשראי");
+            pay.setText("עובד?: לא");
         }
         else {
-            pay.setText("אמצעי תשלום: מזומן");
+            pay.setText("עובד?: כן");
         }
 
         if (adoption.isDelivery()==true){
-            recievedOrder.setText("קבלת הכלב: משלוח");
+            recievedOrder.setText("סוג בית: דירה");
         }
         else{
-            recievedOrder.setText("קבלת הכלב: איסוף עצמי");
+            recievedOrder.setText("סוג בית: בית פרטי");
         }
         return listViewItem;
     }

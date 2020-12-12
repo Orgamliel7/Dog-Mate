@@ -2,8 +2,6 @@ package com.oreo.DogMate.adopterSideActivities;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,7 +23,10 @@ import com.oreo.DogMate.Objects.Advertiser;
 import com.oreo.DogMate.Objects.Dog;
 import com.oreo.DogMate.R;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -35,10 +36,10 @@ import androidx.annotation.Nullable;
  */
 public class AdoptDogActivity extends Adopter_Navigation {
 
-    Button Adopt, date;
+    Button Adopt;
     EditText comment;
-    RadioButton cash,card, delivery, pickup;
-    String dateS,commentS;
+    RadioButton cash, work, typeOfHouse, pickup;
+    String dateS, commentS;
     FirebaseDatabase DB;
     FirebaseAuth auth;
     DatabaseReference adoptionsAdoRef;
@@ -52,10 +53,9 @@ public class AdoptDogActivity extends Adopter_Navigation {
     String orderNum;
     boolean creditCard;
     boolean deliveryBool;
-    int year,month,day;
+    int year, month, day;
     Calendar calendar;
     DatePickerDialog.OnDateSetListener mDateListener;
-
 
 
     @Override
@@ -68,11 +68,11 @@ public class AdoptDogActivity extends Adopter_Navigation {
         advertiser = (Advertiser) intent.getSerializableExtra("Advertiser");
         dog.getName();
         Adopt = findViewById(R.id.adopt);
-        date = (Button) findViewById(R.id.inputDate);
+
         comment = findViewById(R.id.commentInput);
         cash = findViewById(R.id.cash);
-        card = findViewById(R.id.creditCard);
-        delivery = findViewById(R.id.delivery);
+        work = findViewById(R.id.creditCard);
+        typeOfHouse = findViewById(R.id.delivery);
         pickup = findViewById(R.id.selfDelivery);
         creditCard = false;
         deliveryBool = false;
@@ -83,27 +83,11 @@ public class AdoptDogActivity extends Adopter_Navigation {
         adoptionsAdoRef = DB.getReference("Adoptions/Adopter Adoptions");
         adopterRef = DB.getReference("Users").child("Adopter").child(userID);
         //adding a date chooser
-        date.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DatePickerDialog dialog =  new DatePickerDialog(
-                        AdoptDogActivity.this,
-                        android.R.style.Theme_Holo_Light_Dialog_MinWidth,
-                        mDateListener,
-                        calendar.get(Calendar.YEAR),
-                        calendar.get(Calendar.MONTH),
-                        calendar.get(Calendar.DAY_OF_MONTH)
-                );
 
-                dialog.getWindow().setBackgroundDrawable( new ColorDrawable( Color.TRANSPARENT ) );
-                dialog.show();
-            }
-
-        } );
 
         mDateListener = new DatePickerDialog.OnDateSetListener() {
             @Override
-            public void onDateSet(DatePicker datePicker ,int Year ,int Month ,int Day) {
+            public void onDateSet(DatePicker datePicker, int Year, int Month, int Day) {
                 day = Day;
                 month = Month + 1;
                 year = Year;
@@ -121,7 +105,7 @@ public class AdoptDogActivity extends Adopter_Navigation {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 userID = auth.getCurrentUser().getUid();
-                if(dataSnapshot.hasChild(userID)) {
+                if (dataSnapshot.hasChild(userID)) {
                     adopter = dataSnapshot.child(userID).getValue(Adopter.class);
                 }
             }
@@ -136,37 +120,33 @@ public class AdoptDogActivity extends Adopter_Navigation {
 
     public void CreateNewOrderC(View view) {
         findViewById(R.id.adopt).setEnabled(true);
-        dateS = (day + "/" + month + "/" + year);
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date date2 = new Date();
+        dateS = dateFormat.format(date2);
+        // dateS = (day + "/" + month + "/" + year);
         commentS = comment.getText().toString().trim();
         //validations
-        if(dateS.equals("0/0/0")){
-            date.setError("חובה להזין תאריך!");
-            return;
-        }
-
-        else if((!card.isChecked())&&(!cash.isChecked())){
-            card.setError("חובה לבחור אמצעי תשלום למשלוח!");
+        if ((!work.isChecked()) && (!cash.isChecked())) {
+            work.setError("חובה לבחור!");
             return;
 
-        }
-
-        else if((!delivery.isChecked())&&(!pickup.isChecked())){
-            delivery.setError("חובה לבחור אמצעי איסוף!");
+        } else if ((!typeOfHouse.isChecked()) && (!pickup.isChecked())) {
+            typeOfHouse.setError("חובה לבחור!");
             return;
 
         }
 
-        if(card.isChecked()){
+        if (work.isChecked()) {
             creditCard = true;
 
         }
-        if(delivery.isChecked()){
+        if (typeOfHouse.isChecked()) {
             deliveryBool = true;
         }
         DatabaseReference.CompletionListener completionListener = new DatabaseReference.CompletionListener() {
             @Override
             public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
-                if(databaseError!=null){
+                if (databaseError != null) {
                     Toast.makeText(getApplicationContext(), databaseError.getMessage(),
                             Toast.LENGTH_SHORT).show();
 
@@ -174,13 +154,13 @@ public class AdoptDogActivity extends Adopter_Navigation {
             }
         };
         orderNum = adoptionsAdvRef.push().getKey();
-         adoption = new Adoption(adopter, advertiser, dog,
-                 dateS,commentS,creditCard,deliveryBool);
-        adoptionsAdoRef.child(adopter.getUserID()).child(orderNum).setValue(adoption,completionListener);
-        adoptionsAdvRef.child(advertiser.getUserID()).child(orderNum).setValue(adoption,completionListener);
+        adoption = new Adoption(adopter, advertiser, dog,
+                dateS, commentS, creditCard, deliveryBool);
+        adoptionsAdoRef.child(adopter.getUserID()).child(orderNum).setValue(adoption, completionListener);
+        adoptionsAdvRef.child(advertiser.getUserID()).child(orderNum).setValue(adoption, completionListener);
 
         // when finishing to adoption - moves to the orders list
-        Toast.makeText(AdoptDogActivity.this, "האימוץ בוצע בהצלחה!", Toast.LENGTH_LONG).show();
+        Toast.makeText(AdoptDogActivity.this, "בקשת האימוץ בוצע בהצלחה!", Toast.LENGTH_LONG).show();
         findViewById(R.id.adopt).setEnabled(true);
         startActivity(new Intent(AdoptDogActivity.this, AdopterOrderActivity.class));
     }

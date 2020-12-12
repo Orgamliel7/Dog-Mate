@@ -40,7 +40,7 @@ public class DogAdapter extends ArrayAdapter<Dog> {
         Dog dog = dogs.get(position);
         age.setText("גיל: "+ dog.getAge());
         name.setText("גזע: "+ dog.getName());
-        allerganics.setText("רכיבים אלרגניים: "+ dog.getAllerganics());
+        allerganics.setText("האם היפואלרגני: "+ dog.getAllerganics());
         description.setText("תיאור: "+ dog.getDescription());
 
         return listViewItem;

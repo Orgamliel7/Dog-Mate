@@ -5,7 +5,7 @@
         <item
             android:id="@+id/adopter_orders"
             android:icon="@drawable/adopter_orders"
-            android:title="הכלבים שלי" />
+            android:title="הבקשות שלי" />
         <item
             android:id="@+id/adopt_dog"
             android:icon="@drawable/adopt_dog"

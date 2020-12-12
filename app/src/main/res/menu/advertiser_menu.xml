@@ -5,7 +5,7 @@
         <item
             android:id="@+id/my_menu"
             android:icon="@drawable/my_menu"
-            android:title="התפריט שלי" />
+            android:title="הכלבים שלי" />
         <item
             android:id="@+id/advertiser_orders"
             android:icon="@drawable/advertiser_orders"
