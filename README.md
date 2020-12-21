@@ -1,7 +1,9 @@
 # dogMate
 
-Our application - DogMate - connects between the human being to his best friend
+Our application - DogMate - connects between the human being to his best friend.
+
 The aim of the app is dog's adoption' connection between advertisers to adopters.
+
 One of the advantages is concretic and wide search of dogs to adopt, concering deatils that are important for dogs needs.
 
 ## Target
