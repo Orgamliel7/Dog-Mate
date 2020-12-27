@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adopterSideActivities.mySearchDogActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupAge"
+        android:layout_width="335dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dogAge">
+
+        <RadioButton
+            android:id="@+id/radio_puppy"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/puppy" />
+
+        <!--            android:onClick="onRadioButtonClicked"-->
+        <RadioButton
+            android:id="@+id/radio_adult"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/adult" />
+
+        <RadioButton
+            android:id="@+id/radio_old"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/old" />
+
+        <!--            android:onClick="onRadioButtonClicked"-->
+
+        <!--            android:onClick="onRadioButtonClicked"/>-->
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="335dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="172dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/dogSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/male" />
+
+        <!--            android:onClick="onRadioButtonClicked"-->
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/female" />
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupSize"
+        android:layout_width="335dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_small"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/small" />
+
+        <RadioButton
+            android:id="@+id/radio_medium"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/radio_big"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/big" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/dogAge"
+        android:layout_width="314dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/dog_age"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/dogSize"
+        android:layout_width="321dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/size"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dogGender"
+        android:layout_width="335dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="@string/gender"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupGender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupAge"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="304dp"
+        android:layout_height="28dp"
+        android:text="@string/region"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRegion"
+        android:layout_width="411dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/radio_center"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/center" />
+
+        <RadioButton
+            android:id="@+id/radio_north"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/north" />
+
+        <RadioButton
+            android:id="@+id/radio_south"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/south" />
+
+        <RadioButton
+            android:id="@+id/radio_jerusalem"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/jerusalem" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="232dp"
+        android:text="@string/accept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="start"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

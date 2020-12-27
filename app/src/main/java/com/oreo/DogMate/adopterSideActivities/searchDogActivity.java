@@ -41,7 +41,8 @@ public class searchDogActivity extends Adopter_Navigation {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_dog);search_edit_text = (EditText) findViewById(R.id.search_edit_text2);
+        setContentView(R.layout.activity_search_dog);
+        search_edit_text = (EditText) findViewById(R.id.search_edit_text2);
         noResults = findViewById(R.id.noResults2);
         noResults.setVisibility(View.INVISIBLE);
         listViewdogs = (ListView) findViewById(R.id.listViewdogsC);

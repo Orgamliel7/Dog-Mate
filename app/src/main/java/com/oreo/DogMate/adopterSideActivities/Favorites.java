@@ -22,6 +22,7 @@ import com.oreo.DogMate.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import androidx.annotation.NonNull;
 
@@ -56,7 +57,7 @@ public class Favorites extends Adopter_Navigation {
     @Override
     protected void onStart() {
         super.onStart();
-        userID = FireLog.getCurrentUser().getUid();
+        userID = Objects.requireNonNull(FireLog.getCurrentUser()).getUid();
         AdopterRef = DB.getReference("Users/Adopter").child(userID);
         /**
          * Adding the favorites Advertisers to the advertiserList.
@@ -66,9 +67,9 @@ public class Favorites extends Adopter_Navigation {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 advertiserList.clear();
                 Adopter me =  dataSnapshot.getValue(Adopter.class);
-                    for (Advertiser advertiser : me.getFavorites()) {
-                        advertiserList.add(advertiser);
-                    }
+                if (me != null) {
+                    advertiserList.addAll(me.getFavorites());
+                }
 
                 if (advertiserList.isEmpty()) {
                     Toast.makeText(Favorites.this, "אין מועדפים", Toast.LENGTH_LONG).show();

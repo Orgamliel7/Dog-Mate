@@ -92,6 +92,7 @@ public class SearchMainMenu extends Adopter_Navigation {
     }
 
     public void SearchDog(View view) {
-        startActivity(new Intent(SearchMainMenu.this, searchDogActivity.class));
+        startActivity(new Intent(SearchMainMenu.this,mySearchDogActivity.class));
+//        startActivity(new Intent(SearchMainMenu.this, searchDogActivity.class));
     }
 }

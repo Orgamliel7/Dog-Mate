@@ -120,6 +120,24 @@
     <string name="advertiserdits">מפרסם:</string>
     <string name="move_to_menu">עבור לתפריט</string>
     <string name="delete_from_favorites">מחק מהמועדפים</string>
+    <string name="puppy">גור</string>
+    <string name="adult">בוגר</string>
+    <string name="old">מבוגר</string>
+    <string name="dog_age">גיל הכלב</string>
+    <string name="dog_gender">מין</string>
+    <string name="male">זכר</string>
+    <string name="female">נקבה</string>
+    <string name="size">גודל</string>
+    <string name="small">קטן</string>
+    <string name="gender">מין</string>
+    <string name="region">איזור בארץ</string>
+    <string name="center">מרכז</string>
+    <string name="north">צפון</string>
+    <string name="south">דרום</string>
+    <string name="jerusalem">ירושלים</string>
+    <string name="medium">בינוני</string>
+    <string name="big">גדול</string>
+    <string name="accept">accept</string>
 
 
 </resources>
