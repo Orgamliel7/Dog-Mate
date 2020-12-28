@@ -47,45 +47,45 @@ public class SearchMainMenu extends Adopter_Navigation {
         ordersList = new ArrayList<Adoption>();
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        userID = FireLog.getCurrentUser().getUid();
-        adoptionsAdoRef = DB.getReference("Adoptions/Adopter Adoptions").child(userID);
-        //Will show all the last orders of the user
-        adoptionsAdoRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                ordersList.clear();
-                for (DataSnapshot orderSnapShot : dataSnapshot.getChildren()) {
-                    Adoption adoption = orderSnapShot.getValue(Adoption.class);
-                    ordersList.add(adoption);
-                }
-                if (ordersList.isEmpty()) {
-                    Toast.makeText(SearchMainMenu.this, "אין כלבים במאגר", Toast.LENGTH_LONG).show();
-                    return;
-                }
-                AdoptionAdapterAdopter orderC_Adapter = new AdoptionAdapterAdopter(SearchMainMenu.this, ordersList);
-                ordersListView.setAdapter(orderC_Adapter);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-        //A click on a adoption will move to the dogWatchActivity to re-adoption
-        ordersListView.setOnItemClickListener(new ListView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(SearchMainMenu.this, dogWatchActivityAdopter.class);
-                intent.putExtra("Dog", ordersList.get(i).getDog());
-                intent.putExtra("Advertiser",ordersList.get(i).getAdvertiser());
-                startActivity(intent);
-            }
-
-        });
-    }
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        userID = FireLog.getCurrentUser().getUid();
+//        adoptionsAdoRef = DB.getReference("Adoptions/Adopter Adoptions").child(userID);
+//        //Will show all the last orders of the user
+//        adoptionsAdoRef.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                ordersList.clear();
+//                for (DataSnapshot orderSnapShot : dataSnapshot.getChildren()) {
+//                    Adoption adoption = orderSnapShot.getValue(Adoption.class);
+//                    ordersList.add(adoption);
+//                }
+//                if (ordersList.isEmpty()) {
+//                    Toast.makeText(SearchMainMenu.this, "אין כלבים במאגר", Toast.LENGTH_LONG).show();
+//                    return;
+//                }
+//                AdoptionAdapterAdopter orderC_Adapter = new AdoptionAdapterAdopter(SearchMainMenu.this, ordersList);
+//                ordersListView.setAdapter(orderC_Adapter);
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
+//        //A click on a adoption will move to the dogWatchActivity to re-adoption
+//        ordersListView.setOnItemClickListener(new ListView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Intent intent = new Intent(SearchMainMenu.this, dogWatchActivityAdopter.class);
+//                intent.putExtra("Dog", ordersList.get(i).getDog());
+//                intent.putExtra("Advertiser",ordersList.get(i).getAdvertiser());
+//                startActivity(intent);
+//            }
+//
+//        });
+//    }
 
     public void SearchAdvertiser(View view) {
         startActivity(new Intent(SearchMainMenu.this, SearchAdvertiserActivity.class));

@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/bacground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".adopterSideActivities.mySearchDogActivity"></activity>
+        <activity android:name=".adopterSideActivities.dogsResultsAdopter" />
+        <activity android:name=".adopterSideActivities.mySearchDogActivity" />
         <activity
             android:name=".adopterSideActivities.SearchMainMenu"
             android:theme="@style/AppTheme.NoActionBar" />

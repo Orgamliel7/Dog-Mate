@@ -68,9 +68,9 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
         FireLog = FirebaseAuth.getInstance();
         DB = FirebaseDatabase.getInstance();
         userID = FireLog.getCurrentUser().getUid();
-        imageRef = DB.getReference("Menu").child(userID).child(dog.getDocID()).child("images");
+        imageRef = DB.getReference("Menu").child(userID).child(dog.getDogID()).child("images");
         storage = FirebaseStorage.getInstance();
-        dogRef=DB.getReference("Menu").child(userID).child(dog.getDocID());
+        dogRef=DB.getReference("Menu").child(userID).child(dog.getDogID());
 
 
 

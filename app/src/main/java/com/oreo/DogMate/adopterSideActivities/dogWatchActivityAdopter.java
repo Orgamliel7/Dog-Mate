@@ -72,9 +72,9 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
         FireLog = FirebaseAuth.getInstance();
         DB = FirebaseDatabase.getInstance();
         userID = FireLog.getCurrentUser().getUid();
-        imageRef = DB.getReference("Menu").child(dog.getadvertiserID()).child(dog.getDocID()).child("images");
+        imageRef = DB.getReference("Menu").child(dog.getadvertiserID()).child(dog.getDogID()).child("images");
         storage = FirebaseStorage.getInstance();
-        dogRef=DB.getReference("Menu").child(dog.getadvertiserID()).child(dog.getDocID());
+        dogRef=DB.getReference("Menu").child(dog.getadvertiserID()).child(dog.getDogID());
 
     }
     protected void onStart() {

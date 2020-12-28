@@ -138,6 +138,8 @@
     <string name="medium">בינוני</string>
     <string name="big">גדול</string>
     <string name="accept">accept</string>
+    <string name="dogName">שם הכלב:</string>
+    <string name="needsEducated">מחונך לצרכים</string>
 
 
 </resources>

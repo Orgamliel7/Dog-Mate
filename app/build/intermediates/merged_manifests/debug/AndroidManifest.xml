@@ -23,6 +23,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.oreo.DogMate.adopterSideActivities.dogsResultsAdopter" />
         <activity android:name="com.oreo.DogMate.adopterSideActivities.mySearchDogActivity" />
         <activity
             android:name="com.oreo.DogMate.adopterSideActivities.SearchMainMenu"

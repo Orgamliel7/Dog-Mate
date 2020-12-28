@@ -8,34 +8,45 @@ import java.util.ArrayList;
  * Represent a Dog
  */
 public class Dog implements Serializable {
-    private  String age;
+    private Age age;
     private String name;
+    private Gender gender;
+    private Region region;
+    private Size size;
+    private boolean isNeedsEducated;
+
     private String allerganics;
     private String description;
-    private String docID;
+    private String dogID;
     ArrayList<Upload> images;
     private String imagesID;
     private String advertiserID;
 
-    public Dog(){
+    public Dog() {
         // no args constructor needed
     }
 
-    public Dog(String age, String name, String allerganics, String description, String advertiserID){
-        this.age=age;
-        this.name=name;
-        this.allerganics=allerganics;
-        this.description=description;
+    public Dog(Age age, String name, Size size, Gender gender, Region region, boolean ne, String allerganics, String description, String advertiserID) {
+        this.age = age;
+        this.name = name;
+        this.gender = gender;
+        this.region = region;
+        this.size = size;
+        this.isNeedsEducated = ne;
+        this.allerganics = allerganics;
+        this.description = description;
         images = new ArrayList<Upload>();
         imagesID = "";
-        this.advertiserID=advertiserID;
+        this.advertiserID = advertiserID;
     }
-    public void addImage(Upload upload){
-        if(images==null){
+
+    public void addImage(Upload upload) {
+        if (images == null) {
             images = new ArrayList<Upload>();
         }
         images.add(upload);
     }
+
     public void setImages(ArrayList<Upload> images) {
         this.images = images;
     }
@@ -47,8 +58,9 @@ public class Dog implements Serializable {
     public void setadvertiserID(String advertiserID) {
         this.advertiserID = advertiserID;
     }
-    public ArrayList<Upload> getImages(){
-        if(images==null) images = new ArrayList<>();
+
+    public ArrayList<Upload> getImages() {
+        if (images == null) images = new ArrayList<>();
         return images;
     }
 
@@ -64,7 +76,7 @@ public class Dog implements Serializable {
         return name;
     }
 
-    public String getAge() {
+    public Age getAge() {
         return age;
     }
 
@@ -76,7 +88,7 @@ public class Dog implements Serializable {
         return description;
     }
 
-    public void setAge(String age) {
+    public void setAge(Age age) {
         this.age = age;
     }
 
@@ -92,12 +104,43 @@ public class Dog implements Serializable {
         this.description = description;
     }
 
-    public void setDocID(String docID) {
-        this.docID = docID;
+    public void setDogID(String dogID) {
+        this.dogID = dogID;
     }
 
-    public String getDocID() {
-        return docID;
+    public String getDogID() {
+        return dogID;
     }
 
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public Size getSize() {
+        return size;
+    }
+
+    public void setSize(Size size) {
+        this.size = size;
+    }
+
+    public Region getRegion() {
+        return region;
+    }
+
+    public void setRegion(Region region) {
+        this.region = region;
+    }
+
+    public boolean isNeedsEducated() {
+        return isNeedsEducated;
+    }
+
+    public void setNeedsEducated(boolean needsEducated) {
+        isNeedsEducated = needsEducated;
+    }
 }

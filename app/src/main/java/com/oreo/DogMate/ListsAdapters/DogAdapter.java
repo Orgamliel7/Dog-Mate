@@ -1,5 +1,6 @@
 package com.oreo.DogMate.ListsAdapters;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,22 +27,23 @@ public class DogAdapter extends ArrayAdapter<Dog> {
 
     }
 
+    @SuppressLint("SetTextI18n")
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater =  context.getLayoutInflater();
-        View listViewItem = inflater.inflate(R.layout.list_dog_item, null, true);
+        @SuppressLint("ViewHolder") View listViewItem = inflater.inflate(R.layout.list_dog_item, null, true);
 
-        TextView age = listViewItem.findViewById(R.id.age);
         TextView name = listViewItem.findViewById(R.id.dogName);
-        TextView allerganics = listViewItem.findViewById(R.id.allerganics);
-        TextView description = listViewItem.findViewById(R.id.descript);
+        TextView age = listViewItem.findViewById(R.id.age);
+        TextView region = listViewItem.findViewById(R.id.region);
+        TextView gender = listViewItem.findViewById(R.id.gender);
 
         Dog dog = dogs.get(position);
-        age.setText("גיל: "+ dog.getAge());
-        name.setText("גזע: "+ dog.getName());
-        allerganics.setText("האם היפואלרגני: "+ dog.getAllerganics());
-        description.setText("תיאור: "+ dog.getDescription());
+        age.setText("גיל: "+ dog.getAge().name());
+        name.setText("שם: "+ dog.getName());
+        region.setText("איזור בארץ: "+ dog.getRegion().name());
+        gender.setText("מין: "+ dog.getGender().name());
 
         return listViewItem;
     }

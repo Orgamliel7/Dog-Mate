@@ -28,7 +28,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/descript"
+        android:id="@+id/gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:lineSpacingExtra="8sp"
@@ -39,7 +39,7 @@
         android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/allerganics"
+        android:id="@+id/region"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:lineSpacingExtra="8sp"

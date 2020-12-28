@@ -46,48 +46,48 @@ public class advertiserMenuActivity extends Advertiser_Navigation {
         DB = FirebaseDatabase.getInstance();
         FireLog = FirebaseAuth.getInstance();
 
-        dogList = new ArrayList<Dog>();
+        dogList = new ArrayList<>();
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        userID = FireLog.getCurrentUser().getUid();
-        menu = DB.getReference("Menu").child(userID);
-        menu.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                dogList.clear();
-
-                for (DataSnapshot dogSnapShot : dataSnapshot.getChildren()) {
-                    Dog dog = dogSnapShot.getValue(Dog.class);
-                    dogList.add(dog);
-                }
-                if (dogList.isEmpty()) {
-                    Toast.makeText(advertiserMenuActivity.this, "התפריט ריק! הוסף כלב חדש", Toast.LENGTH_LONG).show();
-                    moveToAdddog();
-                    return;
-                }
-                DogAdapter dogAdapter = new DogAdapter(advertiserMenuActivity.this, dogList);
-                listViewdogs.setAdapter(dogAdapter);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-        listViewdogs.setOnItemClickListener(new ListView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(advertiserMenuActivity.this, WatchDogAdvertiserActivity.class);
-                intent.putExtra("Dog", dogList.get(i));
-                startActivity(intent);
-            }
-        });
-
-    }
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        userID = FireLog.getCurrentUser().getUid();
+//        menu = DB.getReference("Menu").child(userID);
+//        menu.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                dogList.clear();
+//
+//                for (DataSnapshot dogSnapShot : dataSnapshot.getChildren()) {
+//                    Dog dog = dogSnapShot.getValue(Dog.class);
+//                    dogList.add(dog);
+//                }
+//                if (dogList.isEmpty()) {
+//                    Toast.makeText(advertiserMenuActivity.this, "התפריט ריק! הוסף כלב חדש", Toast.LENGTH_LONG).show();
+//                    moveToAdddog();
+//                    return;
+//                }
+//                DogAdapter dogAdapter = new DogAdapter(advertiserMenuActivity.this, dogList);
+//                listViewdogs.setAdapter(dogAdapter);
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
+//        listViewdogs.setOnItemClickListener(new ListView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Intent intent = new Intent(advertiserMenuActivity.this, WatchDogAdvertiserActivity.class);
+//                intent.putExtra("Dog", dogList.get(i));
+//                startActivity(intent);
+//            }
+//        });
+//
+//    }
     public void moveToAdddog() {
         Intent intent = new Intent(advertiserMenuActivity.this, AddDogActivity.class);
         startActivity(intent);

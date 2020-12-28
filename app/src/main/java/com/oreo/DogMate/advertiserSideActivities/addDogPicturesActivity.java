@@ -63,9 +63,9 @@ public class addDogPicturesActivity extends Advertiser_Navigation {
         DB = FirebaseDatabase.getInstance();
         FireLog = FirebaseAuth.getInstance();
         userID = FireLog.getCurrentUser().getUid();
-        storageReference = FirebaseStorage.getInstance().getReference("Menu").child(userID).child(dog.getDocID());
-        picRef = DB.getReference("Menu").child(userID).child(dog.getDocID());
-        dogsRef = DB.getReference("dogs").child(dog.getDocID());
+        storageReference = FirebaseStorage.getInstance().getReference("Menu").child(userID).child(dog.getDogID());
+        picRef = DB.getReference("Menu").child(userID).child(dog.getDogID());
+        dogsRef = DB.getReference("dogs").child(dog.getDogID());
 
 
 

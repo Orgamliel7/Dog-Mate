@@ -16,28 +16,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.789"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/dogAge">
+        app:layout_constraintTop_toTopOf="@+id/dogAgeAdver">
 
         <RadioButton
             android:id="@+id/radio_puppy"
-            android:layout_width="93dp"
+            android:layout_width="107dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedAge"
             android:text="@string/puppy" />
 
         <!--            android:onClick="onRadioButtonClicked"-->
         <RadioButton
             android:id="@+id/radio_adult"
-            android:layout_width="99dp"
+            android:layout_width="122dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedAge"
             android:text="@string/adult" />
 
         <RadioButton
             android:id="@+id/radio_old"
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedAge"
             android:text="@string/old" />
 
         <!--            android:onClick="onRadioButtonClicked"-->
@@ -48,22 +51,23 @@
 
     <RadioGroup
         android:id="@+id/radioGroupGender"
-        android:layout_width="335dp"
-        android:layout_height="35dp"
+        android:layout_width="231dp"
+        android:layout_height="31dp"
         android:layout_marginTop="172dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/dogSize"
+        app:layout_constraintBottom_toTopOf="@+id/dogSizeAdver"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
             android:id="@+id/radio_male"
-            android:layout_width="93dp"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedGender"
             android:text="@string/male" />
 
         <!--            android:onClick="onRadioButtonClicked"-->
@@ -72,10 +76,10 @@
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedGender"
             android:text="@string/female" />
 
     </RadioGroup>
-
 
     <RadioGroup
         android:id="@+id/radioGroupSize"
@@ -92,6 +96,7 @@
             android:layout_width="93dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedSize"
             android:text="@string/small" />
 
         <RadioButton
@@ -99,6 +104,7 @@
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedSize"
             android:text="@string/medium" />
 
         <RadioButton
@@ -106,13 +112,14 @@
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedSize"
             android:text="@string/big" />
 
     </RadioGroup>
 
 
     <TextView
-        android:id="@+id/dogAge"
+        android:id="@+id/dogAgeAdver"
         android:layout_width="314dp"
         android:layout_height="33dp"
         android:layout_marginTop="28dp"
@@ -127,7 +134,7 @@
 
 
     <TextView
-        android:id="@+id/dogSize"
+        android:id="@+id/dogSizeAdver"
         android:layout_width="321dp"
         android:layout_height="35dp"
         android:layout_marginBottom="8dp"
@@ -141,7 +148,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/dogGender"
+        android:id="@+id/dogGenderAdver"
         android:layout_width="335dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
@@ -157,7 +164,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/regionAdver"
         android:layout_width="304dp"
         android:layout_height="28dp"
         android:text="@string/region"
@@ -173,13 +180,15 @@
     <RadioGroup
         android:id="@+id/radioGroupRegion"
         android:layout_width="411dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="361dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/search_needs_educated"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
@@ -187,6 +196,7 @@
             android:layout_width="93dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedRegion"
             android:text="@string/center" />
 
         <RadioButton
@@ -194,20 +204,23 @@
             android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedRegion"
             android:text="@string/north" />
 
         <RadioButton
             android:id="@+id/radio_south"
-            android:layout_width="99dp"
+            android:layout_width="88dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedRegion"
             android:text="@string/south" />
 
         <RadioButton
             android:id="@+id/radio_jerusalem"
-            android:layout_width="99dp"
+            android:layout_width="89dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:onClick="onRadioButtonClickedRegion"
             android:text="@string/jerusalem" />
 
     </RadioGroup>
@@ -216,13 +229,25 @@
         android:id="@+id/buttonAccept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="120dp"
+        android:onClick="start"
         android:text="@string/accept"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="start"/>
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/search_needs_educated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="273dp"
+        android:text="@string/needsEducated"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupRegion"
+        android:onClick="onCheckboxClicked"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
