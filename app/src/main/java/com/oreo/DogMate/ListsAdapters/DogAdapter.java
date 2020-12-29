@@ -59,10 +59,11 @@ public class DogAdapter extends ArrayAdapter<Dog> {
         final ImageView imageView = listViewItem.findViewById(R.id.img);
 
         Dog dog = dogs.get(position);
+        final boolean[] success = {false};
 
         if (dog.getImages().size() > 0) {
             FirebaseStorage storage = FirebaseStorage.getInstance();
-            StorageReference storageReference = storage.getReferenceFromUrl("gs://dogmate-c8039.appspot.com/Menu").child(dog.getadvertiserID() + "/" + dog.getDogID() + "/" +dog.getImages().get(0).getName() + ".jpg");
+            StorageReference storageReference = storage.getReferenceFromUrl("gs://dogmate-c8039.appspot.com/Menu").child(dog.getadvertiserID() + "/" + dog.getDogID() + "/" + dog.getImages().get(0).getName() + ".jpg");
 
             try {
                 final File file = File.createTempFile("image", "jpg");
@@ -71,16 +72,44 @@ public class DogAdapter extends ArrayAdapter<Dog> {
                     public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
                         Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
                         imageView.setImageBitmap(bitmap);
+                        success[0] = true;
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(context, "failed", Toast.LENGTH_SHORT).show();
                     }
                 });
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
+
+            if (!success[0]) {
+                FirebaseStorage storage1 = FirebaseStorage.getInstance();
+                StorageReference storageReference1 = storage1.getReferenceFromUrl("gs://dogmate-c8039.appspot.com/Menu").child(dog.getadvertiserID() + "/" + dog.getDogID() + "/" + dog.getImages().get(0).getName() + ".png");
+
+                try {
+                    final File file = File.createTempFile("image", "png");
+                    storageReference1.getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+                            imageView.setImageBitmap(bitmap);
+                            success[0] = true;
+                        }
+
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(context, "failed", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
         }
         age.setText("גיל: " + dog.getAge().name());
         name.setText("שם: " + dog.getName());

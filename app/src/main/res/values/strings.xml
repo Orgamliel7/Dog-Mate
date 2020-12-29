@@ -147,6 +147,7 @@
     <string name="suitsToApartment">מתאים לדירה</string>
     <string name="search">חיפוש</string>
     <string name="dogs_s_pic">dogs\'s pic</string>
+    <string name="sendRequest">שלח בקשה</string>
 
 
 </resources>

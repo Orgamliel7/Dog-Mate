@@ -27,6 +27,7 @@ import com.oreo.DogMate.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -60,7 +61,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
         listViewdogs = (ListView) findViewById(R.id.listViewdogsC);
         DB = FirebaseDatabase.getInstance();
         FireLog = FirebaseAuth.getInstance();
-        userID = FireLog.getCurrentUser().getUid();
+        userID = Objects.requireNonNull(FireLog.getCurrentUser()).getUid();
         dogList = new ArrayList<Dog>();
         search_edit_text.addTextChangedListener(new TextWatcher() {
             @Override
@@ -84,7 +85,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
     }
 
     private void cleanFilter() {
-        userID = FireLog.getCurrentUser().getUid();
+        userID = Objects.requireNonNull(FireLog.getCurrentUser()).getUid();
         menuForadopter = DB.getReference("Menu").child(advertiser.getUserID());
         menuForadopter.addValueEventListener(new ValueEventListener() {
             @Override
@@ -92,7 +93,9 @@ public class AdopterMenuActivity extends Adopter_Navigation {
                 dogList.clear();
                 for (DataSnapshot dogSnapShot : dataSnapshot.getChildren()) {
                     Dog dog = dogSnapShot.getValue(Dog.class);
-                    dogList.add(dog);
+                    if (dog != null) {
+                        dogList.add(dog);
+                    }
                 }
 
                 DogAdapter dogAdapter = new DogAdapter(AdopterMenuActivity.this, dogList);
@@ -109,7 +112,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
     @Override
     protected void onStart() {
         super.onStart();
-        userID = FireLog.getCurrentUser().getUid();
+        userID = Objects.requireNonNull(FireLog.getCurrentUser()).getUid();
         menuForadopter = DB.getReference("Menu").child(advertiser.getUserID());
         menuForadopter.addValueEventListener(new ValueEventListener() {
             @Override
@@ -117,7 +120,9 @@ public class AdopterMenuActivity extends Adopter_Navigation {
                 dogList.clear();
                 for (DataSnapshot dogSnapShot : dataSnapshot.getChildren()) {
                     Dog dog = dogSnapShot.getValue(Dog.class);
-                    dogList.add(dog);
+                    if (dog!=null) {
+                        dogList.add(dog);
+                    }
                 }
 
                 DogAdapter dogAdapter = new DogAdapter(AdopterMenuActivity.this, dogList);
@@ -135,11 +140,13 @@ public class AdopterMenuActivity extends Adopter_Navigation {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 me = dataSnapshot.getValue(Adopter.class);
-                for (int i = 0; i < me.getFavorites().size(); i++) {
-                    if(me.getFavorites().get(i).getUserID().equals(advertiser.getUserID())){
-                        Button button = (Button) findViewById(R.id.addtoFavorites);
-                        button.setClickable(false);
-                        button.setText("זהו מפרסם מועדף עליי!");
+                if (me != null) {
+                    for (int i = 0; i < me.getFavorites().size(); i++) {
+                        if (me.getFavorites().get(i).getUserID().equals(advertiser.getUserID())) {
+                            Button button = (Button) findViewById(R.id.addtoFavorites);
+                            button.setClickable(false);
+                            button.setText("זהו מפרסם מועדף עליי!");
+                        }
                     }
                 }
             }
@@ -171,7 +178,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
         menuForadopter = DB.getReference("Menu").child(advertiser.getUserID());
         menuForadopter.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 /*
                  * Clear the list for every new search
                  * */
@@ -181,9 +188,11 @@ public class AdopterMenuActivity extends Adopter_Navigation {
                  * */
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Dog dog = snapshot.getValue(Dog.class);
-                    String name = dog.getName();
-                    if (name.toLowerCase().trim().contains(searchedText)) {
-                        dogList.add(dog);
+                    if (dog!=null) {
+                        String name = dog.getName();
+                        if (name.toLowerCase().trim().contains(searchedText)) {
+                            dogList.add(dog);
+                        }
                     }
                 }
                 if (dogList.isEmpty()) {
@@ -194,7 +203,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseError) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
         });
@@ -212,8 +221,11 @@ public class AdopterMenuActivity extends Adopter_Navigation {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 me = dataSnapshot.getValue(Adopter.class);
-                me.addAdvertiser(advertiser);
-                adopterRef.setValue(me, completionListener);
+                if (me != null) {
+                    me.addAdvertiser(advertiser);
+                    adopterRef.setValue(me, completionListener);
+
+                }
             }
 
             @Override
@@ -221,7 +233,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
 
             }
 
-            DatabaseReference.CompletionListener completionListener = new DatabaseReference.CompletionListener() {
+            final DatabaseReference.CompletionListener completionListener = new DatabaseReference.CompletionListener() {
                 @Override
                 public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
                     if (databaseError != null) {

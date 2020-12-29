@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -14,11 +15,11 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/dogBreed"
+        android:id="@+id/dog_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFF"
-        android:text="@string/dogBreed"
+        android:text="@string/dogName"
         android:textColor="#0C0C0C"
         android:textSize="18sp" />
 
@@ -55,43 +56,14 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/adopterAppartment"
-                android:layout_width="67dp"
-                android:layout_height="match_parent"
-                android:background="#FFFF"/>
-<!--                android:text="@string/adopterAppartment"-->
-<!--                android:textColor="#0C0C0C" -->
 
-            <TextView
-                android:id="@+id/adopterFloor"
-                android:layout_width="74dp"
-                android:layout_height="match_parent"
-                android:background="#FFFF"/>
-<!--                android:text="@string/adopterFloor"-->
-<!--                android:textColor="#0C0C0C" -->
-
-            <TextView
-                android:id="@+id/adopterNumHouse"
-                android:layout_width="91dp"
-                android:layout_height="match_parent"
-                android:background="#FFFF"/>
-<!--                android:text="@string/adopterNumHouse"-->
-<!--                android:textColor="#0C0C0C" -->
-
-            <TextView
-                android:id="@+id/adopterStreet"
-                android:layout_width="86dp"
-                android:layout_height="match_parent"
-                android:background="#FFFF"
-                android:text="@string/adopterStreet"
-                android:textColor="#0C0C0C" />
 
             <TextView
                 android:id="@+id/adopterCity"
-                android:layout_width="91dp"
+                android:layout_width="401dp"
                 android:layout_height="33dp"
                 android:background="#FFFF"
                 android:text="@string/adopterCity"
@@ -106,24 +78,6 @@
         android:layout_height="wrap_content"
         android:background="#FFFF"
         android:text="@string/Comment"
-        android:textColor="#0C0C0C"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/PayOrder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFF"
-        android:text="@string/PayOrder"
-        android:textColor="#0C0C0C"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/recievedOrder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFF"
-        android:text="@string/recievedOrder"
         android:textColor="#0C0C0C"
         android:textSize="18sp" />
 

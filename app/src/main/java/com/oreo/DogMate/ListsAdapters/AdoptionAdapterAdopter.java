@@ -1,5 +1,6 @@
 package com.oreo.DogMate.ListsAdapters;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,19 +32,15 @@ public class AdoptionAdapterAdopter extends ArrayAdapter<Adoption> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
-        View listViewItem = inflater.inflate(R.layout.adoption_item_adopter, null, true);
+        @SuppressLint("ViewHolder") View listViewItem = inflater.inflate(R.layout.adoption_item_adopter, null, true);
         TextView B_phone = listViewItem.findViewById(R.id.advertiserPhone);
         TextView B_name = listViewItem.findViewById(R.id.advertiserName);
         TextView B_email = listViewItem.findViewById(R.id.advertiserEmail);
         TextView B_City = listViewItem.findViewById(R.id.advertiserCity);
-        TextView B_Street = listViewItem.findViewById(R.id.advertiserStreet);
-        TextView B_House = listViewItem.findViewById(R.id.advertiserNumHouse);
-        TextView B_floor = listViewItem.findViewById(R.id.advertiserFloor);
+
         //TextView B_appartment = listViewItem.findViewById(R.id.advertiserAppartment);
         TextView date = listViewItem.findViewById(R.id.dateOrder);
-        TextView pay = listViewItem.findViewById(R.id.PayOrder);
-        TextView recievedOrder = listViewItem.findViewById(R.id.recievedOrder);
-        TextView nameDog = listViewItem.findViewById(R.id.dogBreed);
+        TextView nameDog = listViewItem.findViewById(R.id.dog_name);
         TextView comments = listViewItem.findViewById(R.id.Comment);
 
         Adoption adoption = ordersList.get(position);
@@ -52,26 +49,10 @@ public class AdoptionAdapterAdopter extends ArrayAdapter<Adoption> {
         B_phone.setText("טלפון המפרסם: " + adoption.getAdvertiser().getPhone());
         B_name.setText("שם המפרסם: " + adoption.getAdvertiser().getFull_name());
         B_City.setText("עיר: " + adoption.getAdvertiser().getAddress().getCity());
-        B_Street.setText("רחוב: " + adoption.getAdvertiser().getAddress().getStreetName());
-       // B_House.setText("מספר בית: " + adoption.getAdvertiser().getAddress().getBuildingNumber());
-       // B_floor.setText("קומה: " + adoption.getAdvertiser().getAddress().getFloor());
-       // B_appartment.setText("דירה: " + adoption.getAdvertiser().getAddress().getAppartmentNumber());
         date.setText("תאריך: " + adoption.getDate());
-        nameDog.setText("גזע הכלב: " + adoption.getDog().getName());
-        comments.setText("הערות: " + adoption.getComments());
-        if(adoption.isCard() == true){
-            pay.setText("עובד?: לא");
-        }
-        else {
-            pay.setText("עובד?: כן");
-        }
+        nameDog.setText("שם הכלב: " + adoption.getDog().getName());
+        comments.setText(adoption.getRequest());
 
-        if (adoption.isDelivery()==true){
-            recievedOrder.setText("סוג בית: דירה");
-        }
-        else{
-            recievedOrder.setText("סוג בית: בית פרטי");
-        }
         return listViewItem;
     }
 }

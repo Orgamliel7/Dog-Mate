@@ -1,5 +1,6 @@
 package com.oreo.DogMate.adopterSideActivities;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,6 +29,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Objects;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -37,9 +40,8 @@ import androidx.annotation.Nullable;
 public class AdoptDogActivity extends Adopter_Navigation {
 
     Button Adopt;
-    EditText comment;
-    RadioButton cash, work, typeOfHouse, pickup;
-    String dateS, commentS;
+    EditText editTextInfo;
+    String dateS, info;
     FirebaseDatabase DB;
     FirebaseAuth auth;
     DatabaseReference adoptionsAdoRef;
@@ -51,8 +53,7 @@ public class AdoptDogActivity extends Adopter_Navigation {
     Adopter adopter;
     Adoption adoption;
     String orderNum;
-    boolean creditCard;
-    boolean deliveryBool;
+
     int year, month, day;
     Calendar calendar;
     DatePickerDialog.OnDateSetListener mDateListener;
@@ -66,19 +67,13 @@ public class AdoptDogActivity extends Adopter_Navigation {
         Intent intent = getIntent();
         dog = (Dog) intent.getSerializableExtra("Dog");
         advertiser = (Advertiser) intent.getSerializableExtra("Advertiser");
-        dog.getName();
         Adopt = findViewById(R.id.adopt);
-
-        comment = findViewById(R.id.commentInput);
-        cash = findViewById(R.id.cash);
-        work = findViewById(R.id.creditCard);
-        typeOfHouse = findViewById(R.id.delivery);
-        pickup = findViewById(R.id.selfDelivery);
-        creditCard = false;
-        deliveryBool = false;
+        TextView suggestion = findViewById(R.id.suggestion);
+        editTextInfo = findViewById(R.id.editText);
+        suggestion.setText("ממליצים לכתוב על: \n *רקע כללי,עבודה,משפחה\n * סוג בית \n *האם יש זמן להוציא את הכלב לטיול וכמה פעמים ביום");
         DB = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
-        userID = auth.getCurrentUser().getUid();
+        userID = Objects.requireNonNull(auth.getCurrentUser()).getUid();
         adoptionsAdvRef = DB.getReference("Adoptions/Advertiser Adoptions");
         adoptionsAdoRef = DB.getReference("Adoptions/Adopter Adoptions");
         adopterRef = DB.getReference("Users").child("Adopter").child(userID);
@@ -104,7 +99,7 @@ public class AdoptDogActivity extends Adopter_Navigation {
         adopterRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                userID = auth.getCurrentUser().getUid();
+                userID = Objects.requireNonNull(auth.getCurrentUser()).getUid();
                 if (dataSnapshot.hasChild(userID)) {
                     adopter = dataSnapshot.child(userID).getValue(Adopter.class);
                 }
@@ -120,29 +115,13 @@ public class AdoptDogActivity extends Adopter_Navigation {
 
     public void CreateNewOrderC(View view) {
         findViewById(R.id.adopt).setEnabled(true);
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        @SuppressLint("SimpleDateFormat") DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         Date date2 = new Date();
         dateS = dateFormat.format(date2);
         // dateS = (day + "/" + month + "/" + year);
-        commentS = comment.getText().toString().trim();
-        //validations
-        if ((!work.isChecked()) && (!cash.isChecked())) {
-            work.setError("חובה לבחור!");
-            return;
+        info = editTextInfo.getText().toString().trim();
 
-        } else if ((!typeOfHouse.isChecked()) && (!pickup.isChecked())) {
-            typeOfHouse.setError("חובה לבחור!");
-            return;
 
-        }
-
-        if (work.isChecked()) {
-            creditCard = true;
-
-        }
-        if (typeOfHouse.isChecked()) {
-            deliveryBool = true;
-        }
         DatabaseReference.CompletionListener completionListener = new DatabaseReference.CompletionListener() {
             @Override
             public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
@@ -155,7 +134,7 @@ public class AdoptDogActivity extends Adopter_Navigation {
         };
         orderNum = adoptionsAdvRef.push().getKey();
         adoption = new Adoption(adopter, advertiser, dog,
-                dateS, commentS, creditCard, deliveryBool);
+                dateS, info);
         adoptionsAdoRef.child(adopter.getUserID()).child(orderNum).setValue(adoption, completionListener);
         adoptionsAdvRef.child(advertiser.getUserID()).child(orderNum).setValue(adoption, completionListener);
 

@@ -13,23 +13,19 @@ public class Adoption implements Serializable {
     Dog dog;
 
     String date;
-    String comments;
-
-    boolean card;// true means pay by card, false means pay by cash
-    boolean delivery;//true means apartment from the advertiser, false means self-apartment
+    String request;
 
     public Adoption(Adopter adopter, Advertiser advertiser, Dog dog, String date,
-                    String comments, boolean card, boolean delivery) {
+                    String request) {
         this.adopter = adopter;
         this.advertiser = advertiser;
         this.dog = dog;
         this.date = date;
-        this.comments = comments;
-        this.card = card;
-        this.delivery = delivery;
+        this.request = request;
+
     }
 
-    public Adoption(){
+    public Adoption() {
 
     }
 
@@ -45,29 +41,14 @@ public class Adoption implements Serializable {
         return dog;
     }
 
-    public String getComments() {
-        return comments;
+    public String getRequest() {
+        return request;
     }
 
-    public void setComments(String comments) {
-        this.comments = comments;
+    public void setComments(String request) {
+        this.request = request;
     }
 
-    public boolean isCard() {
-        return card;
-    }
-
-    public void setCard(boolean card) {
-        this.card = card;
-    }
-
-    public boolean isDelivery() {
-        return delivery;
-    }
-
-    public void setDelivery(boolean delivery) {
-        this.delivery = delivery;
-    }
 
     public String getDate() {
         return date;

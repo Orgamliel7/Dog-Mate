@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -135,9 +136,21 @@ public class dogsResultsAdopter extends Adopter_Navigation {
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseError) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
+        });
+
+
+        //Press on a advertiser will move to the advertiser's menu
+        listViewdogs.setOnItemClickListener(new ListView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(dogsResultsAdopter.this, dogWatchActivityAdopter.class);
+                intent.putExtra("Dog", dogList.get(i));
+                startActivity(intent);
+            }
+
         });
 
     }

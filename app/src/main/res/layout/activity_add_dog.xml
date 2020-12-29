@@ -7,45 +7,46 @@
     android:background="@color/colorPrimary"
     android:fillViewport="true">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".advertiserSideActivities.AddDogActivity"
-        tools:ignore="LabelFor">
+        tools:context=".adopterSideActivities.mySearchDogActivity">
 
 
         <RadioGroup
-            android:id="@+id/radioGroupAgeAdver"
+            android:id="@+id/radioGroupAge"
             android:layout_width="335dp"
             android:layout_height="0dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/dogGenderAdver"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.789"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dogAgeAdver">
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--            android:onClick="onRadioButtonClicked"-->
 
             <RadioButton
                 android:id="@+id/radio_puppy_Adver"
-                android:layout_width="107dp"
-                android:layout_height="wrap_content"
+                android:layout_width="113dp"
+                android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedAge"
                 android:text="@string/puppy" />
 
-            <!--            android:onClick="onRadioButtonClicked"-->
             <RadioButton
                 android:id="@+id/radio_adult_Adver"
-                android:layout_width="119dp"
-                android:layout_height="match_parent"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedAge"
                 android:text="@string/adult" />
 
             <RadioButton
                 android:id="@+id/radio_old_Adver"
-                android:layout_width="113dp"
+                android:layout_width="96dp"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedAge"
@@ -57,14 +58,14 @@
         </RadioGroup>
 
         <RadioGroup
-            android:id="@+id/radioGroupGenderAdver"
-            android:layout_width="231dp"
+            android:id="@+id/radioGroupGender"
+            android:layout_width="222dp"
             android:layout_height="0dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="11dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/dogSizeAdver"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.911"
+            app:layout_constraintHorizontal_bias="0.888"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dogGenderAdver">
 
@@ -88,10 +89,10 @@
         </RadioGroup>
 
         <RadioGroup
-            android:id="@+id/radioGroupSizeAdver"
-            android:layout_width="335dp"
+            android:id="@+id/radioGroupSize"
+            android:layout_width="330dp"
             android:layout_height="0dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="19dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/regionAdver"
@@ -100,7 +101,7 @@
 
             <RadioButton
                 android:id="@+id/radio_small_Adver"
-                android:layout_width="93dp"
+                android:layout_width="108dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedSize"
@@ -108,7 +109,7 @@
 
             <RadioButton
                 android:id="@+id/radio_medium_Adver"
-                android:layout_width="99dp"
+                android:layout_width="119dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedSize"
@@ -117,7 +118,7 @@
             <RadioButton
                 android:id="@+id/radio_big_Adver"
                 android:layout_width="99dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedSize"
                 android:text="@string/big" />
@@ -126,16 +127,15 @@
 
         <TextView
             android:id="@+id/dogAgeAdver"
-            android:layout_width="314dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="190dp"
+            android:layout_width="328dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="104dp"
             android:text="@string/dog_age"
             android:textAllCaps="true"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/radioGroupAgeAdver"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.845"
+            app:layout_constraintHorizontal_bias="0.759"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -147,11 +147,11 @@
             android:textAllCaps="true"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/radioGroupSizeAdver"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroupSize"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintHorizontal_bias="0.766"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroupGenderAdver" />
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupGender" />
 
         <TextView
             android:id="@+id/dogGenderAdver"
@@ -161,41 +161,39 @@
             android:text="@string/gender"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/radioGroupGenderAdver"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroupGender"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.802"
+            app:layout_constraintHorizontal_bias="0.736"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroupAgeAdver" />
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupAge" />
 
         <TextView
             android:id="@+id/regionAdver"
-            android:layout_width="304dp"
+            android:layout_width="303dp"
             android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
             android:text="@string/region"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/radioGroupRegionAdver"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroupRegion"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.887"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroupSizeAdver" />
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupSize" />
 
         <RadioGroup
-            android:id="@+id/radioGroupRegionAdver"
-            android:layout_width="411dp"
+            android:id="@+id/radioGroupRegion"
+            android:layout_width="366dp"
             android:layout_height="0dp"
-            android:layout_marginTop="479dp"
-            android:layout_marginBottom="109dp"
+            android:layout_marginBottom="26dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/checkBox_kidsFriendly"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox_needs_educated"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.666"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/regionAdver">
 
             <RadioButton
                 android:id="@+id/radio_center_Adver"
-                android:layout_width="93dp"
+                android:layout_width="82dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedRegion"
@@ -203,7 +201,7 @@
 
             <RadioButton
                 android:id="@+id/radio_north_Adver"
-                android:layout_width="125dp"
+                android:layout_width="98dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedRegion"
@@ -211,7 +209,7 @@
 
             <RadioButton
                 android:id="@+id/radio_south_Adver"
-                android:layout_width="99dp"
+                android:layout_width="97dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedRegion"
@@ -219,20 +217,104 @@
 
             <RadioButton
                 android:id="@+id/radio_jerusalem_Adver"
-                android:layout_width="99dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:onClick="onRadioButtonClickedRegion"
                 android:text="@string/jerusalem" />
 
         </RadioGroup>
 
+        <CheckBox
+            android:id="@+id/checkBox_needs_educated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="17dp"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/needsEducated"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox_kidsFriendly"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupRegion" />
+
+        <CheckBox
+            android:id="@+id/checkBox_isHypoallergenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/hypoallergenic"
+            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox_needs_educated"
+            app:layout_constraintStart_toStartOf="@+id/checkBox_dogsFriendly" />
+
+        <CheckBox
+            android:id="@+id/checkBox_kidsFriendly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="23dp"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/kidsFriendly"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox_catsFriendly"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_needs_educated" />
+
+        <CheckBox
+            android:id="@+id/checkBox_catsFriendly"
+            android:layout_width="130dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="153dp"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/catsFriendly"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_kidsFriendly" />
+
+        <CheckBox
+            android:id="@+id/checkBox_dogsFriendly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="28dp"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/dogsFriendly"
+            app:layout_constraintEnd_toStartOf="@+id/checkBox_kidsFriendly"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_needs_educated" />
+
+        <CheckBox
+            android:id="@+id/checkBox_apartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="119dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="27dp"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/suitsToApartment"
+            app:layout_constraintEnd_toStartOf="@+id/checkBox_catsFriendly"
+            app:layout_constraintHorizontal_bias="0.611"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_dogsFriendly" />
+
+        <EditText
+            android:id="@+id/dog_name_editText"
+            android:layout_width="264dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:inputType="text"
+            android:text="@string/dogName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor" />
+
         <Button
-            android:id="@+id/addPicture"
-            android:layout_width="207dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="164dp"
-            android:layout_marginBottom="16dp"
+            android:id="@+id/addPic"
+            android:layout_width="299dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginBottom="60dp"
             android:background="#FFFFFF"
             android:onClick="addItem"
             android:text="@string/addPicture"
@@ -240,92 +322,336 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <EditText
-            android:id="@+id/dog_name_editText"
-            android:layout_width="256dp"
-            android:layout_height="62dp"
-            android:layout_marginBottom="336dp"
-            android:autofillHints=""
-            android:inputType="text"
-            android:text="@string/dogName"
-            app:layout_constraintBottom_toTopOf="@+id/radioGroupRegionAdver"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.877"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <CheckBox
-            android:id="@+id/checkBox_needs_educated"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="165dp"
-            android:onClick="onCheckboxClicked"
-            android:text="@string/needsEducated"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroupRegionAdver"
-            app:layout_constraintVertical_bias="0.619" />
-
-        <CheckBox
-            android:id="@+id/checkBox_isHypoallergenic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="92dp"
-            android:onClick="onCheckboxClicked"
-            android:text="@string/hypoallergenic"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/radioGroupRegionAdver" />
-
-        <CheckBox
-            android:id="@+id/checkBox_kidsFriendly"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="78dp"
-            android:onClick="onCheckboxClicked"
-            android:text="@string/kidsFriendly"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroupRegionAdver"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <CheckBox
-            android:id="@+id/checkBox_catsFriendly"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:onClick="onCheckboxClicked"
-            android:text="@string/catsFriendly"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox_needs_educated"
-            app:layout_constraintStart_toStartOf="@+id/checkBox_dogsFriendly" />
-
-        <CheckBox
-            android:id="@+id/checkBox_dogsFriendly"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="24dp"
-            android:onClick="onCheckboxClicked"
-            android:text="@string/dogsFriendly"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox_kidsFriendly"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox_catsFriendly" />
-
-        <CheckBox
-            android:id="@+id/checkBox_apartment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="2dp"
-            android:onClick="onCheckboxClicked"
-            android:text="@string/suitsToApartment"
-            app:layout_constraintEnd_toEndOf="@+id/checkBox_dogsFriendly"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox_dogsFriendly" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
 
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@color/colorPrimary"-->
+    <!--    android:fillViewport="true">-->
 
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        tools:context=".advertiserSideActivities.AddDogActivity"-->
+    <!--        tools:ignore="LabelFor">-->
+
+
+    <!--        <RadioGroup-->
+    <!--            android:id="@+id/radioGroupAgeAdver"-->
+    <!--            android:layout_width="335dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_marginBottom="24dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/dogGenderAdver"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.789"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/dogAgeAdver">-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_puppy_Adver"-->
+    <!--                android:layout_width="107dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedAge"-->
+    <!--                android:text="@string/puppy" />-->
+
+    <!--            &lt;!&ndash;            android:onClick="onRadioButtonClicked"&ndash;&gt;-->
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_adult_Adver"-->
+    <!--                android:layout_width="119dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedAge"-->
+    <!--                android:text="@string/adult" />-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_old_Adver"-->
+    <!--                android:layout_width="113dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedAge"-->
+    <!--                android:text="@string/old" />-->
+
+    <!--            &lt;!&ndash;            android:onClick="onRadioButtonClicked"&ndash;&gt;-->
+
+    <!--            &lt;!&ndash;            android:onClick="onRadioButtonClicked"/>&ndash;&gt;-->
+    <!--        </RadioGroup>-->
+
+    <!--        <RadioGroup-->
+    <!--            android:id="@+id/radioGroupGenderAdver"-->
+    <!--            android:layout_width="231dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/dogSizeAdver"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.911"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/dogGenderAdver">-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_male_Adver"-->
+    <!--                android:layout_width="125dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedGender"-->
+    <!--                android:text="@string/male" />-->
+
+    <!--            &lt;!&ndash;            android:onClick="onRadioButtonClicked"&ndash;&gt;-->
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_female_Adver"-->
+    <!--                android:layout_width="99dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedGender"-->
+    <!--                android:text="@string/female" />-->
+
+    <!--        </RadioGroup>-->
+
+    <!--        <RadioGroup-->
+    <!--            android:id="@+id/radioGroupSizeAdver"-->
+    <!--            android:layout_width="335dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_marginEnd="12dp"-->
+    <!--            android:layout_marginBottom="19dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/regionAdver"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/dogSizeAdver">-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_small_Adver"-->
+    <!--                android:layout_width="93dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedSize"-->
+    <!--                android:text="@string/small" />-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_medium_Adver"-->
+    <!--                android:layout_width="99dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedSize"-->
+    <!--                android:text="@string/medium" />-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_big_Adver"-->
+    <!--                android:layout_width="99dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedSize"-->
+    <!--                android:text="@string/big" />-->
+
+    <!--        </RadioGroup>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/dogAgeAdver"-->
+    <!--            android:layout_width="314dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_marginTop="190dp"-->
+    <!--            android:text="@string/dog_age"-->
+    <!--            android:textAllCaps="true"-->
+    <!--            android:textSize="18sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/radioGroupAgeAdver"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.845"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/dogSizeAdver"-->
+    <!--            android:layout_width="321dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:text="@string/size"-->
+    <!--            android:textAllCaps="true"-->
+    <!--            android:textSize="18sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/radioGroupSizeAdver"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.833"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/radioGroupGenderAdver" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/dogGenderAdver"-->
+    <!--            android:layout_width="335dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:text="@string/gender"-->
+    <!--            android:textSize="18sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/radioGroupGenderAdver"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.802"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/radioGroupAgeAdver" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/regionAdver"-->
+    <!--            android:layout_width="304dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:text="@string/region"-->
+    <!--            android:textSize="18sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/radioGroupRegionAdver"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.887"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/radioGroupSizeAdver" />-->
+
+    <!--        <RadioGroup-->
+    <!--            android:id="@+id/radioGroupRegionAdver"-->
+    <!--            android:layout_width="411dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_marginTop="479dp"-->
+    <!--            android:layout_marginBottom="109dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/checkBox_kidsFriendly"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.0"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_center_Adver"-->
+    <!--                android:layout_width="93dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedRegion"-->
+    <!--                android:text="@string/center" />-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_north_Adver"-->
+    <!--                android:layout_width="125dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedRegion"-->
+    <!--                android:text="@string/north" />-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_south_Adver"-->
+    <!--                android:layout_width="99dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedRegion"-->
+    <!--                android:text="@string/south" />-->
+
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/radio_jerusalem_Adver"-->
+    <!--                android:layout_width="99dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:onClick="onRadioButtonClickedRegion"-->
+    <!--                android:text="@string/jerusalem" />-->
+
+    <!--        </RadioGroup>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/addPicture"-->
+    <!--            android:layout_width="207dp"-->
+    <!--            android:layout_height="46dp"-->
+    <!--            android:layout_marginStart="164dp"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:background="#FFFFFF"-->
+    <!--            android:onClick="addItem"-->
+    <!--            android:text="@string/addPicture"-->
+    <!--            android:textSize="30sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/dog_name_editText"-->
+    <!--            android:layout_width="256dp"-->
+    <!--            android:layout_height="62dp"-->
+    <!--            android:layout_marginBottom="336dp"-->
+    <!--            android:autofillHints=""-->
+    <!--            android:inputType="text"-->
+    <!--            android:text="@string/dogName"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/radioGroupRegionAdver"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.877"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--        <CheckBox-->
+    <!--            android:id="@+id/checkBox_needs_educated"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginEnd="16dp"-->
+    <!--            android:layout_marginBottom="165dp"-->
+    <!--            android:onClick="onCheckboxClicked"-->
+    <!--            android:text="@string/needsEducated"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/radioGroupRegionAdver"-->
+    <!--            app:layout_constraintVertical_bias="0.619" />-->
+
+    <!--        <CheckBox-->
+    <!--            android:id="@+id/checkBox_isHypoallergenic"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="300dp"-->
+    <!--            android:layout_marginTop="92dp"-->
+    <!--            android:onClick="onCheckboxClicked"-->
+    <!--            android:text="@string/hypoallergenic"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="@+id/radioGroupRegionAdver" />-->
+
+    <!--        <CheckBox-->
+    <!--            android:id="@+id/checkBox_kidsFriendly"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginEnd="16dp"-->
+    <!--            android:layout_marginBottom="78dp"-->
+    <!--            android:onClick="onCheckboxClicked"-->
+    <!--            android:text="@string/kidsFriendly"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/radioGroupRegionAdver"-->
+    <!--            app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--        <CheckBox-->
+    <!--            android:id="@+id/checkBox_catsFriendly"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="2dp"-->
+    <!--            android:onClick="onCheckboxClicked"-->
+    <!--            android:text="@string/catsFriendly"-->
+    <!--            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox_needs_educated"-->
+    <!--            app:layout_constraintStart_toStartOf="@+id/checkBox_dogsFriendly" />-->
+
+    <!--        <CheckBox-->
+    <!--            android:id="@+id/checkBox_dogsFriendly"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="13dp"-->
+    <!--            android:layout_marginEnd="24dp"-->
+    <!--            android:onClick="onCheckboxClicked"-->
+    <!--            android:text="@string/dogsFriendly"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/checkBox_kidsFriendly"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/checkBox_catsFriendly" />-->
+
+    <!--        <CheckBox-->
+    <!--            android:id="@+id/checkBox_apartment"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="14dp"-->
+    <!--            android:layout_marginEnd="2dp"-->
+    <!--            android:onClick="onCheckboxClicked"-->
+    <!--            android:text="@string/suitsToApartment"-->
+    <!--            app:layout_constraintEnd_toEndOf="@+id/checkBox_dogsFriendly"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/checkBox_dogsFriendly" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--</ScrollView>-->

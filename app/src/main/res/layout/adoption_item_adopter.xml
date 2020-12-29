@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/dateOrder"
@@ -13,13 +15,14 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/dogBreed"
+        android:id="@+id/dog_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFF"
-        android:text="@string/dogBreed"
+        android:text="@string/dogName"
         android:textColor="#0C0C0C"
         android:textSize="18sp" />
+
 
     <TextView
         android:id="@+id/advertiserName"
@@ -56,48 +59,13 @@
         <TableRow
             android:id="@+id/TableRow"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/advertiserAppartment"
-                android:layout_width="70dp"
-                android:layout_height="37dp"
-                android:layout_column="5"
-                android:background="#FFFF"/>
-<!--                android:text="@string/advertiserAppartment"-->
-<!--                android:textColor="#0C0C0C" -->
-
-
-            <TextView
-                android:id="@+id/advertiserFloor"
-                android:layout_width="72dp"
-                android:layout_height="37dp"
-                android:layout_column="4"
-                android:background="#FFFF"/>
-<!--                android:text="@string/advertiserFloor"-->
-<!--                android:textColor="#0C0C0C" -->
-
-            <TextView
-                android:id="@+id/advertiserNumHouse"
-                android:layout_width="90dp"
-                android:layout_height="37dp"
-                android:layout_column="3"
-                android:background="#FFFF"/>
-<!--                android:text="@string/advertiserNumHouse"-->
-<!--                android:textColor="#0C0C0C" -->
-
-            <TextView
-                android:id="@+id/advertiserStreet"
-                android:layout_width="83dp"
-                android:layout_height="37dp"
-                android:layout_column="2"
-                android:background="#FFFF"
-                android:text="@string/advertiserStreet"
-                android:textColor="#0C0C0C" />
 
             <TextView
                 android:id="@+id/advertiserCity"
-                android:layout_width="96dp"
+                android:layout_width="400dp"
                 android:layout_height="37dp"
                 android:layout_column="1"
                 android:background="#FFFF"
@@ -109,28 +77,12 @@
     <TextView
         android:id="@+id/Comment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="273dp"
         android:background="#FFFF"
         android:text="@string/Comment"
+        android:textAlignment="center"
         android:textColor="#0C0C0C"
         android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/PayOrder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFF"
-        android:text="@string/PayOrder"
-        android:textColor="#0C0C0C"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/recievedOrder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFF"
-        android:text="@string/recievedOrder"
-        android:textColor="#0C0C0C"
-        android:textSize="18sp" />
 
 </LinearLayout>
