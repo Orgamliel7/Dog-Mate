@@ -1,4 +1,4 @@
-#Mon Dec 28 16:02:54 IST 2020
+#Tue Dec 29 14:01:51 IST 2020
 base.0=/home/reut/AndroidStudioProjects/DogMate2/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

@@ -140,6 +140,13 @@
     <string name="accept">accept</string>
     <string name="dogName">שם הכלב:</string>
     <string name="needsEducated">מחונך לצרכים</string>
+    <string name="hypoallergenic">היפואלרגני</string>
+    <string name="kidsFriendly">ידידותי לילדים</string>
+    <string name="catsFriendly">ידידותי לחתולים</string>
+    <string name="dogsFriendly">ידידותי לכלבים</string>
+    <string name="suitsToApartment">מתאים לדירה</string>
+    <string name="search">חיפוש</string>
+    <string name="dogs_s_pic">dogs\'s pic</string>
 
 
 </resources>

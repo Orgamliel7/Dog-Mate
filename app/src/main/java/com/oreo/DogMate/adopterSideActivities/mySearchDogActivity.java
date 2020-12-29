@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 
+import com.oreo.DogMate.Navigation.Adopter_Navigation;
 import com.oreo.DogMate.Objects.Age;
 import com.oreo.DogMate.Objects.Gender;
 import com.oreo.DogMate.Objects.Preference;
@@ -17,7 +18,7 @@ import com.oreo.DogMate.Objects.Region;
 import com.oreo.DogMate.Objects.Size;
 import com.oreo.DogMate.R;
 
-public class mySearchDogActivity extends AppCompatActivity {
+public class mySearchDogActivity extends Adopter_Navigation {
     private Preference preference;
 
     @Override
@@ -38,7 +39,22 @@ public class mySearchDogActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.search_needs_educated:
                 if (checked) preference.setNeedsEducated(true);
-
+                break;
+            case R.id.search_isHypo:
+                if (checked) preference.setHypoallergenic(true);
+                break;
+            case R.id.search_kidsFriendly:
+                if (checked) preference.setKidsFriendly(true);
+                break;
+            case R.id.search_catsFriendly:
+                if (checked) preference.setCatsFriendly(true);
+                break;
+            case R.id.search_dogsFriendly:
+                if (checked) preference.setDogsFriendly(true);
+                break;
+            case R.id.search_suitsToApartment:
+                if (checked) preference.setSuitsToApartment(true);
+                break;
 
         }
     }

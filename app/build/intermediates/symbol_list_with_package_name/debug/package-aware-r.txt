@@ -710,6 +710,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1180,6 +1181,11 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id checkBox_apartment
+id checkBox_catsFriendly
+id checkBox_dogsFriendly
+id checkBox_isHypoallergenic
+id checkBox_kidsFriendly
 id checkBox_needs_educated
 id checkbox
 id chooseFile
@@ -1268,6 +1274,7 @@ id ifadopter
 id ifadvertiser
 id image
 id imageView
+id img
 id info
 id inputFullName
 id inputPhone
@@ -1395,15 +1402,20 @@ id scrollable
 id search_badge
 id search_bar
 id search_button
+id search_catsFriendly
 id search_close_btn
+id search_dogsFriendly
 id search_edit_frame
 id search_edit_text
 id search_edit_text2
 id search_go_btn
+id search_isHypo
+id search_kidsFriendly
 id search_mag_icon
 id search_needs_educated
 id search_plate
 id search_src_text
+id search_suitsToApartment
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -1707,6 +1719,7 @@ string appartmentNumber
 string appbar_scrolling_view_behavior
 string big
 string bottom_sheet_behavior
+string catsFriendly
 string center
 string character_counter_content_description
 string character_counter_pattern
@@ -1753,6 +1766,8 @@ string dog_id
 string dog_id_C
 string dog_name
 string dog_name_C
+string dogsFriendly
+string dogs_s_pic
 string doneUploading
 string edit
 string fab_transformation_scrim_behavior
@@ -1771,10 +1786,12 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string houseNumber
+string hypoallergenic
 string ifadopter
 string ifadvertiser
 string isWorking
 string jerusalem
+string kidsFriendly
 string male
 string medium
 string move_to_menu
@@ -1814,6 +1831,7 @@ string recievedOrder
 string reg
 string region
 string registration
+string search
 string search_menu_title
 string searchadvertiser
 string searchbyAdvertiser
@@ -1824,6 +1842,7 @@ string small
 string south
 string status_bar_notification_info_overflow
 string streetName
+string suitsToApartment
 string todo
 string typeOfHouse
 string work

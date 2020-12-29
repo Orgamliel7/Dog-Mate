@@ -47,6 +47,14 @@ public class AddDogActivity extends Advertiser_Navigation {
     Region region;
     String dogName;
     boolean isNeedsEducated;
+    boolean isHypoallergenic;
+    boolean isKidsFriendly;
+    boolean isCatsFriendly;
+    boolean isDogsFriendly;
+    boolean isSuitsToApartment;
+    boolean isSuitsToPrivateHouse;
+
+
     Dog dog;
 
     @Override
@@ -99,9 +107,23 @@ public class AddDogActivity extends Advertiser_Navigation {
         // Check which checkbox was clicked
         switch (view.getId()) {
             case R.id.checkBox_needs_educated:
-                if (checked) {isNeedsEducated = true;}
-
-
+                isNeedsEducated = checked;
+                break;
+            case R.id.checkBox_isHypoallergenic:
+                isHypoallergenic = checked;
+                break;
+            case R.id.checkBox_kidsFriendly:
+                isKidsFriendly = checked;
+                break;
+            case R.id.checkBox_dogsFriendly:
+                isDogsFriendly = checked;
+                break;
+            case R.id.checkBox_catsFriendly:
+                isCatsFriendly = checked;
+                break;
+            case R.id.checkBox_apartment:
+                isSuitsToApartment = checked;
+                break;
 
         }
     }
@@ -224,7 +246,7 @@ public class AddDogActivity extends Advertiser_Navigation {
             }
         };
         if (dog == null) {
-            dog = new Dog(agei, dogName, size, gender, region, isNeedsEducated, " ", " ", userID);
+            dog = new Dog(agei, dogName, size, gender, region, isNeedsEducated, isHypoallergenic, isKidsFriendly, isCatsFriendly, isDogsFriendly, isSuitsToApartment, false, false, " ", " ", userID);
             dog.setDogID(dogRef.push().getKey());
         }
         //if the dog exist and we just want to edit it
@@ -235,6 +257,12 @@ public class AddDogActivity extends Advertiser_Navigation {
             dog.setRegion(region);
             dog.setName(dogName);
             dog.setNeedsEducated(isNeedsEducated);
+            dog.setHypoallergenic(isHypoallergenic);
+            dog.setKidsFriendly(isKidsFriendly);
+            dog.setCatsFriendly(isCatsFriendly);
+            dog.setDogsFriendly(isDogsFriendly);
+            dog.setSuitsToApartment(isSuitsToApartment);
+
             dog.setDescription(" ");
             dog.setAllerganics(" ");
         }

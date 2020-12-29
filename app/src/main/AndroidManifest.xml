@@ -11,13 +11,12 @@
         android:roundIcon="@drawable/bacground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".adopterSideActivities.dogsResultsAdopter" />
-        <activity android:name=".adopterSideActivities.mySearchDogActivity" />
-        <activity
-            android:name=".adopterSideActivities.SearchMainMenu"
+        <activity android:name=".adopterSideActivities.dogsResultsAdopter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".adopterSideActivities.mySearchDogActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".adopterSideActivities.searchDogActivity"
+            android:name=".adopterSideActivities.SearchMainMenu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".adopterSideActivities.adopter_settings"

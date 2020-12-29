@@ -18,6 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.oreo.DogMate.ListsAdapters.DogAdapter;
+import com.oreo.DogMate.Navigation.Adopter_Navigation;
 import com.oreo.DogMate.Objects.Dog;
 import com.oreo.DogMate.Objects.Preference;
 import com.oreo.DogMate.R;
@@ -25,7 +26,7 @@ import com.oreo.DogMate.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class dogsResultsAdopter extends AppCompatActivity {
+public class dogsResultsAdopter extends Adopter_Navigation {
     private FirebaseAuth FireLog;// fire base authentication
     ListView listViewdogs;
     String userID;
@@ -89,10 +90,36 @@ public class dogsResultsAdopter extends AppCompatActivity {
                             }
                         }
                         if (preference.isNeedsEducated()) {
-                            if (dog.isNeedsEducated() == false) {
+                            if (!dog.isNeedsEducated()) {
                                 isMatch = false;
                             }
                         }
+                        if (preference.isHypoallergenic()) {
+                            if (!dog.isHypoallergenic()) {
+                                isMatch = false;
+                            }
+                        }
+                        if (preference.isKidsFriendly()) {
+                            if (!dog.isKidsFriendly()) {
+                                isMatch = false;
+                            }
+                        }
+                        if (preference.isDogsFriendly()) {
+                            if (!dog.isDogsFriendly()) {
+                                isMatch = false;
+                            }
+                        }
+                        if (preference.isCatsFriendly()) {
+                            if (!dog.isCatsFriendly()) {
+                                isMatch = false;
+                            }
+                        }
+                        if (preference.isSuitsToApartment()) {
+                            if (!dog.isSuitsToApartment()) {
+                                isMatch = false;
+                            }
+                        }
+
 
                         if (isMatch) {
                             dogList.add(dog);

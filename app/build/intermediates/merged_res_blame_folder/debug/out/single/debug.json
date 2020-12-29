@@ -72,12 +72,12 @@
         "source": "/home/reut/AndroidStudioProjects/DogMate2/app/src/main/res/layout/activity_adopter_screen.xml"
     },
     {
-        "merged": "/home/reut/AndroidStudioProjects/DogMate2/app/build/intermediates/res/merged/debug/menu_advertiser_menu.xml.flat",
-        "source": "/home/reut/AndroidStudioProjects/DogMate2/app/src/main/res/menu/advertiser_menu.xml"
-    },
-    {
         "merged": "/home/reut/AndroidStudioProjects/DogMate2/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/home/reut/AndroidStudioProjects/DogMate2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/reut/AndroidStudioProjects/DogMate2/app/build/intermediates/res/merged/debug/menu_advertiser_menu.xml.flat",
+        "source": "/home/reut/AndroidStudioProjects/DogMate2/app/src/main/res/menu/advertiser_menu.xml"
     },
     {
         "merged": "/home/reut/AndroidStudioProjects/DogMate2/app/build/intermediates/res/merged/debug/layout_activity_dogs_results_adopter.xml.flat",

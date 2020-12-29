@@ -14,6 +14,14 @@ public class Dog implements Serializable {
     private Region region;
     private Size size;
     private boolean isNeedsEducated;
+    private boolean isHypoallergenic;
+    private boolean isKidsFriendly;
+    private boolean isCatsFriendly;
+    private boolean isDogsFriendly;
+    private boolean suitsToApartment;
+    private boolean suitsToPrivateHouse;
+    private boolean isEnergetic;
+
 
     private String allerganics;
     private String description;
@@ -26,13 +34,21 @@ public class Dog implements Serializable {
         // no args constructor needed
     }
 
-    public Dog(Age age, String name, Size size, Gender gender, Region region, boolean ne, String allerganics, String description, String advertiserID) {
+    public Dog(Age age, String name, Size size, Gender gender, Region region, boolean ne, boolean iH, boolean kf, boolean cf,
+               boolean df, boolean ap, boolean ph, boolean ie, String allerganics, String description, String advertiserID) {
         this.age = age;
         this.name = name;
         this.gender = gender;
         this.region = region;
         this.size = size;
         this.isNeedsEducated = ne;
+        this.isHypoallergenic = iH;
+        this.isKidsFriendly = kf;
+        this.isCatsFriendly = cf;
+        this.isDogsFriendly = df;
+        this.suitsToApartment = ap;
+        this.suitsToPrivateHouse = ph;
+        this.isEnergetic = ie;
         this.allerganics = allerganics;
         this.description = description;
         images = new ArrayList<Upload>();
@@ -142,5 +158,61 @@ public class Dog implements Serializable {
 
     public void setNeedsEducated(boolean needsEducated) {
         isNeedsEducated = needsEducated;
+    }
+
+    public boolean isHypoallergenic() {
+        return isHypoallergenic;
+    }
+
+    public void setHypoallergenic(boolean hypoallergenic) {
+        isHypoallergenic = hypoallergenic;
+    }
+
+    public boolean isKidsFriendly() {
+        return isKidsFriendly;
+    }
+
+    public void setKidsFriendly(boolean kidsFriendly) {
+        isKidsFriendly = kidsFriendly;
+    }
+
+    public boolean isCatsFriendly() {
+        return isCatsFriendly;
+    }
+
+    public void setCatsFriendly(boolean catsFriendly) {
+        isCatsFriendly = catsFriendly;
+    }
+
+    public boolean isDogsFriendly() {
+        return isDogsFriendly;
+    }
+
+    public void setDogsFriendly(boolean dogsFriendly) {
+        isDogsFriendly = dogsFriendly;
+    }
+
+    public boolean isSuitsToApartment() {
+        return suitsToApartment;
+    }
+
+    public void setSuitsToApartment(boolean suitsToApartment) {
+        this.suitsToApartment = suitsToApartment;
+    }
+
+    public boolean isSuitsToPrivateHouse() {
+        return suitsToPrivateHouse;
+    }
+
+    public void setSuitsToPrivateHouse(boolean suitsToPrivateHouse) {
+        this.suitsToPrivateHouse = suitsToPrivateHouse;
+    }
+
+    public boolean isEnergetic() {
+        return isEnergetic;
+    }
+
+    public void setEnergetic(boolean energetic) {
+        isEnergetic = energetic;
     }
 }
