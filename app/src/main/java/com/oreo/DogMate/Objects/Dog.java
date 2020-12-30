@@ -21,7 +21,7 @@ public class Dog implements Serializable {
     private boolean suitsToApartment;
     private boolean suitsToPrivateHouse;
     private boolean isEnergetic;
-
+    private String breed;
 
     private String allerganics;
     private String description;
@@ -34,10 +34,11 @@ public class Dog implements Serializable {
         // no args constructor needed
     }
 
-    public Dog(Age age, String name, Size size, Gender gender, Region region, boolean ne, boolean iH, boolean kf, boolean cf,
+    public Dog(Age age, String name,String breed, Size size, Gender gender, Region region, boolean ne, boolean iH, boolean kf, boolean cf,
                boolean df, boolean ap, boolean ph, boolean ie, String allerganics, String description, String advertiserID) {
         this.age = age;
         this.name = name;
+        this.breed = breed;
         this.gender = gender;
         this.region = region;
         this.size = size;
@@ -214,5 +215,13 @@ public class Dog implements Serializable {
 
     public void setEnergetic(boolean energetic) {
         isEnergetic = energetic;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breexd) {
+        this.breed = breexd;
     }
 }

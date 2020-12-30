@@ -1164,6 +1164,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id breedListItem
 id buildingNumber
 id buildingNumberInput
 id buttonAccept
@@ -1218,6 +1219,9 @@ id dogName
 id dogPicturesRecycler
 id dogSizeAdver
 id dogWatch
+id dog_breed_editText
+id dog_breed_editText_search
+id dog_breed_watchDog
 id dog_name
 id dog_name_editText
 id doneUploading
@@ -1815,6 +1819,7 @@ string search
 string search_menu_title
 string searchadvertiser
 string searchbyAdvertiser
+string sendAdoptionRequest
 string sendRequest
 string serachdog
 string settings

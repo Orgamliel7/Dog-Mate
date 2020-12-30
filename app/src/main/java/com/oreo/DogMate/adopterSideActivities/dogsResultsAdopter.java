@@ -80,6 +80,13 @@ public class dogsResultsAdopter extends Adopter_Navigation {
                                 isMatch = false;
                             }
                         }
+
+
+                        if (preference.getBreed() != null) {
+                            if (!dog.getBreed().toLowerCase().contains(preference.getBreed().toLowerCase())) {
+                                isMatch = false;
+                            }
+                        }
                         if (preference.getGender() != null) {
                             if (dog.getGender() != preference.getGender()) {
                                 isMatch = false;

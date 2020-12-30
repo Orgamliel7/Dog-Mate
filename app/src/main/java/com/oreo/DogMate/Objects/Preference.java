@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Preference implements Serializable {
 
     private Age age;
+    private String breed;
     private Size size;
     private Gender gender;
     private Region region;
@@ -18,9 +19,10 @@ public class Preference implements Serializable {
     private boolean isEnergetic;
 
 
-    public Preference(Age a, Size s, Gender g, Region r, boolean ne, boolean ih, boolean kf, boolean cf, boolean df, boolean ap, boolean ph, boolean ie) {
+    public Preference(Age a,String breed, Size s, Gender g, Region r, boolean ne, boolean ih, boolean kf, boolean cf, boolean df, boolean ap, boolean ph, boolean ie) {
         this.age = a;
         this.size = s;
+        this.breed = breed;
         this.gender = g;
         this.region = r;
         this.isNeedsEducated = ne;
@@ -131,5 +133,13 @@ public class Preference implements Serializable {
 
     public void setEnergetic(boolean energetic) {
         isEnergetic = energetic;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
 }

@@ -51,7 +51,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
     Adopter me;
     Advertiser advertiser;
     DatabaseReference adoptionsRef;
-    TextView dogDetails,AdvertiserDetails, street, city, total; //will show the dog and Advertisers main details
+    TextView dogDetails,AdvertiserDetails, street, city, total, breed;//will show the dog and Advertisers main details
     DatabaseReference  adopterRef;
     @Override
 
@@ -66,6 +66,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
         AdvertiserDetails = findViewById(R.id.advertiserdets);
         total = findViewById(R.id.totalPay);
         street = findViewById(R.id.advertiserStreet);
+        breed = findViewById(R.id.dog_breed_watchDog);
         city = findViewById(R.id.advertiserCity);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -93,10 +94,11 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
                 if(dataSnapshot.hasChild(dog.getadvertiserID())){
                     advertiser = dataSnapshot.child(dog.getadvertiserID()).getValue(Advertiser.class);
                     dogDetails.setText("שם הכלב: "+ dog.getName());
+                    breed.setText( "גזע הכלב: " + dog.getBreed());
                     total.setText("גיל הכלב: "+ dog.getAge());
-                    AdvertiserDetails.setText("פרטי המפרסם: "+ advertiser.getFull_name() + "id: " + advertiser.getUserID());
-                    street.setText("רחוב: "+ advertiser.getAddress().getStreetName());
-                    city.setText("עיר: "+ advertiser.getAddress().getCity());
+                    AdvertiserDetails.setText("פרטי המפרסם: "+ advertiser.getFull_name());
+                    street.setText("אימייל: "+ advertiser.getEmail());
+                    city.setText("מספר פלאפון: "+ advertiser.getPhone());
                 }
             }
 

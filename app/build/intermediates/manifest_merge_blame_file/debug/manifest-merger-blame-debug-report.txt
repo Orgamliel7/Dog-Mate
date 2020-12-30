@@ -6,355 +6,355 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="22"
-8-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml
+8-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml
+9-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:5:22-64
+11-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:24:5-79
-12-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:24:22-76
+12-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:5-79
+12-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:22-76
 13    <uses-permission android:name="android.permission.WAKE_LOCK" />
-13-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:25:5-68
-13-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:25:22-65
+13-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:25:5-68
+13-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:25:22-65
 14    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-14-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:5-110
-14-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
+14-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:26:5-110
+14-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:26:22-107
 15
 16    <application
-16-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:7:5-65:19
+16-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:7:5-65:19
 17        android:allowBackup="true"
-17-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:8:9-35
+17-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:8:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\3cbfbf747f25ee2613cffb9fb53dd267\core-1.0.1\AndroidManifest.xml:22:18-86
+18-->[androidx.core:core:1.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/3cbfbf747f25ee2613cffb9fb53dd267/core-1.0.1/AndroidManifest.xml:22:18-86
 19        android:debuggable="true"
 20        android:icon="@drawable/adopter_favorites"
-20-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:9:9-51
+20-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:9:9-51
 21        android:label="@string/app_name"
-21-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:10:9-41
+21-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:10:9-41
 22        android:roundIcon="@drawable/bacground"
-22-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:11:9-48
+22-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:11:9-48
 23        android:supportsRtl="true"
-23-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:12:9-35
+23-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:12:9-35
 24        android:testOnly="true"
 25        android:theme="@style/AppTheme" >
-25-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:13:9-40
+25-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:13:9-40
 26        <activity
-26-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:14:9-15:59
+26-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:14:9-15:59
 27            android:name="com.oreo.DogMate.adopterSideActivities.dogsResultsAdopter"
-27-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:14:19-75
+27-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:14:19-75
 28            android:theme="@style/AppTheme.NoActionBar" />
-28-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:15:13-56
+28-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:15:13-56
 29        <activity
-29-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:16:9-17:59
+29-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:16:9-17:59
 30            android:name="com.oreo.DogMate.adopterSideActivities.mySearchDogActivity"
-30-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:16:19-76
+30-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:16:19-76
 31            android:theme="@style/AppTheme.NoActionBar" />
-31-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:17:13-56
+31-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:17:13-56
 32        <activity
-32-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:18:9-20:59
+32-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:18:9-20:59
 33            android:name="com.oreo.DogMate.adopterSideActivities.SearchMainMenu"
-33-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:19:13-65
+33-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:19:13-65
 34            android:theme="@style/AppTheme.NoActionBar" />
-34-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:20:13-56
+34-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:20:13-56
 35        <activity
-35-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:21:9-23:59
+35-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:21:9-23:59
 36            android:name="com.oreo.DogMate.adopterSideActivities.adopter_settings"
-36-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:22:13-67
+36-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:22:13-67
 37            android:theme="@style/AppTheme.NoActionBar" />
-37-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:23:13-56
+37-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:23:13-56
 38        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserSettingsActivity" />
-38-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:24:9-89
-38-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:24:19-86
+38-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:24:9-89
+38-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:24:19-86
 39        <activity android:name="com.oreo.DogMate.Navigation.Adopter_Navigation" />
-39-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:25:9-67
-39-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:25:19-64
+39-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:25:9-67
+39-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:25:19-64
 40        <activity android:name="com.oreo.DogMate.Navigation.Advertiser_Navigation" />
-40-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:26:9-70
-40-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:26:19-67
+40-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:26:9-70
+40-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:26:19-67
 41        <activity
-41-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:27:9-29:59
+41-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:27:9-29:59
 42            android:name="com.oreo.DogMate.adopterSideActivities.dogWatchActivityAdopter"
-42-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:28:13-74
+42-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:28:13-74
 43            android:theme="@style/AppTheme.NoActionBar" />
-43-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:29:13-56
+43-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:29:13-56
 44        <activity android:name="com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity" />
-44-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:30:9-89
-44-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:30:19-86
+44-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:30:9-89
+44-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:30:19-86
 45        <activity android:name="com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity" />
-45-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:31:9-85
-45-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:31:19-82
+45-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:31:9-85
+45-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:31:19-82
 46        <activity
-46-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:32:9-34:59
+46-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:32:9-34:59
 47            android:name="com.oreo.DogMate.adopterSideActivities.AdopterOrderActivity"
-47-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:33:13-71
+47-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:33:13-71
 48            android:theme="@style/AppTheme.NoActionBar" />
-48-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:34:13-56
+48-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:34:13-56
 49        <activity
-49-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:35:9-37:59
+49-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:35:9-37:59
 50            android:name="com.oreo.DogMate.adopterSideActivities.AdoptDogActivity"
-50-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:36:13-67
+50-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:36:13-67
 51            android:theme="@style/AppTheme.NoActionBar" />
-51-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:37:13-56
+51-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:37:13-56
 52        <activity
-52-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:38:9-40:59
+52-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:38:9-40:59
 53            android:name="com.oreo.DogMate.adopterSideActivities.AdopterMenuActivity"
-53-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:39:13-70
+53-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:39:13-70
 54            android:theme="@style/AppTheme.NoActionBar" />
-54-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:40:13-56
+54-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:40:13-56
 55        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserOrderActivity" />
-55-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:41:9-86
-55-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:41:19-83
+55-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:41:9-86
+55-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:41:19-83
 56        <activity
-56-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:42:9-44:59
+56-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:42:9-44:59
 57            android:name="com.oreo.DogMate.adopterSideActivities.Favorites"
-57-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:43:13-60
+57-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:43:13-60
 58            android:theme="@style/AppTheme.NoActionBar" />
-58-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:44:13-56
+58-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:44:13-56
 59        <activity android:name="com.oreo.DogMate.advertiserSideActivities.AddDogActivity" />
-59-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:45:9-77
-59-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:45:19-74
+59-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:45:9-77
+59-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:45:19-74
 60        <activity android:name="com.oreo.DogMate.Navigation.Register" />
-60-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:46:9-57
-60-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:46:19-54
+60-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:46:9-57
+60-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:46:19-54
 61        <activity
-61-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:47:9-49:59
+61-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:47:9-49:59
 62            android:name="com.oreo.DogMate.adopterSideActivities.SearchAdvertiserActivity"
-62-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:48:13-75
+62-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:48:13-75
 63            android:theme="@style/AppTheme.NoActionBar" />
-63-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:49:13-56
+63-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:49:13-56
 64        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserMenuActivity" />
-64-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:50:9-85
-64-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:50:19-82
+64-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:50:9-85
+64-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:50:19-82
 65        <activity
-65-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:51:9-53:59
+65-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:51:9-53:59
 66            android:name="com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity"
-66-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:52:13-78
+66-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:52:13-78
 67            android:theme="@style/AppTheme.NoActionBar" />
-67-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:53:13-56
+67-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:53:13-56
 68        <activity android:name="com.oreo.DogMate.Navigation.Login" />
-68-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:54:9-54
-68-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:54:19-51
+68-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:54:9-54
+68-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:54:19-51
 69        <activity
-69-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:55:9-57:59
+69-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:55:9-57:59
 70            android:name="com.oreo.DogMate.adopterSideActivities.adopterScreen"
-70-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:56:13-64
+70-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:56:13-64
 71            android:theme="@style/AppTheme.NoActionBar" />
-71-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:57:13-56
+71-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:57:13-56
 72        <activity android:name="com.oreo.DogMate.Navigation.MainActivity" >
-72-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:58:9-64:20
-72-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:58:19-58
+72-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:58:9-64:20
+72-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:58:19-58
 73            <intent-filter>
-73-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:59:13-63:29
+73-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:59:13-63:29
 74                <action android:name="android.intent.action.MAIN" />
-74-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:60:17-69
-74-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:60:25-66
+74-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:60:17-69
+74-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:60:25-66
 75
 76                <category android:name="android.intent.category.LAUNCHER" />
-76-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:62:17-77
-76-->C:\Users\eliya\AndroidStudioProjects\dogMateSheet\app\src\main\AndroidManifest.xml:62:27-74
+76-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:62:17-77
+76-->/home/reut/AndroidStudioProjects/DogMate2/app/src/main/AndroidManifest.xml:62:27-74
 77            </intent-filter>
 78        </activity>
 79        <activity
-79-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:27:9-44:20
+79-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:27:9-44:20
 80            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-80-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:28:13-80
+80-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:28:13-80
 81            android:excludeFromRecents="true"
-81-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:29:13-46
+81-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:29:13-46
 82            android:exported="true"
-82-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:30:13-36
+82-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:30:13-36
 83            android:launchMode="singleTask"
-83-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:31:13-44
+83-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:31:13-44
 84            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-84-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:32:13-72
+84-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:32:13-72
 85            <intent-filter>
-85-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:33:13-43:29
+85-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:33:13-43:29
 86                <action android:name="android.intent.action.VIEW" />
-86-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
-86-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
+86-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:17-69
+86-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:25-66
 87
 88                <category android:name="android.intent.category.DEFAULT" />
-88-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:17-76
-88-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:27-73
+88-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:17-76
+88-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:27-73
 89                <category android:name="android.intent.category.BROWSABLE" />
-89-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
-89-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
+89-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:17-78
+89-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:27-75
 90
 91                <data
-91-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
+91-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:39:17-42:51
 92                    android:host="firebase.auth"
-92-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:40:21-49
+92-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:40:21-49
 93                    android:path="/"
-93-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:41:21-37
+93-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:41:21-37
 94                    android:scheme="genericidp" />
-94-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
+94-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:42:21-48
 95            </intent-filter>
 96        </activity>
 97        <activity
-97-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:45:9-62:20
+97-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:45:9-62:20
 98            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-98-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:46:13-79
+98-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:46:13-79
 99            android:excludeFromRecents="true"
-99-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:47:13-46
+99-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:47:13-46
 100            android:exported="true"
-100-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:48:13-36
+100-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:48:13-36
 101            android:launchMode="singleTask"
-101-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:49:13-44
+101-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:49:13-44
 102            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-102-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:50:13-72
+102-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:50:13-72
 103            <intent-filter>
-103-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:51:13-61:29
+103-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:51:13-61:29
 104                <action android:name="android.intent.action.VIEW" />
-104-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
-104-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
+104-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:17-69
+104-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:25-66
 105
 106                <category android:name="android.intent.category.DEFAULT" />
-106-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:17-76
-106-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:27-73
+106-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:17-76
+106-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:27-73
 107                <category android:name="android.intent.category.BROWSABLE" />
-107-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
-107-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
+107-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:17-78
+107-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:27-75
 108
 109                <data
-109-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
+109-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:39:17-42:51
 110                    android:host="firebase.auth"
-110-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:40:21-49
+110-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:40:21-49
 111                    android:path="/"
-111-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:41:21-37
+111-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:41:21-37
 112                    android:scheme="recaptcha" />
-112-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
+112-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:42:21-48
 113            </intent-filter>
 114        </activity>
 115
 116        <service
-116-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:64:9-73:19
+116-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:64:9-73:19
 117            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-117-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:65:13-101
+117-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:65:13-101
 118            android:enabled="true"
-118-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:66:13-35
+118-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:66:13-35
 119            android:exported="false" >
-119-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:67:13-37
+119-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:67:13-37
 120            <intent-filter>
-120-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:68:13-72:29
+120-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:68:13-72:29
 121                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-121-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:17-89
-121-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:25-86
+121-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:69:17-89
+121-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:69:25-86
 122
 123                <category android:name="android.intent.category.DEFAULT" />
-123-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:17-76
-123-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:27-73
+123-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:17-76
+123-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:27-73
 124            </intent-filter>
 125        </service>
 126        <service
-126-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:74:9-80:19
+126-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:74:9-80:19
 127            android:name="com.google.firebase.components.ComponentDiscoveryService"
-127-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:75:13-84
+127-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:75:13-84
 128            android:directBootAware="true"
-128-->[com.google.firebase:firebase-common:19.4.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:35:13-43
+128-->[com.google.firebase:firebase-common:19.4.0] /home/reut/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:35:13-43
 129            android:exported="false" >
-129-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:76:13-37
+129-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:76:13-37
 130            <meta-data
-130-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:77:13-79:85
+130-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:77:13-79:85
 131                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-131-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:78:17-109
+131-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:78:17-109
 132                android:value="com.google.firebase.components.ComponentRegistrar" />
-132-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:79:17-82
+132-->[com.google.firebase:firebase-auth:20.0.1] /home/reut/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:79:17-82
 133            <meta-data
-133-->[com.google.firebase:firebase-storage:19.2.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\80b96b8459e39584abd3365a7bf0267b\jetified-firebase-storage-19.2.0\AndroidManifest.xml:33:13-35:85
+133-->[com.google.firebase:firebase-storage:19.2.0] /home/reut/.gradle/caches/transforms-2/files-2.1/80b96b8459e39584abd3365a7bf0267b/jetified-firebase-storage-19.2.0/AndroidManifest.xml:33:13-35:85
 134                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-134-->[com.google.firebase:firebase-storage:19.2.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\80b96b8459e39584abd3365a7bf0267b\jetified-firebase-storage-19.2.0\AndroidManifest.xml:34:17-107
+134-->[com.google.firebase:firebase-storage:19.2.0] /home/reut/.gradle/caches/transforms-2/files-2.1/80b96b8459e39584abd3365a7bf0267b/jetified-firebase-storage-19.2.0/AndroidManifest.xml:34:17-107
 135                android:value="com.google.firebase.components.ComponentRegistrar" />
-135-->[com.google.firebase:firebase-storage:19.2.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\80b96b8459e39584abd3365a7bf0267b\jetified-firebase-storage-19.2.0\AndroidManifest.xml:35:17-82
+135-->[com.google.firebase:firebase-storage:19.2.0] /home/reut/.gradle/caches/transforms-2/files-2.1/80b96b8459e39584abd3365a7bf0267b/jetified-firebase-storage-19.2.0/AndroidManifest.xml:35:17-82
 136            <meta-data
-136-->[com.google.firebase:firebase-database:19.5.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\fc103de11ba45e8031c7a2ff05cc918b\jetified-firebase-database-19.5.1\AndroidManifest.xml:32:13-34:85
+136-->[com.google.firebase:firebase-database:19.5.1] /home/reut/.gradle/caches/transforms-2/files-2.1/fc103de11ba45e8031c7a2ff05cc918b/jetified-firebase-database-19.5.1/AndroidManifest.xml:32:13-34:85
 137                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-137-->[com.google.firebase:firebase-database:19.5.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\fc103de11ba45e8031c7a2ff05cc918b\jetified-firebase-database-19.5.1\AndroidManifest.xml:33:17-109
+137-->[com.google.firebase:firebase-database:19.5.1] /home/reut/.gradle/caches/transforms-2/files-2.1/fc103de11ba45e8031c7a2ff05cc918b/jetified-firebase-database-19.5.1/AndroidManifest.xml:33:17-109
 138                android:value="com.google.firebase.components.ComponentRegistrar" />
-138-->[com.google.firebase:firebase-database:19.5.1] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\fc103de11ba45e8031c7a2ff05cc918b\jetified-firebase-database-19.5.1\AndroidManifest.xml:34:17-82
+138-->[com.google.firebase:firebase-database:19.5.1] /home/reut/.gradle/caches/transforms-2/files-2.1/fc103de11ba45e8031c7a2ff05cc918b/jetified-firebase-database-19.5.1/AndroidManifest.xml:34:17-82
 139            <meta-data
-139-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\9001e637591bf99550f9534257e99161\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:30:13-32:85
+139-->[com.google.android.gms:play-services-measurement-api:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:30:13-32:85
 140                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-140-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\9001e637591bf99550f9534257e99161\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:31:17-139
+140-->[com.google.android.gms:play-services-measurement-api:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:31:17-139
 141                android:value="com.google.firebase.components.ComponentRegistrar" />
-141-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\9001e637591bf99550f9534257e99161\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:32:17-82
+141-->[com.google.android.gms:play-services-measurement-api:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:32:17-82
 142            <meta-data
-142-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\25cc831f1bf7a761536517aab3350bc7\jetified-firebase-installations-16.3.4\AndroidManifest.xml:18:13-20:85
+142-->[com.google.firebase:firebase-installations:16.3.4] /home/reut/.gradle/caches/transforms-2/files-2.1/25cc831f1bf7a761536517aab3350bc7/jetified-firebase-installations-16.3.4/AndroidManifest.xml:18:13-20:85
 143                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-143-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\25cc831f1bf7a761536517aab3350bc7\jetified-firebase-installations-16.3.4\AndroidManifest.xml:19:17-127
+143-->[com.google.firebase:firebase-installations:16.3.4] /home/reut/.gradle/caches/transforms-2/files-2.1/25cc831f1bf7a761536517aab3350bc7/jetified-firebase-installations-16.3.4/AndroidManifest.xml:19:17-127
 144                android:value="com.google.firebase.components.ComponentRegistrar" />
-144-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\25cc831f1bf7a761536517aab3350bc7\jetified-firebase-installations-16.3.4\AndroidManifest.xml:20:17-82
+144-->[com.google.firebase:firebase-installations:16.3.4] /home/reut/.gradle/caches/transforms-2/files-2.1/25cc831f1bf7a761536517aab3350bc7/jetified-firebase-installations-16.3.4/AndroidManifest.xml:20:17-82
 145        </service>
 146
 147        <activity
-147-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+147-->[com.google.android.gms:play-services-base:17.1.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d92a27efcac738b4f280b9ad0c07bda7/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
 148            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-148-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+148-->[com.google.android.gms:play-services-base:17.1.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d92a27efcac738b4f280b9ad0c07bda7/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
 149            android:exported="false"
-149-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+149-->[com.google.android.gms:play-services-base:17.1.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d92a27efcac738b4f280b9ad0c07bda7/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
 150            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-150-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d92a27efcac738b4f280b9ad0c07bda7\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+150-->[com.google.android.gms:play-services-base:17.1.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d92a27efcac738b4f280b9ad0c07bda7/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
 151
 152        <receiver
-152-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:29:9-33:20
+152-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:29:9-33:20
 153            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-153-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:30:13-85
+153-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:30:13-85
 154            android:enabled="true"
-154-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:31:13-35
+154-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:31:13-35
 155            android:exported="false" >
-155-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:32:13-37
+155-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:32:13-37
 156        </receiver>
 157
 158        <service
-158-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:35:9-38:40
+158-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:35:9-38:40
 159            android:name="com.google.android.gms.measurement.AppMeasurementService"
-159-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:36:13-84
+159-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:36:13-84
 160            android:enabled="true"
-160-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:37:13-35
+160-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:37:13-35
 161            android:exported="false" />
-161-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:38:13-37
+161-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:38:13-37
 162        <service
-162-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:39:9-43:72
+162-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:39:9-43:72
 163            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-163-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:40:13-87
+163-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:40:13-87
 164            android:enabled="true"
-164-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:41:13-35
+164-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:41:13-35
 165            android:exported="false"
-165-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:42:13-37
+165-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:42:13-37
 166            android:permission="android.permission.BIND_JOB_SERVICE" />
-166-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\d535ddb9b282b7dfd1ae98643f85d9b9\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:43:13-69
+166-->[com.google.android.gms:play-services-measurement:18.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:43:13-69
 167
 168        <provider
-168-->[com.google.firebase:firebase-common:19.4.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:26:9-31:39
+168-->[com.google.firebase:firebase-common:19.4.0] /home/reut/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:26:9-31:39
 169            android:name="com.google.firebase.provider.FirebaseInitProvider"
-169-->[com.google.firebase:firebase-common:19.4.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:27:13-77
+169-->[com.google.firebase:firebase-common:19.4.0] /home/reut/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:27:13-77
 170            android:authorities="com.oreo.DogMate.firebaseinitprovider"
-170-->[com.google.firebase:firebase-common:19.4.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:28:13-72
+170-->[com.google.firebase:firebase-common:19.4.0] /home/reut/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:28:13-72
 171            android:directBootAware="true"
-171-->[com.google.firebase:firebase-common:19.4.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:29:13-43
+171-->[com.google.firebase:firebase-common:19.4.0] /home/reut/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:29:13-43
 172            android:exported="false"
-172-->[com.google.firebase:firebase-common:19.4.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:30:13-37
+172-->[com.google.firebase:firebase-common:19.4.0] /home/reut/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:30:13-37
 173            android:initOrder="100" />
-173-->[com.google.firebase:firebase-common:19.4.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\5500978cd02395a8bf5bbed55985b128\jetified-firebase-common-19.4.0\AndroidManifest.xml:31:13-36
+173-->[com.google.firebase:firebase-common:19.4.0] /home/reut/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:31:13-36
 174
 175        <meta-data
-175-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\c77d530a894c9cdc1e02ae73843c5ba2\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+175-->[com.google.android.gms:play-services-basement:17.1.0] /home/reut/.gradle/caches/transforms-2/files-2.1/c77d530a894c9cdc1e02ae73843c5ba2/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
 176            android:name="com.google.android.gms.version"
-176-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\c77d530a894c9cdc1e02ae73843c5ba2\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+176-->[com.google.android.gms:play-services-basement:17.1.0] /home/reut/.gradle/caches/transforms-2/files-2.1/c77d530a894c9cdc1e02ae73843c5ba2/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
 177            android:value="@integer/google_play_services_version" />
-177-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\c77d530a894c9cdc1e02ae73843c5ba2\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+177-->[com.google.android.gms:play-services-basement:17.1.0] /home/reut/.gradle/caches/transforms-2/files-2.1/c77d530a894c9cdc1e02ae73843c5ba2/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
 178
 179        <provider
-179-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\6bbd55f29e79100be078e35e58a9e672\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+179-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/6bbd55f29e79100be078e35e58a9e672/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
 180            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-180-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\6bbd55f29e79100be078e35e58a9e672\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+180-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/6bbd55f29e79100be078e35e58a9e672/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
 181            android:authorities="com.oreo.DogMate.lifecycle-process"
-181-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\6bbd55f29e79100be078e35e58a9e672\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+181-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/6bbd55f29e79100be078e35e58a9e672/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
 182            android:exported="false"
-182-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\6bbd55f29e79100be078e35e58a9e672\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+182-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/6bbd55f29e79100be078e35e58a9e672/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
 183            android:multiprocess="true" />
-183-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\eliya\.gradle\caches\transforms-2\files-2.1\6bbd55f29e79100be078e35e58a9e672\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+183-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/reut/.gradle/caches/transforms-2/files-2.1/6bbd55f29e79100be078e35e58a9e672/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
 184    </application>
 185
 186</manifest>

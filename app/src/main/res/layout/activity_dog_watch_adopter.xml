@@ -14,13 +14,23 @@
         android:id="@+id/dogWatch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:gravity="right"
         android:background="#FFFFFF"
-        android:text="@string/dogDETS"
+        android:text="@string/dogName"
         android:textColor="#000"
         android:textDirection="rtl"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/dog_breed_watchDog"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="31dp"
+        android:textDirection="rtl"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="@string/dogBreed" />
 
     <TextView
         android:id="@+id/advertiserdets"
@@ -31,7 +41,8 @@
         android:text="@string/advertiserDETS"
         android:textColor="#000"
         android:textDirection="rtl"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded" />
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -41,7 +52,8 @@
         <TableRow
             android:id="@+id/TableRow"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <TextView
                 android:id="@+id/advertiserStreet"
@@ -49,7 +61,7 @@
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:background="#FFFF"
-                android:text="@string/advertiserStreet"
+                android:text="@string/advertiserEmail"
                 android:textColor="#0C0C0C"
                 android:textSize="18sp" />
 
@@ -59,7 +71,7 @@
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:background="#FFFF"
-                android:text="@string/advertiserCity"
+                android:text="@string/advertiserPhone"
                 android:textColor="#0C0C0C"
                 android:textSize="18sp" />
 
@@ -71,7 +83,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:text="גיל הכלב"
+        android:text="@string/dog_age"
         android:textColor="#000"
         android:textSize="18sp" />
 
@@ -81,7 +93,7 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:onClick="adoption"
-        android:text="@string/adoption"
+        android:text="@string/sendAdoptionRequest"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/dogPicturesRecycler" />

@@ -56,6 +56,8 @@ public class DogAdapter extends ArrayAdapter<Dog> {
         TextView age = listViewItem.findViewById(R.id.age);
         TextView region = listViewItem.findViewById(R.id.region);
         TextView gender = listViewItem.findViewById(R.id.gender);
+        TextView breed = listViewItem.findViewById(R.id.breedListItem);
+
         final ImageView imageView = listViewItem.findViewById(R.id.img);
 
         Dog dog = dogs.get(position);
@@ -101,7 +103,6 @@ public class DogAdapter extends ArrayAdapter<Dog> {
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(context, "failed", Toast.LENGTH_SHORT).show();
                         }
                     });
                 } catch (IOException e) {
@@ -112,6 +113,7 @@ public class DogAdapter extends ArrayAdapter<Dog> {
 
         }
         age.setText("גיל: " + dog.getAge().name());
+        breed.setText("גזע: " + dog.getBreed());
         name.setText("שם: " + dog.getName());
         region.setText("איזור בארץ: " + dog.getRegion().name());
         gender.setText("מין: " + dog.getGender().name());

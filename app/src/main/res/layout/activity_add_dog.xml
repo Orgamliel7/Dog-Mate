@@ -19,7 +19,7 @@
             android:layout_width="335dp"
             android:layout_height="0dp"
             android:layout_marginTop="130dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="12dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/dogGenderAdver"
@@ -264,12 +264,12 @@
             android:layout_width="130dp"
             android:layout_height="0dp"
             android:layout_marginEnd="4dp"
-            android:layout_marginBottom="153dp"
+            android:layout_marginBottom="152dp"
             android:onClick="onCheckboxClicked"
             android:text="@string/catsFriendly"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox_kidsFriendly" />
+            app:layout_constraintTop_toBottomOf="@+id/dog_breed_editText" />
 
         <CheckBox
             android:id="@+id/checkBox_dogsFriendly"
@@ -300,12 +300,29 @@
             android:id="@+id/dog_name_editText"
             android:layout_width="264dp"
             android:layout_height="40dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="20dp"
             android:autofillHints=""
             android:inputType="text"
             android:text="@string/dogName"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/dog_breed_editText"
+            android:layout_width="273dp"
+            android:layout_height="37dp"
+
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="1dp"
+
+            android:layout_marginBottom="440dp"
+            android:autofillHints=""
+            android:inputType="text"
+            android:text="@string/dogBreed"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox_catsFriendly"
+            app:layout_constraintEnd_toEndOf="@+id/dog_name_editText"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="LabelFor" />
 

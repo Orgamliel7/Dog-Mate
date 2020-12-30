@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 
 import com.oreo.DogMate.Navigation.Adopter_Navigation;
@@ -26,6 +29,30 @@ public class mySearchDogActivity extends Adopter_Navigation {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_search_dog);
         preference = new Preference();
+
+        EditText breed = (EditText) findViewById(R.id.dog_breed_editText_search);
+
+        breed.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            /**
+             * Option to search a dog by it's name
+             * @param s
+             */
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (!s.toString().isEmpty()) {
+                    preference.setBreed(s.toString().trim());
+                }
+            }
+        });
+
 
     }
 

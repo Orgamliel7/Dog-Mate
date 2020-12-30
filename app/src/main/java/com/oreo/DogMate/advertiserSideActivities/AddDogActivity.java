@@ -39,6 +39,7 @@ public class AddDogActivity extends Advertiser_Navigation {
     String ageIn, nameIn, descIn, allergicIn;
     private FirebaseAuth FireLog;// fire base authentication
     EditText name;
+    EditText breed;
     DatabaseReference dogRef;
     FirebaseDatabase DB;
     Age agei;
@@ -46,6 +47,7 @@ public class AddDogActivity extends Advertiser_Navigation {
     Gender gender;
     Region region;
     String dogName;
+    String dogBreed;
     boolean isNeedsEducated;
     boolean isHypoallergenic;
     boolean isKidsFriendly;
@@ -67,6 +69,7 @@ public class AddDogActivity extends Advertiser_Navigation {
         FirebaseUser user = FireLog.getCurrentUser();
         userID = user.getUid();
         name = (EditText) findViewById(R.id.dog_name_editText);
+        breed = (EditText) findViewById(R.id.dog_breed_editText);
 
         Intent intent = getIntent();
         if (intent.hasExtra("Dog")) {
@@ -92,11 +95,34 @@ public class AddDogActivity extends Advertiser_Navigation {
                 if (!s.toString().isEmpty()) {
                     dogName = s.toString().trim();
                 } else {
-                    dogName = " ";
+                    dogName = "None";
                 }
             }
         });
 
+
+        breed.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            /**
+             * Option to search a dog by it's name
+             * @param s
+             */
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (!s.toString().isEmpty()) {
+                    dogBreed = s.toString().trim();
+                } else {
+                    dogBreed = "None";
+                }
+            }
+        });
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -246,7 +272,7 @@ public class AddDogActivity extends Advertiser_Navigation {
             }
         };
         if (dog == null) {
-            dog = new Dog(agei, dogName, size, gender, region, isNeedsEducated, isHypoallergenic, isKidsFriendly, isCatsFriendly, isDogsFriendly, isSuitsToApartment, false, false, " ", " ", userID);
+            dog = new Dog(agei, dogName, dogBreed, size, gender, region, isNeedsEducated, isHypoallergenic, isKidsFriendly, isCatsFriendly, isDogsFriendly, isSuitsToApartment, false, false, " ", " ", userID);
             dog.setDogID(dogRef.push().getKey());
         }
         //if the dog exist and we just want to edit it
@@ -256,6 +282,7 @@ public class AddDogActivity extends Advertiser_Navigation {
             dog.setGender(gender);
             dog.setRegion(region);
             dog.setName(dogName);
+            dog.setBreed(dogBreed);
             dog.setNeedsEducated(isNeedsEducated);
             dog.setHypoallergenic(isHypoallergenic);
             dog.setKidsFriendly(isKidsFriendly);
