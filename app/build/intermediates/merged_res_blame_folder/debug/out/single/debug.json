@@ -136,6 +136,10 @@
         "source": "/home/reut/AndroidStudioProjects/DogMate2/app/src/main/res/layout/activity_advertiser_navigation.xml"
     },
     {
+        "merged": "/home/reut/AndroidStudioProjects/DogMate2/app/build/intermediates/res/merged/debug/drawable_dogs_tapet.jpeg.flat",
+        "source": "/home/reut/AndroidStudioProjects/DogMate2/app/src/main/res/drawable/dogs_tapet.jpeg"
+    },
+    {
         "merged": "/home/reut/AndroidStudioProjects/DogMate2/app/build/intermediates/res/merged/debug/layout_adoption_item_advertiser.xml.flat",
         "source": "/home/reut/AndroidStudioProjects/DogMate2/app/src/main/res/layout/adoption_item_advertiser.xml"
     },

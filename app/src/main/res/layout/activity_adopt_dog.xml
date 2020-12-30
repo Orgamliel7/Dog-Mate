@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/dogs_tapet"
     android:orientation="vertical"
     tools:context=".adopterSideActivities.AdoptDogActivity"
     tools:ignore="ExtraText">
@@ -22,21 +22,45 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ]]>
 
     <EditText
         android:id="@+id/editText"
 
-        android:layout_width="251dp"
-        android:layout_height="129dp"
-        android:layout_marginEnd="80dp"
+        android:layout_width="346dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="130dp"
         android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:lines="12"
+        android:textAlignment="textEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/orderDetails"
+        app:layout_constraintVertical_bias="0.84"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -44,13 +68,11 @@
         android:layout_width="213dp"
         android:layout_height="52dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginBottom="187dp"
+        android:layout_marginEnd="108dp"
         android:text="@string/orderDetails"
         android:textColor="#090808"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,25 +80,29 @@
         android:id="@+id/adopt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="52dp"
-        android:background="#FCF9F9"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="120dp"
+        android:background="#FFFFFF"
         android:onClick="CreateNewOrderC"
         android:text="@string/sendRequest"
-        android:textColor="#0C0C0C"
+        android:textColor="#090808"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/suggestion"
-        android:layout_width="216dp"
-        android:layout_height="96dp"
+        android:layout_width="350dp"
+        android:layout_height="270dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.308" />
+        app:layout_constraintVertical_bias="0.197" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

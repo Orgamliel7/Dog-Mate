@@ -59,6 +59,7 @@ public class AdoptDogActivity extends Adopter_Navigation {
     DatePickerDialog.OnDateSetListener mDateListener;
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,7 +71,9 @@ public class AdoptDogActivity extends Adopter_Navigation {
         Adopt = findViewById(R.id.adopt);
         TextView suggestion = findViewById(R.id.suggestion);
         editTextInfo = findViewById(R.id.editText);
-        suggestion.setText("ממליצים לכתוב על: \n *רקע כללי,עבודה,משפחה\n * סוג בית \n *האם יש זמן להוציא את הכלב לטיול וכמה פעמים ביום");
+        suggestion.setText("מעוניינים ב- " + dog.getName() + "?");
+        suggestion.append("\n ספרו קצת על עצמכם: \n *רקע כללי,איפה אתם גרים,מי גר בבית, במה עוסקים?\n * האם גרים בדירה או בית פרטי? \n *האם גידלתם כלבים/גורים בעבר? \n *מי יהיה אחראי על טיולים לכלב? \n *האם יש זמן לפעילות גופנים יומיומית עם הכלב? \n *כמה זמן ביום ואיפה תערך פעילות זו?\n");
+        suggestion.append("מאחלים לכם אימוץ נעים:)");
         DB = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
         userID = Objects.requireNonNull(auth.getCurrentUser()).getUid();
