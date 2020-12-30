@@ -55,7 +55,7 @@ public class dogsResultsAdopter extends Adopter_Navigation {
     @Override
     protected void onStart() {
         super.onStart();
-        menuForadopter = DB.getReference("dogs");
+        menuForadopter = DB.getReference("Dogs");
         menuForadopter.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

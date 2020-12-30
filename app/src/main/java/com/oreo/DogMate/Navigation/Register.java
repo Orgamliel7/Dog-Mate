@@ -23,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.oreo.DogMate.Objects.Address;
 import com.oreo.DogMate.Objects.Adopter;
 import com.oreo.DogMate.Objects.Advertiser;
+import com.oreo.DogMate.Objects.Dog;
 import com.oreo.DogMate.R;
 
 import java.util.ArrayList;
@@ -160,7 +161,7 @@ public class Register extends AppCompatActivity {
                                     Log.d(TAG, "onFailue" + e.toString());
                                 }
                             } else {
-                                ArrayList<Advertiser> b= new ArrayList<Advertiser>();
+                                ArrayList<Dog> b= new ArrayList<Dog>();
                                 Adopter adopter = new Adopter(email, fullName, Phone, adress, userID, b);
                                 try {
                                     adopterRef.child(userID).setValue(adopter);

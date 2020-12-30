@@ -85,6 +85,15 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/dogPicturesRecycler" />
+    <Button
+        android:id="@+id/addtoFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:onClick="addToFavorits"
+        android:text="@string/addTofavorites"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
     <ProgressBar
         android:id="@+id/progress_image_advertiser"

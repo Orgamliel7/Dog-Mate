@@ -3,6 +3,7 @@ package com.oreo.DogMate.adopterSideActivities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,6 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.oreo.DogMate.ListsAdapters.DogImageAdapterAdopter;
 import com.oreo.DogMate.Navigation.Adopter_Navigation;
+import com.oreo.DogMate.Objects.Adopter;
 import com.oreo.DogMate.Objects.Advertiser;
 import com.oreo.DogMate.Objects.Dog;
 import com.oreo.DogMate.Objects.Upload;
@@ -25,6 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -45,10 +48,11 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
     private FirebaseAuth FireLog;
     String userID;
     Dog dog;
+    Adopter me;
     Advertiser advertiser;
     DatabaseReference adoptionsRef;
     TextView dogDetails,AdvertiserDetails, street, city, total; //will show the dog and Advertisers main details
-
+    DatabaseReference  adopterRef;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,6 +131,29 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
             }
         });
 
+        //If this advertiser is in the favorits - will point this out to the adopter
+        adopterRef = DB.getReference("Users/Adopter").child(userID);
+        adopterRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                me = dataSnapshot.getValue(Adopter.class);
+                if (me != null) {
+                    for (int i = 0; i < me.getFavorites().size(); i++) {
+                        if (me.getFavorites().get(i).getDogID().equals(dog.getDogID())) {
+                            Button button = (Button) findViewById(R.id.addtoFavorites);
+                            button.setClickable(false);
+                            button.setText("זהו כלב מועדף עליי!");
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
     }
 
     /**
@@ -140,4 +167,44 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
             intent.putExtra("Advertiser", advertiser);
             startActivity(intent);
         }
+
+    /**
+          * When pressing the button "add to favorites"
+          * @param view
+          */
+    public void addToFavorits(View view) {
+
+        adopterRef = DB.getReference("Users/Adopter").child(userID);
+        adopterRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                me = dataSnapshot.getValue(Adopter.class);
+                if (me != null) {
+                    me.addAdvertiser(dog);
+                    adopterRef.setValue(me, completionListener);
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+
+            final DatabaseReference.CompletionListener completionListener = new DatabaseReference.CompletionListener() {
+                @Override
+                public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
+                    if (databaseError != null) {
+                        Toast.makeText(getApplicationContext(), "כלב לא נוסף למועדפים!",
+                                Toast.LENGTH_SHORT).show();
+
+
+                    } else {
+                        Toast.makeText(getApplicationContext(), "כלב נוסף למועדפים!",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+            };
+        });
+    }
 }

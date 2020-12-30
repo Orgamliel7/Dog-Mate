@@ -135,27 +135,27 @@ public class AdopterMenuActivity extends Adopter_Navigation {
             }
         });
         //If this advertiser is in the favorits - will point this out to the adopter
-        adopterRef = DB.getReference("Users/Adopter").child(userID);
-        adopterRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                me = dataSnapshot.getValue(Adopter.class);
-                if (me != null) {
-                    for (int i = 0; i < me.getFavorites().size(); i++) {
-                        if (me.getFavorites().get(i).getUserID().equals(advertiser.getUserID())) {
-                            Button button = (Button) findViewById(R.id.addtoFavorites);
-                            button.setClickable(false);
-                            button.setText("זהו מפרסם מועדף עליי!");
-                        }
-                    }
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
+//        adopterRef = DB.getReference("Users/Adopter").child(userID);
+//        adopterRef.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                me = dataSnapshot.getValue(Adopter.class);
+//                if (me != null) {
+//                    for (int i = 0; i < me.getFavorites().size(); i++) {
+//                        if (me.getFavorites().get(i).getUserID().equals(advertiser.getUserID())) {
+//                            Button button = (Button) findViewById(R.id.addtoFavorites);
+//                            button.setClickable(false);
+//                            button.setText("זהו מפרסם מועדף עליי!");
+//                        }
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
 
         listViewdogs.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
@@ -210,43 +210,43 @@ public class AdopterMenuActivity extends Adopter_Navigation {
 
     }
 
-    /**
-     * When pressing the button "add to favorites"
-     * @param view
-     */
-    public void addToFavorits(View view) {
-
-        adopterRef = DB.getReference("Users/Adopter").child(userID);
-        adopterRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                me = dataSnapshot.getValue(Adopter.class);
-                if (me != null) {
-                    me.addAdvertiser(advertiser);
-                    adopterRef.setValue(me, completionListener);
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-
-            final DatabaseReference.CompletionListener completionListener = new DatabaseReference.CompletionListener() {
-                @Override
-                public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
-                    if (databaseError != null) {
-                        Toast.makeText(getApplicationContext(), "מפרסם לא נוסף למועדפים!",
-                                Toast.LENGTH_SHORT).show();
-
-
-                    } else {
-                        Toast.makeText(getApplicationContext(), "מפרסם נוסף למועדפים!",
-                                Toast.LENGTH_SHORT).show();
-                    }
-                }
-            };
-        });
-    }
+//    /**
+//     * When pressing the button "add to favorites"
+//     * @param view
+//     */
+//    public void addToFavorits(View view) {
+//
+//        adopterRef = DB.getReference("Users/Adopter").child(userID);
+//        adopterRef.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                me = dataSnapshot.getValue(Adopter.class);
+//                if (me != null) {
+//                    me.addAdvertiser(advertiser);
+//                    adopterRef.setValue(me, completionListener);
+//
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//
+//            final DatabaseReference.CompletionListener completionListener = new DatabaseReference.CompletionListener() {
+//                @Override
+//                public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
+//                    if (databaseError != null) {
+//                        Toast.makeText(getApplicationContext(), "מפרסם לא נוסף למועדפים!",
+//                                Toast.LENGTH_SHORT).show();
+//
+//
+//                    } else {
+//                        Toast.makeText(getApplicationContext(), "מפרסם נוסף למועדפים!",
+//                                Toast.LENGTH_SHORT).show();
+//                    }
+//                }
+//            };
+//        });
+//    }
 }

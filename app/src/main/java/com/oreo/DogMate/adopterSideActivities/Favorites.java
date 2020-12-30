@@ -14,10 +14,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.oreo.DogMate.ListsAdapters.AdvertiserAdapter;
+import com.oreo.DogMate.ListsAdapters.DogAdapter;
 import com.oreo.DogMate.Navigation.Adopter_Navigation;
 import com.oreo.DogMate.Objects.Adopter;
-import com.oreo.DogMate.Objects.Advertiser;
+import com.oreo.DogMate.Objects.Dog;
 import com.oreo.DogMate.R;
 
 import java.util.ArrayList;
@@ -32,12 +32,12 @@ import androidx.annotation.NonNull;
  */
 public class Favorites extends Adopter_Navigation {
     private FirebaseAuth FireLog;// fire base authentication - will give us the user ID
-    ListView listViewAdvertisers; // The list view that will show the Advertisers
+    ListView listViewDog; // The list view that will show the Advertisers
     String userID;
     DatabaseReference AdopterRef; //A reference to the adopter's favorites arrayList in the DB
     FirebaseDatabase DB; // A reference to our DataBase
     FirebaseUser currentUser; //A reference to the current user
-    List<Advertiser> advertiserList; // the list that will contain the Advertisers
+    List<Dog> dogList; // the list that will contain the Advertisers
 
 
     @Override
@@ -48,9 +48,9 @@ public class Favorites extends Adopter_Navigation {
         FireLog = FirebaseAuth.getInstance();
         currentUser = FireLog.getCurrentUser();
         userID = currentUser.getUid();
-        listViewAdvertisers = findViewById(R.id.advertisers_list);
-        advertiserList = new ArrayList<Advertiser>();
-        AdopterRef = DB.getReference("Cutsomers").child(userID).child("favorites");
+        listViewDog = findViewById(R.id.advertisers_list);
+        dogList = new ArrayList<Dog>();
+        AdopterRef = DB.getReference("Adopter").child(userID).child("favorites");
 
     }
 
@@ -65,18 +65,18 @@ public class Favorites extends Adopter_Navigation {
         AdopterRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                advertiserList.clear();
+                dogList.clear();
                 Adopter me =  dataSnapshot.getValue(Adopter.class);
                 if (me != null) {
-                    advertiserList.addAll(me.getFavorites());
+                    dogList.addAll(me.getFavorites());
                 }
 
-                if (advertiserList.isEmpty()) {
+                if (dogList.isEmpty()) {
                     Toast.makeText(Favorites.this, "אין מועדפים", Toast.LENGTH_LONG).show();
                     return;
                 }
-                AdvertiserAdapter advertiserAdapter = new AdvertiserAdapter(Favorites.this, advertiserList);
-                listViewAdvertisers.setAdapter(advertiserAdapter);
+                DogAdapter advertiserAdapter = new DogAdapter(Favorites.this, dogList);
+                listViewDog.setAdapter(advertiserAdapter);
             }
 
             @Override
@@ -88,11 +88,11 @@ public class Favorites extends Adopter_Navigation {
          * when the adopter will press one advertiser,
          * the activity of the dogs of this advertiser will be opened
          */
-        listViewAdvertisers.setOnItemClickListener(new ListView.OnItemClickListener() {
+        listViewDog.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(Favorites.this, AdopterMenuActivity.class);
-                intent.putExtra("advertiser", advertiserList.get(i));
+                Intent intent = new Intent(Favorites.this, dogWatchActivityAdopter.class);
+                intent.putExtra("Dog", dogList.get(i));
                 startActivity(intent);
             }
         });

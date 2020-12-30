@@ -7,9 +7,9 @@ import java.util.List;
  * A class that represents the adopter
  */
 public class Adopter extends User {
-    List<Advertiser> favorites;
+    List<Dog> favorites;
 
-    public Adopter(String email, String full_name, String phone, Address address, String userID, ArrayList<Advertiser> favorites) {
+    public Adopter(String email, String full_name, String phone, Address address, String userID, ArrayList<Dog> favorites) {
         super(email, full_name, phone, address, userID);
         this.favorites = favorites;
     }
@@ -18,19 +18,19 @@ public class Adopter extends User {
 
     }
 
-    public List<Advertiser> getFavorites() {
+    public List<Dog> getFavorites() {
         if(favorites==null){
-            favorites = new ArrayList<Advertiser>();
+            favorites = new ArrayList<Dog>();
         }
         return favorites;
     }
 
-    public void addAdvertiser(Advertiser advertiser) {
+    public void addAdvertiser(Dog dog) {
         if(favorites==null){
-            favorites = new ArrayList<Advertiser>();
+            favorites = new ArrayList<Dog>();
         }
-        if(favorites.contains(advertiser)==false) {
-            favorites.add(advertiser);
+        if(favorites.contains(dog)==false) {
+            favorites.add(dog);
         }
     }
 }

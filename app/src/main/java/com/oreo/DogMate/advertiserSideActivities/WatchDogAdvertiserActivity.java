@@ -39,6 +39,7 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
     private RecyclerView recyclerView;
     private DogImageAdapterAdvertiser dogImageAdapter;
     private DatabaseReference imageRef;
+    private DatabaseReference menuRef;
     private DatabaseReference dogRef;
     private FirebaseStorage storage;
     private List<Upload> uploads;
@@ -70,7 +71,8 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
         userID = FireLog.getCurrentUser().getUid();
         imageRef = DB.getReference("Menu").child(userID).child(dog.getDogID()).child("images");
         storage = FirebaseStorage.getInstance();
-        dogRef=DB.getReference("Menu").child(userID).child(dog.getDogID());
+        menuRef =DB.getReference("Menu").child(userID).child(dog.getDogID());
+        dogRef=DB.getReference("Dogs").child(dog.getDogID());
 
 
 
@@ -151,6 +153,7 @@ public class WatchDogAdvertiserActivity extends Advertiser_Navigation implements
                         for (int i = 0; i < dog.getImages().size(); i++){
                             onDeleteClick(i);
                         }
+                        menuRef.removeValue();
                         dogRef.removeValue();
                     }
                 });
