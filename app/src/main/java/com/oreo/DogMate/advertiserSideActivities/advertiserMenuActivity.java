@@ -66,7 +66,6 @@ public class advertiserMenuActivity extends Advertiser_Navigation {
                 }
                 if (dogList.isEmpty()) {
                     Toast.makeText(advertiserMenuActivity.this, "התפריט ריק! הוסף כלב חדש", Toast.LENGTH_LONG).show();
-                    moveToAdddog();
                     return;
                 }
                 DogAdapter dogAdapter = new DogAdapter(advertiserMenuActivity.this, dogList);
@@ -89,12 +88,5 @@ public class advertiserMenuActivity extends Advertiser_Navigation {
 
     }
 
-    public void moveToAdddog() {
-        Intent intent = new Intent(advertiserMenuActivity.this, AddDogActivity.class);
-        startActivity(intent);
-    }
 
-    public void addNewDog(View view) {
-        moveToAdddog();
-    }
 }

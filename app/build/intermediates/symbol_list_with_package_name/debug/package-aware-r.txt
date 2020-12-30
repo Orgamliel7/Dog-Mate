@@ -1661,6 +1661,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string accept
 string action_settings
+string addDog
 string addItem
 string addPicture
 string addPictures

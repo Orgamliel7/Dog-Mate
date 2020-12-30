@@ -1,10 +1,5 @@
-com/oreo/DogMate/advertiserSideActivities/WatchDogAdvertiserActivity.java
- com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity
- com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity$1
- com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity$2
- com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity$3
- com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity$4
- com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity$5
+com/oreo/DogMate/Navigation/Advertiser_Navigation.java
+ com.oreo.DogMate.Navigation.Advertiser_Navigation
 com/oreo/DogMate/adopterSideActivities/dogWatchActivityAdopter.java
  com.oreo.DogMate.adopterSideActivities.dogWatchActivityAdopter
  com.oreo.DogMate.adopterSideActivities.dogWatchActivityAdopter$1
@@ -54,8 +49,10 @@ com/oreo/DogMate/adopterSideActivities/AdoptDogActivity.java
  com.oreo.DogMate.adopterSideActivities.AdoptDogActivity$3
 com/oreo/DogMate/BuildConfig.java
  com.oreo.DogMate.BuildConfig
-com/oreo/DogMate/Objects/Region.java
- com.oreo.DogMate.Objects.Region
+com/oreo/DogMate/advertiserSideActivities/advertiserScreenActivity.java
+ com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity
+ com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity$1
+ com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity$2
 com/oreo/DogMate/Objects/Preference.java
  com.oreo.DogMate.Objects.Preference
 com/oreo/DogMate/adopterSideActivities/adopterScreen.java
@@ -64,12 +61,14 @@ com/oreo/DogMate/ListsAdapters/AdvertiserAdapter.java
  com.oreo.DogMate.ListsAdapters.AdvertiserAdapter
 com/oreo/DogMate/adopterSideActivities/SearchMainMenu.java
  com.oreo.DogMate.adopterSideActivities.SearchMainMenu
-com/oreo/DogMate/ListsAdapters/DogAdapter.java
- com.oreo.DogMate.ListsAdapters.DogAdapter
- com.oreo.DogMate.ListsAdapters.DogAdapter$1
- com.oreo.DogMate.ListsAdapters.DogAdapter$2
- com.oreo.DogMate.ListsAdapters.DogAdapter$3
- com.oreo.DogMate.ListsAdapters.DogAdapter$4
+com/oreo/DogMate/advertiserSideActivities/addDogPicturesActivity.java
+ com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity
+ com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$1
+ com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$2
+ com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$3
+ com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$4
+ com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$5
+ com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$5$1
 com/oreo/DogMate/ListsAdapters/AdoptionAdapterAdopter.java
  com.oreo.DogMate.ListsAdapters.AdoptionAdapterAdopter
 com/oreo/DogMate/Navigation/Login.java
@@ -119,21 +118,22 @@ com/oreo/DogMate/Objects/Dog.java
 com/oreo/DogMate/adopterSideActivities/adopter_settings.java
  com.oreo.DogMate.adopterSideActivities.adopter_settings
  com.oreo.DogMate.adopterSideActivities.adopter_settings$1
-com/oreo/DogMate/Navigation/Advertiser_Navigation.java
- com.oreo.DogMate.Navigation.Advertiser_Navigation
-com/oreo/DogMate/advertiserSideActivities/addDogPicturesActivity.java
- com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity
- com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$1
- com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$2
- com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$3
- com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$4
- com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$5
- com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity$5$1
+com/oreo/DogMate/Objects/Region.java
+ com.oreo.DogMate.Objects.Region
+com/oreo/DogMate/ListsAdapters/DogAdapter.java
+ com.oreo.DogMate.ListsAdapters.DogAdapter
+ com.oreo.DogMate.ListsAdapters.DogAdapter$1
+ com.oreo.DogMate.ListsAdapters.DogAdapter$2
+ com.oreo.DogMate.ListsAdapters.DogAdapter$3
+ com.oreo.DogMate.ListsAdapters.DogAdapter$4
 com/oreo/DogMate/advertiserSideActivities/advertiserMenuActivity.java
  com.oreo.DogMate.advertiserSideActivities.advertiserMenuActivity
  com.oreo.DogMate.advertiserSideActivities.advertiserMenuActivity$1
  com.oreo.DogMate.advertiserSideActivities.advertiserMenuActivity$2
-com/oreo/DogMate/advertiserSideActivities/advertiserScreenActivity.java
- com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity
- com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity$1
- com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity$2
+com/oreo/DogMate/advertiserSideActivities/WatchDogAdvertiserActivity.java
+ com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity
+ com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity$1
+ com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity$2
+ com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity$3
+ com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity$4
+ com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity$5

@@ -57,4 +57,11 @@ public class advertiserScreenActivity extends Advertiser_Navigation {
         startActivity(new Intent(getApplicationContext(), Login.class));
         finish();
     }
+
+    public void addNewDog(View view) {
+        Intent intent = new Intent(advertiserScreenActivity.this, AddDogActivity.class);
+        startActivity(intent);
+    }
+
+
 }
