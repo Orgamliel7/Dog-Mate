@@ -44,7 +44,7 @@ public class adopterScreen extends Adopter_Navigation {
     }
 
     public void moveToadopterOrders(View view) {
-        Intent intent = new Intent(this, AdopterOrderActivity.class);
+        Intent intent = new Intent(this, AdopterRequestActivity.class);
         startActivity(intent);
     }
 

@@ -47,7 +47,7 @@ public class advertiserScreenActivity extends Advertiser_Navigation {
     }
 
     public void moveToAdvertiserOrders(View v){
-        startActivity(new Intent(getApplicationContext(), advertiserOrderActivity.class));
+        startActivity(new Intent(getApplicationContext(), advertiserRequestActivity.class));
     }
     public void moveToSettings(){
         startActivity(new Intent(getApplicationContext(), advertiserSettingsActivity.class));

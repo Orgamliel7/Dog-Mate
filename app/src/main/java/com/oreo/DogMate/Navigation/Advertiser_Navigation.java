@@ -10,7 +10,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.oreo.DogMate.R;
 import com.oreo.DogMate.advertiserSideActivities.advertiserMenuActivity;
-import com.oreo.DogMate.advertiserSideActivities.advertiserOrderActivity;
+import com.oreo.DogMate.advertiserSideActivities.advertiserRequestActivity;
 import com.oreo.DogMate.advertiserSideActivities.advertiserSettingsActivity;
 import com.oreo.DogMate.advertiserSideActivities.advertiserScreenActivity;
 
@@ -65,7 +65,7 @@ public class Advertiser_Navigation extends Activity implements NavigationView.On
                 break;
 
             case R.id.advertiser_orders:
-                Intent j = new Intent(this, advertiserOrderActivity.class);
+                Intent j = new Intent(this, advertiserRequestActivity.class);
                 startActivity(j);
                 break;
 

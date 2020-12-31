@@ -49,6 +49,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
     String userID;
     Dog dog;
     Adopter me;
+    boolean bAddDog;
     Advertiser advertiser;
     DatabaseReference adoptionsRef;
     TextView dogDetails,AdvertiserDetails, street, city, total, breed;//will show the dog and Advertisers main details
@@ -143,8 +144,8 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
                     for (int i = 0; i < me.getFavorites().size(); i++) {
                         if (me.getFavorites().get(i).getDogID().equals(dog.getDogID())) {
                             Button button = (Button) findViewById(R.id.addtoFavorites);
-                            button.setClickable(false);
-                            button.setText("זהו כלב מועדף עליי!");
+                            //button.setClickable(false);
+                            button.setText("הסרת כלב מהמועדפים");
                         }
                     }
                 }
@@ -182,7 +183,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 me = dataSnapshot.getValue(Adopter.class);
                 if (me != null) {
-                    me.addAdvertiser(dog);
+                    bAddDog  =  me.addDog(dog);
                     adopterRef.setValue(me, completionListener);
 
                 }
@@ -201,8 +202,11 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
                                 Toast.LENGTH_SHORT).show();
 
 
-                    } else {
+                    } else if(bAddDog==true){
                         Toast.makeText(getApplicationContext(), "כלב נוסף למועדפים!",
+                                Toast.LENGTH_SHORT).show();
+                    }else if(bAddDog==false){
+                        Toast.makeText(getApplicationContext(), "כלב הוסר מהמועדפים!",
                                 Toast.LENGTH_SHORT).show();
                     }
                 }

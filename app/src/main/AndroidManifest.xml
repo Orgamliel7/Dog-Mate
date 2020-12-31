@@ -30,7 +30,7 @@
         <activity android:name=".advertiserSideActivities.WatchDogAdvertiserActivity" />
         <activity android:name=".advertiserSideActivities.addDogPicturesActivity" />
         <activity
-            android:name=".adopterSideActivities.AdopterOrderActivity"
+            android:name=".adopterSideActivities.AdopterRequestActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".adopterSideActivities.AdoptDogActivity"
@@ -38,7 +38,7 @@
         <activity
             android:name=".adopterSideActivities.AdopterMenuActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".advertiserSideActivities.advertiserOrderActivity" />
+        <activity android:name=".advertiserSideActivities.advertiserRequestActivity" />
         <activity
             android:name=".adopterSideActivities.Favorites"
             android:theme="@style/AppTheme.NoActionBar" />

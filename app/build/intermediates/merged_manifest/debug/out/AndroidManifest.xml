@@ -44,7 +44,7 @@
         <activity android:name="com.oreo.DogMate.advertiserSideActivities.WatchDogAdvertiserActivity" />
         <activity android:name="com.oreo.DogMate.advertiserSideActivities.addDogPicturesActivity" />
         <activity
-            android:name="com.oreo.DogMate.adopterSideActivities.AdopterOrderActivity"
+            android:name="com.oreo.DogMate.adopterSideActivities.AdopterRequestActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.oreo.DogMate.adopterSideActivities.AdoptDogActivity"
@@ -52,7 +52,7 @@
         <activity
             android:name="com.oreo.DogMate.adopterSideActivities.AdopterMenuActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserOrderActivity" />
+        <activity android:name="com.oreo.DogMate.advertiserSideActivities.advertiserRequestActivity" />
         <activity
             android:name="com.oreo.DogMate.adopterSideActivities.Favorites"
             android:theme="@style/AppTheme.NoActionBar" />

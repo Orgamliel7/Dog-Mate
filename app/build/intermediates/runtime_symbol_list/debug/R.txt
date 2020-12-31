@@ -1545,12 +1545,12 @@ int layout activity_add_dog_pictures 0x7f0b001d
 int layout activity_adopt_dog 0x7f0b001e
 int layout activity_adopter_menu 0x7f0b001f
 int layout activity_adopter_navigation 0x7f0b0020
-int layout activity_adopter_order 0x7f0b0021
+int layout activity_adopter_request 0x7f0b0021
 int layout activity_adopter_screen 0x7f0b0022
 int layout activity_adopter_settings 0x7f0b0023
 int layout activity_advertiser_menu 0x7f0b0024
 int layout activity_advertiser_navigation 0x7f0b0025
-int layout activity_advertiser_order 0x7f0b0026
+int layout activity_advertiser_request 0x7f0b0026
 int layout activity_advertiser_screen 0x7f0b0027
 int layout activity_advertiser_settings 0x7f0b0028
 int layout activity_dog_watch_adopter 0x7f0b0029

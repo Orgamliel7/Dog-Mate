@@ -1,4 +1,4 @@
-package com.oreo.DogMate.advertiserSideActivities;
+package com.oreo.DogMate.adopterSideActivities;
 
 import android.os.Bundle;
 import android.widget.ListView;
@@ -10,8 +10,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.oreo.DogMate.ListsAdapters.AdoptionAdapterAdvertiser;
-import com.oreo.DogMate.Navigation.Advertiser_Navigation;
+import com.oreo.DogMate.Navigation.Adopter_Navigation;
+import com.oreo.DogMate.ListsAdapters.AdoptionAdapterAdopter;
 import com.oreo.DogMate.Objects.Adoption;
 import com.oreo.DogMate.R;
 
@@ -21,62 +21,56 @@ import java.util.List;
 import androidx.annotation.NonNull;
 
 /**
- * In this activity, the Advertiser can watch his orders and their details
+ * In this activity, the adopter can watch his orders
  */
-public class advertiserOrderActivity extends Advertiser_Navigation {
+public class AdopterRequestActivity extends Adopter_Navigation {
 
     private FirebaseAuth FireLog;// fire base authentication
-    ListView listOrders;
+    ListView ordersListView;
     String userID;
-    DatabaseReference adoptionsAdvRef;
+    DatabaseReference databaseOrdersC;
     FirebaseDatabase DB;
 
-    List<Adoption> ordersList;
-
+    List<Adoption> adoptionList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_advertiser_order);
-        listOrders = (ListView)findViewById(R.id.listOrders);
+        setContentView(R.layout.activity_adopter_request);
+        ordersListView = (ListView)findViewById(R.id.listOrdersadopter);
 
         DB = FirebaseDatabase.getInstance();
         FireLog = FirebaseAuth.getInstance();
 
-        ordersList = new ArrayList<Adoption>();
-
+        adoptionList = new ArrayList<Adoption>();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         userID = FireLog.getCurrentUser().getUid();
-        adoptionsAdvRef = DB.getReference("Adoptions/Advertiser Adoptions").child(userID);
+        databaseOrdersC = DB.getReference("Adoptions/Adopter Adoptions").child(userID);
 
-        adoptionsAdvRef.addValueEventListener(new ValueEventListener() {
+        databaseOrdersC.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                ordersList.clear();
+                adoptionList.clear();
                 for (DataSnapshot orderSnapShot : dataSnapshot.getChildren()) {
                     Adoption adoption = orderSnapShot.getValue(Adoption.class);
-                    ordersList.add(adoption);
+                    adoptionList.add(adoption);
                 }
-                if (ordersList.isEmpty()) {
-                    Toast.makeText(advertiserOrderActivity.this, "אין כלבים במאגר", Toast.LENGTH_LONG).show();
+                if (adoptionList.isEmpty()) {
+                    Toast.makeText(AdopterRequestActivity.this, "אין כלבים במאגר", Toast.LENGTH_LONG).show();
                     return;
                 }
-                AdoptionAdapterAdvertiser orderAdapter = new AdoptionAdapterAdvertiser(advertiserOrderActivity.this, ordersList);
-                listOrders.setAdapter(orderAdapter);
+                AdoptionAdapterAdopter orderC_Adapter = new AdoptionAdapterAdopter(AdopterRequestActivity.this, adoptionList);
+                ordersListView.setAdapter(orderC_Adapter);
             }
-
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-
-
-    });
-
+        });
     }
 }

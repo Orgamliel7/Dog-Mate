@@ -25,12 +25,20 @@ public class Adopter extends User {
         return favorites;
     }
 
-    public void addAdvertiser(Dog dog) {
+    public boolean addDog(Dog dog) {
         if(favorites==null){
             favorites = new ArrayList<Dog>();
         }
-        if(favorites.contains(dog)==false) {
-            favorites.add(dog);
-        }
+        boolean b = true;
+            for (Dog i:favorites) {
+                if(i.getDogID().equals(dog.getDogID())){
+                    favorites.remove(i);
+                    b = false;
+                }
+            }
+            if (b==true){
+                favorites.add(dog);
+            }
+        return b;
     }
 }

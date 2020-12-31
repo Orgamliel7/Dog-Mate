@@ -1546,12 +1546,12 @@ layout activity_add_dog_pictures
 layout activity_adopt_dog
 layout activity_adopter_menu
 layout activity_adopter_navigation
-layout activity_adopter_order
+layout activity_adopter_request
 layout activity_adopter_screen
 layout activity_adopter_settings
 layout activity_advertiser_menu
 layout activity_advertiser_navigation
-layout activity_advertiser_order
+layout activity_advertiser_request
 layout activity_advertiser_screen
 layout activity_advertiser_settings
 layout activity_dog_watch_adopter

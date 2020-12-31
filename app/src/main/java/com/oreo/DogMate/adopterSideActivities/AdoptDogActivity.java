@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -144,7 +143,7 @@ public class AdoptDogActivity extends Adopter_Navigation {
         // when finishing to adoption - moves to the orders list
         Toast.makeText(AdoptDogActivity.this, "בקשת האימוץ בוצע בהצלחה!", Toast.LENGTH_LONG).show();
         findViewById(R.id.adopt).setEnabled(true);
-        startActivity(new Intent(AdoptDogActivity.this, AdopterOrderActivity.class));
+        startActivity(new Intent(AdoptDogActivity.this, AdopterRequestActivity.class));
     }
 
 }

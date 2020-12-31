@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/reut/AndroidStudioProjects/DogMate2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "C:\\Users\\eliya\\AndroidStudioProjects\\dogMateSheet\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/reut/.gradle/caches/transforms-2/files-2.1/0c7684b5efebf4f910d4e2dc76f3404c/appcompat-1.0.2/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "C:\\Users\\eliya\\.gradle\\caches\\transforms-2\\files-2.1\\0c7684b5efebf4f910d4e2dc76f3404c\\appcompat-1.0.2\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

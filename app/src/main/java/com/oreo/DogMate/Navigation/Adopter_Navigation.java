@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.oreo.DogMate.R;
-import com.oreo.DogMate.adopterSideActivities.AdopterOrderActivity;
+import com.oreo.DogMate.adopterSideActivities.AdopterRequestActivity;
 import com.oreo.DogMate.adopterSideActivities.Favorites;
 import com.oreo.DogMate.adopterSideActivities.SearchMainMenu;
 import com.oreo.DogMate.adopterSideActivities.adopterScreen;
@@ -61,7 +61,7 @@ public class Adopter_Navigation extends AppCompatActivity implements NavigationV
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.adopter_orders:
-                Intent i = new Intent(this, AdopterOrderActivity.class);
+                Intent i = new Intent(this, AdopterRequestActivity.class);
                 startActivity(i);
                 break;
 
