@@ -23,11 +23,11 @@ public class Dog implements Serializable {
     private boolean isEnergetic;
     private String breed;
 
-    private String allerganics;
-    private String description;
+   // private String allerganics;
+    //private String description;
     private String dogID;
     ArrayList<Upload> images;
-    private String imagesID;
+    //private String imagesID;
     private String advertiserID;
 
     public Dog() {
@@ -50,10 +50,10 @@ public class Dog implements Serializable {
         this.suitsToApartment = ap;
         this.suitsToPrivateHouse = ph;
         this.isEnergetic = ie;
-        this.allerganics = allerganics;
-        this.description = description;
+//        this.allerganics = allerganics;
+//        this.description = description;
         images = new ArrayList<Upload>();
-        imagesID = "";
+       // imagesID = "";
         this.advertiserID = advertiserID;
     }
 
@@ -81,13 +81,13 @@ public class Dog implements Serializable {
         return images;
     }
 
-    public String getImagesID() {
-        return imagesID;
-    }
+//    public String getImagesID() {
+//        return imagesID;
+//    }
 
-    public void setImagesID(String imagesID) {
-        this.imagesID = imagesID;
-    }
+//    public void setImagesID(String imagesID) {
+//        this.imagesID = imagesID;
+//    }
 
     public String getName() {
         return name;
@@ -97,29 +97,29 @@ public class Dog implements Serializable {
         return age;
     }
 
-    public String getAllerganics() {
-        return allerganics;
-    }
+//    public String getAllerganics() {
+//        return allerganics;
+//    }
 
-    public String getDescription() {
-        return description;
-    }
+//    public String getDescription() {
+//        return description;
+//    }
 
     public void setAge(Age age) {
         this.age = age;
     }
 
-    public void setAllerganics(String allerganics) {
-        this.allerganics = allerganics;
-    }
+//    public void setAllerganics(String allerganics) {
+//        this.allerganics = allerganics;
+//    }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+//    public void setDescription(String description) {
+//        this.description = description;
+//    }
 
     public void setDogID(String dogID) {
         this.dogID = dogID;

@@ -290,8 +290,8 @@ public class AddDogActivity extends Advertiser_Navigation {
             dog.setDogsFriendly(isDogsFriendly);
             dog.setSuitsToApartment(isSuitsToApartment);
 
-            dog.setDescription(" ");
-            dog.setAllerganics(" ");
+//            dog.setDescription(" ");
+//            dog.setAllerganics(" ");
         }
         dogRef.child(dog.getDogID()).setValue(dog, completionListener);
         DB.getReference("Dogs").child(dog.getDogID()).setValue(dog, completionListener);
