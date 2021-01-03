@@ -24,7 +24,7 @@ import java.util.List;
 import androidx.annotation.NonNull;
 
 /**
- * The main menu for the search - will show the last orders,
+ * The main Advertiser's dogs for the search - will show the last orders,
  * option to search by a dog or a advertiser
  */
 public class SearchMainMenu extends Adopter_Navigation {

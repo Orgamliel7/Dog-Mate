@@ -54,7 +54,7 @@ public class advertiserMenuActivity extends Advertiser_Navigation {
     protected void onStart() {
         super.onStart();
         userID = FireLog.getCurrentUser().getUid();
-        menu = DB.getReference("Menu").child(userID);
+        menu = DB.getReference("Advertiser's dogs").child(userID);
         menu.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

@@ -39,7 +39,7 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
     private RecyclerView recyclerView;
     private DogImageAdapterAdopter dogImageAdapter; //adapter for the dogs images
     private DatabaseReference imageRef; //reference for the upload details in the DB
-    private DatabaseReference dogRef; //reference to the dog in the Menu in the DB
+    private DatabaseReference dogRef; //reference to the dog in the Advertiser's dogs in the DB
     private FirebaseStorage storage; // reference to the picture itself in the storage
     private List<Upload> uploads; // one upload gives us one picture URL
     private ProgressBar progressBar;
@@ -78,9 +78,9 @@ public class dogWatchActivityAdopter extends Adopter_Navigation {
         FireLog = FirebaseAuth.getInstance();
         DB = FirebaseDatabase.getInstance();
         userID = FireLog.getCurrentUser().getUid();
-        imageRef = DB.getReference("Menu").child(dog.getadvertiserID()).child(dog.getDogID()).child("images");
+        imageRef = DB.getReference("Advertiser's dogs").child(dog.getadvertiserID()).child(dog.getDogID()).child("images");
         storage = FirebaseStorage.getInstance();
-        dogRef=DB.getReference("Menu").child(dog.getadvertiserID()).child(dog.getDogID());
+        dogRef=DB.getReference("Advertiser's dogs").child(dog.getadvertiserID()).child(dog.getDogID());
 
     }
     protected void onStart() {

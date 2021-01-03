@@ -65,7 +65,7 @@ public class DogAdapter extends ArrayAdapter<Dog> {
 
         if (dog.getImages().size() > 0) {
             FirebaseStorage storage = FirebaseStorage.getInstance();
-            StorageReference storageReference = storage.getReferenceFromUrl("gs://dogmate-c8039.appspot.com/Menu").child(dog.getadvertiserID() + "/" + dog.getDogID() + "/" + dog.getImages().get(0).getName() + ".jpg");
+            StorageReference storageReference = storage.getReferenceFromUrl("gs://dogmate-c8039.appspot.com/Advertiser's dogs").child(dog.getadvertiserID() + "/" + dog.getDogID() + "/" + dog.getImages().get(0).getName() + ".jpg");
 
             try {
                 final File file = File.createTempFile("image", "jpg");

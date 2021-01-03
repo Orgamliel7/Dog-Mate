@@ -86,7 +86,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
 
     private void cleanFilter() {
         userID = Objects.requireNonNull(FireLog.getCurrentUser()).getUid();
-        menuForadopter = DB.getReference("Menu").child(advertiser.getUserID());
+        menuForadopter = DB.getReference("Advertiser's dogs").child(advertiser.getUserID());
         menuForadopter.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -113,7 +113,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
     protected void onStart() {
         super.onStart();
         userID = Objects.requireNonNull(FireLog.getCurrentUser()).getUid();
-        menuForadopter = DB.getReference("Menu").child(advertiser.getUserID());
+        menuForadopter = DB.getReference("Advertiser's dogs").child(advertiser.getUserID());
         menuForadopter.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -153,7 +153,7 @@ public class AdopterMenuActivity extends Adopter_Navigation {
      * @param searchedText
      */
     public void setAdapter(final String searchedText) {
-        menuForadopter = DB.getReference("Menu").child(advertiser.getUserID());
+        menuForadopter = DB.getReference("Advertiser's dogs").child(advertiser.getUserID());
         menuForadopter.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

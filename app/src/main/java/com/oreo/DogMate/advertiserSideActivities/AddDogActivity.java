@@ -65,7 +65,7 @@ public class AddDogActivity extends Advertiser_Navigation {
         setContentView(R.layout.activity_add_dog);
         FireLog = FirebaseAuth.getInstance();
         DB = FirebaseDatabase.getInstance();
-        dogRef = DB.getReference("Menu/" + Objects.requireNonNull(FireLog.getCurrentUser()).getUid());
+        dogRef = DB.getReference("Advertiser's dogs/" + Objects.requireNonNull(FireLog.getCurrentUser()).getUid());
         FirebaseUser user = FireLog.getCurrentUser();
         userID = user.getUid();
         name = (EditText) findViewById(R.id.dog_name_editText);
