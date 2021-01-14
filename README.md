@@ -6,7 +6,7 @@ Our application - DogMate - connects between the human being to his best friend.
 
 The aim of the app is dog's adoption' connection between advertisers to adopters.
 
-One of the advantages is concretic and wide search of dogs to adopt, concering deatils that are important for dogs needs.
+One of the advantages is concretic and wide search of dogs to adopt, concering details that are important for dogs needs.
 
 ## Target
 The app is for people who would like to adpot a dog or associations that considers the most important things for the dog i.e. personal preferences.
