@@ -1,3 +1,5 @@
+![Dog_adoption](https://dogfriendlysanantonio.com/wp-content/uploads/2020/06/dog-adoption-san-antonio-image-1024x768.png)
+
 # dogMate
 
 Our application - DogMate - connects between the human being to his best friend.
